@@ -22,16 +22,23 @@ const nextConfig: NextConfig = {
   },
 
   async rewrites() {
-    return [
-      { source: "/logo/:path*",           destination: `${ASSET_HOST}/logo/:path*` },
-      { source: "/about/:path*",          destination: `${ASSET_HOST}/about/:path*` },
-      { source: "/about-page/:path*",     destination: `${ASSET_HOST}/about-page/:path*` },
-      { source: "/galleries-page/:path*", destination: `${ASSET_HOST}/galleries-page/:path*` },
-      { source: "/gallery/:path*",        destination: `${ASSET_HOST}/gallery/:path*` },
-      { source: "/offerings-page/:path*", destination: `${ASSET_HOST}/offerings-page/:path*` },
-      // add any other top-level folders you actually use
-    ];
-  },
+  const ASSET_HOST = process.env.NEXT_PUBLIC_ASSET_BASE!;
+  return [
+    { source: "/logo/:path*",                destination: `${ASSET_HOST}/logo/:path*` },
+    { source: "/about/:path*",               destination: `${ASSET_HOST}/about/:path*` },
+    { source: "/about-page/:path*",          destination: `${ASSET_HOST}/about-page/:path*` },
+    { source: "/galleries-page/:path*",      destination: `${ASSET_HOST}/galleries-page/:path*` },
+    { source: "/gallery/:path*",             destination: `${ASSET_HOST}/gallery/:path*` },
+    { source: "/offerings-page/:path*",      destination: `${ASSET_HOST}/offerings-page/:path*` },
+    { source: "/journal-section/:path*",     destination: `${ASSET_HOST}/journal-section/:path*` },
+    { source: "/kind-words-section/:path*",  destination: `${ASSET_HOST}/kind-words-section/:path*` },
+    { source: "/quintessential-section/:path*", destination: `${ASSET_HOST}/quintessential-section/:path*` },
+    { source: "/service-level-section/:path*",  destination: `${ASSET_HOST}/service-level-section/:path*` },
+
+    // catch-all for root-level assets like /cta.jpg, /hero.jpg, /2.jpg
+    { source: "/:path*", destination: `${ASSET_HOST}/:path*` },
+  ];
+},
 
   ...(isVercel ? {} : {
     turbopack: { rules: { "*.{jsx,tsx}": { loaders: [LOADER] } } },
