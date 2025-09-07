@@ -28,11 +28,11 @@ const nextConfig: NextConfig = {
       { source: "/about-page/:path*",     destination: `${ASSET_HOST}/about-page/:path*` },
       { source: "/galleries-page/:path*", destination: `${ASSET_HOST}/galleries-page/:path*` },
       { source: "/gallery/:path*",        destination: `${ASSET_HOST}/gallery/:path*` },
-      { source: "/offerings-page/:path*", destination: `${ASSET_HOST}/offerings-page/:path*` },
       { source: "/journal-section/:path*",     destination: `${ASSET_HOST}/journal-section/:path*` },
       { source: "/kind-words-section/:path*",  destination: `${ASSET_HOST}/kind-words-section/:path*` },
       { source: "/quintessential-section/:path*", destination: `${ASSET_HOST}/quintessential-section/:path*` },
       { source: "/service-level-section/:path*",  destination: `${ASSET_HOST}/service-level-section/:path*` },
+      { source: "/offerings-page/:path*", destination: `${ASSET_HOST}/offerings-page/:path*` },
     ];
   },
 
