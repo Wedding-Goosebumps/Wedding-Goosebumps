@@ -1,8 +1,6 @@
-// src/lib/assets.ts
 const ASSET_BASE = "https://img.weddinggoosebumps.com";
-
-// encodes each segment so spaces, #, ?, etc. are safe
 export function r2(path: string) {
-  const parts = path.replace(/^\/+/, "").split("/").map(encodeURIComponent);
-  return `${ASSET_BASE}/${parts.join("/")}`;
+  const clean = path.replace(/^\/+/, "");
+  // Let Next.js / the browser handle encoding; do not pre-encode to avoid %2520
+  return `${ASSET_BASE}/${clean}`;
 }
