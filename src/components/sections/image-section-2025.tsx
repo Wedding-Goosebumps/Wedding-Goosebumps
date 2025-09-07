@@ -8,9 +8,9 @@ export const ImageGallery: React.FC = () => {
     "/quintessential-section/Main%20image%20230202105837-MM_09599.jpg";
 
   const THUMBNAILS = [
-    "/quintessential-section/Copy%20of%20230202105837-MM_09465%20(1).jpg",
-    "/quintessential-section/Copy%20of%20230202105837-MM_09833.jpg",
-    "/quintessential-section/Copy%20of%20230202105837-MM_09845.jpg"
+    "/quintessential-section/Copy of 20230202105837-MM_09465 (1).jpg",
+    "/quintessential-section/Copy of 20230202105837-MM_09833.jpg",
+    "/quintessential-section/Copy of 20230202105837-MM_09845.jpg"
   ];
 
   return (

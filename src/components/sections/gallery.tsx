@@ -10,7 +10,7 @@ const IMAGES = [
   "/gallery/DSC05463.jpg",
   "/gallery/DSC05495.jpg",
   "/gallery/DSC07473.jpg",
-  "/gallery/DSC07748.jpg",
+  "/gallery/DSC07748 (1).jpg",
   "/gallery/DSC07927.jpg",
   "/gallery/DSC08363.jpg",
   "/gallery/MM_09867.jpg",

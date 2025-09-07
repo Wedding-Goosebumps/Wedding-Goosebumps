@@ -46,7 +46,7 @@ const ServiceLevelSection = () => {
           {/* IMAGE SIDE — full image visible, centered */}
           <div className="lg:col-span-3 w-full flex justify-center py-2">
             <Image
-              src="/service-level-section/Copy%20of%20MM_09664.jpg"
+              src="/service-level-section/Copy of MM_09664.jpg"
               alt="Ali and couple on stairs"
               width={1100}
               height={1700}
