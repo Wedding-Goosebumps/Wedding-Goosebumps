@@ -320,7 +320,7 @@ export default function AboutPage() {
       {/* RIGHT IMAGE — flush to right margin */}
       <div className="relative h-[64vh] md:h-[72vh] lg:h-[100vh] bg-[#efe9df]">
         <Image
-          src="/about-page/slide6/main.jpg"   // right image
+          src="/about-page/slide6/main.JPG"   // right image
           alt="Testimonial main"
           fill
           className="object-cover"
