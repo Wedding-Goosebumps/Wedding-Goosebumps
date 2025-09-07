@@ -78,7 +78,7 @@ export default function GalleriesPage() {
       <section className="relative w-screen h-[70vh] md:h-[100vh] overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/galleries-hero.mp4"
+          src="/videos/gallery-page-vids/VIMAL WED TEASER 20sec 12.mp4"
           autoPlay
           muted
           loop
@@ -203,7 +203,7 @@ export default function GalleriesPage() {
       <section className="relative w-screen h-[70vh] md:h-[100vh] overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/galleries-hero.mp4"
+          src="/videos/gallery-page-vids/YASH NISHI WED HIGHLIGHT 20 sec 9.mp4"
           autoPlay
           muted
           loop

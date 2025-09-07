@@ -367,7 +367,7 @@ export default function OfferingsPage() {
       <section className="relative w-full h-[70vh] md:h-[100vh] overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/offerings-video.mp4" // place your mp4 in /public/videos
+          src="/videos/offerings-page-vids/ANUJ WEDDING TEASER 20sec 9.mp4" // place your mp4 in /public/videos
           autoPlay
           muted 
           loop
@@ -566,7 +566,7 @@ export default function OfferingsPage() {
 
       {/* ────────────────────────────── SLIDE 10 — (Optional) video again */}
       { <section className="relative w-full h-[100vh] overflow-hidden">
-        <video className="absolute inset-0 w-full h-full object-cover" src="/videos/offerings-outro.mp4" autoPlay muted loop playsInline />
+        <video className="absolute inset-0 w-full h-full object-cover" src="/videos/offerings-page-vids/DHARAM RAJVI WED HIGHLIGHT 4K 20 sec 25.mp4" autoPlay muted loop playsInline />
         <div className="absolute inset-0 bg-black/25" />
       </section> }
 

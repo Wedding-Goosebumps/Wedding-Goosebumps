@@ -14,17 +14,16 @@ function WeddingGoosebumpsSection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            // TODO: replace with your asset
-            backgroundImage: "url('/images/wedding-bg.jpg')",
+            backgroundImage: "url('inquire-page/DSC07075.jpg')", // <-- use your real asset path
           }}
         />
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="relative container mx-auto px-10 py-60 text-center text-white">
+        <div className="relative container mx-auto px-10 py-90 text-center text-white">
           <p className="italic font-lora tracking-wide mb-3">
             let’s celebrate your<span className="italic font-light">Special Day</span> together
           </p>
-          <h2 className="font-playfair-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
+          <h2 className="font-playfair-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 text-white">
             Contact Us 
           </h2>
 
@@ -53,7 +52,7 @@ export default function InquirePage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-gray-300"
             style={{
-              backgroundImage: `url('https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/719d37fe-897e-47a7-947a-3db0f4cae8a6/generated_images/luxurious-punjabi-bride-in-traditional-r-771e21b2-20250801201413.jpg')`,
+              backgroundImage: "url('inquire-page/JIY00200.jpg')", // <-- use your real asset path
             }}
           />
         </div>
@@ -85,35 +84,6 @@ export default function InquirePage() {
 
       <WeddingGoosebumpsSection />
 
-      {/* Video Section */}
-      <section className="relative h-screen overflow-hidden">
-        <div className="sticky top-0 h-screen">
-          <div className="relative w-full h-full">
-            <div className="absolute inset-0">
-              <iframe
-                className="absolute inset-0 w-full h-full object-cover"
-                src="https://www.dailymotion.com/embed/video/x8iwzz4?autoplay=1&mute=1&quality=1080"
-                title="Jennifer Fox Weddings Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white px-8">
-                <h2 className="font-playfair-display text-4xl md:text-5xl lg:text-6xl tracking-wide mb-4">
-                  TIMELESS ELEGANCE
-                </h2>
-                <p className="font-lora text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
-                  Where luxury meets tradition in the most beautiful celebration of love
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute inset-0 z-10" />
-      </section>
       <Footer/>
     </main>
   );

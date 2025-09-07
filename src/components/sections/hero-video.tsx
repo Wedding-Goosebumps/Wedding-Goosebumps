@@ -3,9 +3,9 @@
 
 import Image from "next/image";
 
-const LOGO_URL = "/logo/logo.svg";
+const LOGO_URL = "/logo/logo.png";
 const TEXT_LOGO_URL = "/logo/text-logo.svg";
-const HERO_VIDEO_URL = "/videos/hero.mp4";
+const HERO_VIDEO_URL = "/videos/home-page-vids/MOHIT WED VIDEO 4K 20 Sec 3.mp4";
 
 export default function HeroVideo() {
   return (
@@ -30,8 +30,8 @@ export default function HeroVideo() {
   <Image
     src={TEXT_LOGO_URL}
     alt="WEDDING GOOSBUMPS"
-    width={1000}
-    height={250}
+    width={800}
+    height={150}
     className="h-auto w-full max-w-[1000px] md:w-4/5 lg:w-3/4 -ml-2 invert brightness-0 "
     priority
   />

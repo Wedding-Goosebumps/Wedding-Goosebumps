@@ -11,7 +11,7 @@ export default function VideoFullBleed() {
     <section className="relative w-screen h-screen overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/videos/scroll-video-1.mp4"
+        src="/videos/home-page-vids/DHARAM RAJVI WED HIGHLIGHT 4K 20 sec 7.mp4"
         autoPlay
         muted
         loop

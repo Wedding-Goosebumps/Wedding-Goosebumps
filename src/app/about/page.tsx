@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/sections/navigation";
 
-const LOGO_URL = "/logo/logo.svg";
+const LOGO_URL = "/logo/logo.png";
 
 function Slide({
   children,
@@ -263,7 +263,7 @@ export default function AboutPage() {
       <Slide className="p-0 m-0">
   <div className="w-screen h-screen relative left-1/2 -translate-x-1/2">
     <video
-      src="https://www.dailymotion.com/embed/video/x8iwzz4?autoplay=1&mute=1&quality=1080"
+      src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4" // <-- corrected extension
       autoPlay
       muted
       loop

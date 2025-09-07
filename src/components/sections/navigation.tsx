@@ -14,7 +14,7 @@ const navLinks = [
   { name: "INQUIRE", href: "/inquire" },
 ];
 
-const LOGO_URL = "/logo/logo.svg";
+const LOGO_URL = "/logo/logo.png";
 
 export default function Navigation() {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,11 +52,13 @@ export default function Navigation() {
      h-24 md:h-30  
      w-60 md:w-60   
      shrink-0
+     mt-8
    ">
               <Image
                 src={LOGO_URL}
-                alt="Jennifer Fox logo"
-                fill
+                alt="Wedding Goosebumps"
+                width={100} // set your desired width
+                height={40} // set your desired height
                 className="object-contain"
                 priority
               />
