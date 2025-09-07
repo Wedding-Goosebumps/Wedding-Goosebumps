@@ -34,9 +34,6 @@ const nextConfig: NextConfig = {
     { source: "/kind-words-section/:path*",  destination: `${ASSET_HOST}/kind-words-section/:path*` },
     { source: "/quintessential-section/:path*", destination: `${ASSET_HOST}/quintessential-section/:path*` },
     { source: "/service-level-section/:path*",  destination: `${ASSET_HOST}/service-level-section/:path*` },
-
-    // catch-all for root-level assets like /cta.jpg, /hero.jpg, /2.jpg
-    { source: "/:path*", destination: `${ASSET_HOST}/:path*` },
   ];
 },
 
