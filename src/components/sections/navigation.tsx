@@ -14,7 +14,7 @@ const navLinks = [
   { name: "INQUIRE", href: "/inquire" },
 ];
 
-const LOGO_URL = "/logo/logo.png";
+const LOGO_URL = "/logo/Logo.png";
 
 export default function Navigation() {
   const [isVisible, setIsVisible] = useState(false);

@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 
-const LOGO_URL = "/logo/logo.png";
+const LOGO_URL = "/logo/Logo.png";
 const TEXT_LOGO_URL = "/logo/text-logo.svg";
 const HERO_VIDEO_URL = "/videos/home-page-vids/MOHIT WED VIDEO 4K 20 Sec 3.mp4";
 

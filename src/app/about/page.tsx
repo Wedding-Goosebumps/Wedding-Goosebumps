@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/sections/navigation";
 
-const LOGO_URL = "/logo/logo.png";
+const LOGO_URL = "/logo/Logo.png";
 
 function Slide({
   children,
