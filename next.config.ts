@@ -34,6 +34,7 @@ const nextConfig: NextConfig = {
       { source: "/service-level-section/:path*",  destination: `${ASSET_HOST}/service-level-section/:path*` },
       { source: "/offerings-page/:path*", destination: `${ASSET_HOST}/offerings-page/:path*` },
       { source: "/videos/:path*", destination: `${ASSET_HOST}/videos/:path*` },
+      { source: "/inquire-page/:path*", destination: `${ASSET_HOST}/inquire-page/:path*` },
     ];
   },
 
