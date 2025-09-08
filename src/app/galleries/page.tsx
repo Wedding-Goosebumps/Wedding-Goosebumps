@@ -48,13 +48,13 @@ export default function GalleriesPage() {
       <section className="py-28 md:py-40">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
           <GalleryCard
-            img="/galleries-page/headers/tanya.jpg"
+            img="/galleries-page/headers/Tanya.jpg"
             heading="Crafted with love "
             subheading="Tanya and Aayush"
             slug="1"
           />
           <GalleryCard
-            img="/galleries-page/headers/tatsav.jpg"
+            img="/galleries-page/headers/Tatsav.jpg"
             heading="Timeless modern traditions"
             subheading="Tatsav & Vidhi"
             slug="2"
@@ -115,7 +115,7 @@ export default function GalleriesPage() {
             slug="8"
           />
           <GalleryCard
-            img="/galleries-page/headers/ivan.jpg"
+            img="/galleries-page/headers/ivan.JPG"
             heading="A global love"
             subheading="Ivan & Maria"
             slug="9"
