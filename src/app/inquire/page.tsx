@@ -9,16 +9,13 @@ import Link from "next/link";
 function WeddingGoosebumpsSection() {
   return (
     <section className="relative">
-      {/* Hero band with background image */}
       <div className="relative">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('inquire-page/DSC07075.jpg')", // <-- use your real asset path
-          }}
+        <img
+          src="/inquire-page/DSC07075.jpg"
+          alt="Wedding Goosebumps Hero"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/45" />
-
         <div className="relative container mx-auto px-10 py-90 text-center text-white">
           <p className="italic font-lora tracking-wide mb-3">
             let’s celebrate your<span className="italic font-light">Special Day</span> together
@@ -26,7 +23,6 @@ function WeddingGoosebumpsSection() {
           <h2 className="font-playfair-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 text-white">
             Contact Us 
           </h2>
-
           <Link
             href="/inquire"
             className="inline-block bg-white text-black px-8 py-4 tracking-wide hover:bg-white/90 transition"
@@ -49,11 +45,10 @@ export default function InquirePage() {
       <div className="min-h-screen flex">
         {/* Left side - Large romantic photo */}
         <div className="w-1/2 relative">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-gray-300"
-            style={{
-              backgroundImage: "url('inquire-page/JIY00200.jpg')", // <-- use your real asset path
-            }}
+          <img
+            src="/inquire-page/JIY00200.jpg"
+            alt="Romantic Bride"
+            className="absolute inset-0 w-full h-full object-cover bg-gray-300"
           />
         </div>
 
