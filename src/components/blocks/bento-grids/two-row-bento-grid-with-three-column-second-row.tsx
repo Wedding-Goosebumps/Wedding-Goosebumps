@@ -10,9 +10,9 @@ export default function TwoRowBentoGridWithThreeColumnSecondRow() {
             <div className="relative lg:col-span-3">
               <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-performance.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/bento-01-performance.png"
                   className="h-80 object-cover object-left"
                 />
   
@@ -30,9 +30,9 @@ export default function TwoRowBentoGridWithThreeColumnSecondRow() {
             <div className="relative lg:col-span-3">
               <div className="absolute inset-0 rounded-lg bg-white lg:rounded-tr-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-releases.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/bento-01-releases.png"
                   className="h-80 object-cover object-left lg:object-right"
                 />
   
@@ -50,9 +50,9 @@ export default function TwoRowBentoGridWithThreeColumnSecondRow() {
             <div className="relative lg:col-span-2">
               <div className="absolute inset-0 rounded-lg bg-white lg:rounded-bl-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/bento-01-speed.png"
                   className="h-80 object-cover object-left"
                 />
   
@@ -69,9 +69,9 @@ export default function TwoRowBentoGridWithThreeColumnSecondRow() {
             <div className="relative lg:col-span-2">
               <div className="absolute inset-0 rounded-lg bg-white" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/bento-01-integrations.png"
                   className="h-80 object-cover"
                 />
   
@@ -88,9 +88,9 @@ export default function TwoRowBentoGridWithThreeColumnSecondRow() {
             <div className="relative lg:col-span-2">
               <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-br-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/bento-01-network.png"
                   className="h-80 object-cover"
                 />
   

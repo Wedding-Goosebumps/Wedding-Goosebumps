@@ -41,9 +41,9 @@ export default function SplitWithScreenshotOnDark() {
       </div>
       <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
-          <img
+          <Image
             alt="Your Company"
-            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+            src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=500"
             className="h-11"
           />
           <div className="mt-24 sm:mt-32 lg:mt-16">
@@ -78,9 +78,9 @@ export default function SplitWithScreenshotOnDark() {
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <img
+            <Image
               alt="App screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               width={2432}
               height={1442}
               className="w-304 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"

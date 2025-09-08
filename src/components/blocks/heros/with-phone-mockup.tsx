@@ -22,9 +22,9 @@ export default function WithPhoneMockup() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=600"
                 className="h-8 w-auto"
               />
             </a>
@@ -58,9 +58,9 @@ export default function WithPhoneMockup() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=600"
                   className="h-8 w-auto"
                 />
               </a>
@@ -158,7 +158,7 @@ export default function WithPhoneMockup() {
             </div>
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-            <svg role="img" viewBox="0 0 366 729" className="mx-auto w-91.5 max-w-full drop-shadow-xl">
+            <svg role="Image" viewBox="0 0 366 729" className="mx-auto w-91.5 max-w-full drop-shadow-xl">
               <title>App screenshot</title>
               <defs>
                 <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
@@ -179,7 +179,7 @@ export default function WithPhoneMockup() {
                 clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 transform="translate(24 24)"
               >
-                <img alt="" src="https://tailwindcss.com/plus-assets/img/component-images/mobile-app-screenshot.png" />
+                <Image alt="" src="https://tailwindcss.com/plus-assets/Image/component-images/mobile-app-screenshot.png" />
               </foreignObject>
             </svg>
           </div>

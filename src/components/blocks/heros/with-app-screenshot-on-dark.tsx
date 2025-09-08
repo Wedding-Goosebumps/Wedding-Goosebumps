@@ -21,9 +21,9 @@ export default function WithAppScreenshotOnDark() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
               />
             </a>
@@ -57,9 +57,9 @@ export default function WithAppScreenshotOnDark() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                  src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=500"
                   className="h-8 w-auto"
                 />
               </a>
@@ -134,9 +134,9 @@ export default function WithAppScreenshotOnDark() {
                 </a>
               </div>
             </div>
-            <img
+            <Image
               alt="App screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               width={2432}
               height={1442}
               className="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24"

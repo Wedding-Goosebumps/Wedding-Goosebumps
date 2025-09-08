@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const fonscolombeWeddingImg = "/journal-section/Copy of DEV00489.jpg";
+const fonscolombeWeddingImage = "/journal-section/Copy of DEV00489.jpg";
 
 const JournalSection = () => {
   return (

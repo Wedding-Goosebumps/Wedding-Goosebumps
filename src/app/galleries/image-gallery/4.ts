@@ -1,8 +1,8 @@
 // data/galleries/1.ts
 const set4 = [
   { src: "/galleries-page/gallery/4/DSC05760.jpg", width: 3000, height: 2000 },
-  { src: "/galleries-page/gallery/4/IMG_0418.jpg", width: 3000, height: 2000 },
-  { src: "/galleries-page/gallery/4/IMG_0422.jpg", width: 3000, height: 2000 },
+  { src: "/galleries-page/gallery/4/Image_0418.jpg", width: 3000, height: 2000 },
+  { src: "/galleries-page/gallery/4/Image_0422.jpg", width: 3000, height: 2000 },
   { src: "/galleries-page/gallery/4/JAY02978.jpg", width: 3000, height: 2000 },
   { src: "/galleries-page/gallery/4/KS_05332.jpg", width: 3000, height: 2000 },
   { src: "/galleries-page/gallery/4/KS_06654.jpg", width: 3000, height: 2000 },

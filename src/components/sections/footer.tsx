@@ -25,7 +25,7 @@ export default function Footer() {
         <p className="max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
           Wedding Goosebumps is a{' '}
           <em className="font-serif">full service destination wedding planning and design agency</em>{' '}
-          that specializes in creating elegant and exclusive weddings across France.
+          that specializes in creating elegant and exclusive weddings.
         </p>
 
         <div className="mt-12">

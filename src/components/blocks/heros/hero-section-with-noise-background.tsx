@@ -49,7 +49,7 @@ export function HeroSectionWithNoiseBackground() {
             transition={{ duration: 0.3, delay: 0.3 }}
             className="relative w-full overflow-hidden rounded-xl shadow-2xl [mask-image:linear-gradient(to_bottom,white,white_40%,transparent)]"
           >
-            <img
+            <Image
               src="https://assets.aceternity.com/linear-demo.webp"
               alt="Product screenshot"
               className="h-auto w-full object-cover"

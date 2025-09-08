@@ -33,9 +33,9 @@ export default function ContainedInPanel() {
                 Ac euismod vel sit maecenas.
               </p>
             </div>
-            <img
+            <Image
               alt="Product screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               width={2432}
               height={1442}
               className="relative -z-20 max-w-xl min-w-full rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-5xl lg:max-w-none"

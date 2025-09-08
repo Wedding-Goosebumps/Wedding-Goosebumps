@@ -146,29 +146,29 @@ export default function ThreeTiersWithLogosAndFeatureComparison() {
             ))}
           </div>
           <div className="flex justify-between py-16 opacity-60 max-sm:mx-auto max-sm:max-w-md max-sm:flex-wrap max-sm:justify-evenly max-sm:gap-x-4 max-sm:gap-y-4 sm:py-24">
-            <img
+            <Image
               alt="Transistor"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg"
+              src="https://tailwindcss.com/plus-assets/Image/logos/158x48/transistor-logo-white.svg"
               className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
             />
-            <img
+            <Image
               alt="Laravel"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/laravel-logo-white.svg"
+              src="https://tailwindcss.com/plus-assets/Image/logos/158x48/laravel-logo-white.svg"
               className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
             />
-            <img
+            <Image
               alt="Tuple"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg"
+              src="https://tailwindcss.com/plus-assets/Image/logos/158x48/tuple-logo-white.svg"
               className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
             />
-            <img
+            <Image
               alt="SavvyCal"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg"
+              src="https://tailwindcss.com/plus-assets/Image/logos/158x48/savvycal-logo-white.svg"
               className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
             />
-            <img
+            <Image
               alt="Statamic"
-              src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg"
+              src="https://tailwindcss.com/plus-assets/Image/logos/158x48/statamic-logo-white.svg"
               className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
             />
           </div>

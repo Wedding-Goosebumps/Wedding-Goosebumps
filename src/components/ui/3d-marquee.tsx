@@ -45,7 +45,7 @@ export const ThreeDMarquee = ({
                 {subarray.map((image, imageIndex) => (
                   <div className="relative" key={imageIndex + image}>
                     <GridLineHorizontal className="-top-4" offset="20px" />
-                    <motion.img
+                    <motion.Image
                       whileHover={{
                         y: -10,
                       }}

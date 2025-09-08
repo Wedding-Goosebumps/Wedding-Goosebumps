@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 export const ImageGallery: React.FC = () => {
-  const MAIN_IMG =
+  const MAIN_Image =
     "/quintessential-section/Main image 230202105837-MM_09599.jpg";
 
   const THUMBNAILS = [
@@ -21,8 +21,8 @@ export const ImageGallery: React.FC = () => {
           {/* LEFT: big image */}
           <div className="relative h-[80vh] lg:h-[114vh] bg-[#efe9df]">
             <Image
-              src={MAIN_IMG}
-              alt="Quintessential Aesthetics of France"
+              src={MAIN_Image}
+              alt="Quintessential Aesthetics"
               fill
               className="object-cover"
               priority

@@ -54,9 +54,9 @@ export default function WithProductScreenshotPanel() {
                 className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-white ring-inset"
               />
               <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-                <img
+                <Image
                   alt="Product screenshot"
-                  src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/project-app-screenshot.png"
                   width={2432}
                   height={1442}
                   className="-mb-12 w-228 max-w-none rounded-tl-xl bg-gray-800 ring ring-white/10"

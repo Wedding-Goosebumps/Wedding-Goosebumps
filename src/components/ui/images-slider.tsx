@@ -44,10 +44,10 @@ export const ImagesSlider = ({
     setLoading(true);
     const loadPromises = images.map((image) => {
       return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
+        const Image = new Image();
+        Image.src = image;
+        Image.onload = () => resolve(image);
+        Image.onerror = reject;
       });
     });
 
@@ -135,7 +135,7 @@ export const ImagesSlider = ({
 
       {areImagesLoaded && (
         <AnimatePresence>
-          <motion.img
+          <motion.Image
             key={currentIndex}
             src={loadedImages[currentIndex]}
             initial="initial"

@@ -30,7 +30,7 @@ export default function WithTestimonial() {
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 flex gap-x-4 text-sm/6">
-                    <img
+                    <Image
                       alt=""
                       src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                       className="size-6 flex-none rounded-full"
@@ -43,9 +43,9 @@ export default function WithTestimonial() {
                 </figure>
               </div>
             </div>
-            <img
+            <Image
               alt="Product screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               width={2432}
               height={1442}
               className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:ml-0"

@@ -23,9 +23,9 @@ export default function WithAngledImageOnRight() {
             <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   alt="Your Company"
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=600"
                   className="h-8 w-auto"
                 />
               </a>
@@ -53,9 +53,9 @@ export default function WithAngledImageOnRight() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=600"
                   className="h-8 w-auto"
                 />
               </a>
@@ -141,7 +141,7 @@ export default function WithAngledImageOnRight() {
           </div>
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             alt=""
             src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
             className="aspect-3/2 object-cover lg:aspect-auto lg:size-full"

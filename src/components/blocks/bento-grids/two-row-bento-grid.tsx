@@ -9,9 +9,9 @@ export default function TwoRowBentoGrid() {
           <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
             <div className="flex p-px lg:col-span-4">
               <div className="w-full overflow-hidden rounded-lg bg-gray-800 outline outline-white/15 max-lg:rounded-t-4xl lg:rounded-tl-4xl">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-02-releases.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/dark-bento-02-releases.png"
                   className="h-80 object-cover object-left"
                 />
                 <div className="p-10">
@@ -26,9 +26,9 @@ export default function TwoRowBentoGrid() {
             </div>
             <div className="flex p-px lg:col-span-2">
               <div className="w-full overflow-hidden rounded-lg bg-gray-800 outline outline-white/15 lg:rounded-tr-4xl">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-02-integrations.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/dark-bento-02-integrations.png"
                   className="h-80 object-cover"
                 />
                 <div className="p-10">
@@ -42,9 +42,9 @@ export default function TwoRowBentoGrid() {
             </div>
             <div className="flex p-px lg:col-span-2">
               <div className="w-full overflow-hidden rounded-lg bg-gray-800 outline outline-white/15 lg:rounded-bl-4xl">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-02-security.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/dark-bento-02-security.png"
                   className="h-80 object-cover"
                 />
                 <div className="p-10">
@@ -58,9 +58,9 @@ export default function TwoRowBentoGrid() {
             </div>
             <div className="flex p-px lg:col-span-4">
               <div className="w-full overflow-hidden rounded-lg bg-gray-800 outline outline-white/15 max-lg:rounded-b-4xl lg:rounded-br-4xl">
-                <img
+                <Image
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-02-performance.png"
+                  src="https://tailwindcss.com/plus-assets/Image/component-images/dark-bento-02-performance.png"
                   className="h-80 object-cover object-left"
                 />
                 <div className="p-10">

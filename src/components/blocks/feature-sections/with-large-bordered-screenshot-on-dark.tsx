@@ -8,9 +8,9 @@ export default function WithLargeBorderedScreenshotOnDark() {
           <div className="relative mt-16 aspect-2432/1442 h-144 sm:h-auto sm:w-[calc(var(--container-7xl)-calc(var(--spacing)*16))]">
             <div className="absolute -inset-2 rounded-[calc(var(--radius-xl)+calc(var(--spacing)*2))] bg-white/2.5 shadow-xs ring-1 ring-white/10" />
   
-            <img
+            <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               className="h-full rounded-xl shadow-2xl ring-1 ring-white/10"
             />
           </div>

@@ -4,13 +4,14 @@ import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
 import InquiryForm from "./inquire-form";
 import Link from "next/link";
+import Image from "next/image";
 
 /* ── CTA section (sits below the video) ───────────────────────────── */
 function WeddingGoosebumpsSection() {
   return (
     <section className="relative">
       <div className="relative">
-        <img
+        <Image
           src="/inquire-page/DSC07075.jpg"
           alt="Wedding Goosebumps Hero"
           className="absolute inset-0 w-full h-full object-cover"
@@ -45,7 +46,7 @@ export default function InquirePage() {
       <div className="min-h-screen flex">
         {/* Left side - Large romantic photo */}
         <div className="w-1/2 relative">
-          <img
+          <Image
             src="/inquire-page/JIY00200.jpg"
             alt="Romantic Bride"
             className="absolute inset-0 w-full h-full object-cover bg-gray-300"

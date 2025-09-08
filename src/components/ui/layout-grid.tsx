@@ -60,7 +60,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
 const ImageComponent = ({ card }: { card: Card }) => {
   return (
-    <motion.img
+    <motion.Image
       layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
       height="500"

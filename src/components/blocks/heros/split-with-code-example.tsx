@@ -8,9 +8,9 @@ export default function SplitWithCodeExample() {
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
-                <img
+                <Image
                   className="h-11"
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindcss.com/plus-assets/Image/logos/mark.svg?color=indigo&shade=600"
                   alt="Your Company"
                 />
                 <div className="mt-24 sm:mt-32 lg:mt-16">

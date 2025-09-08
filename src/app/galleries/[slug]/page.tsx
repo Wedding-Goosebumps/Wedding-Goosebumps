@@ -4,8 +4,8 @@ import Navigation from "@/components/sections/navigation";
 import { notFound } from "next/navigation";
 import galleries from "../image-gallery";
 
-type Img = { src: string; width: number; height: number; alt?: string };
-const data = galleries as Record<string, Img[]>;
+type Image = { src: string; width: number; height: number; alt?: string };
+const data = galleries as Record<string, Image[]>;
 
 export default async function GallerySlugPage(
   { params }: { params: Promise<{ slug: string }> }

@@ -57,9 +57,9 @@ import {
         </div>
         <div className="relative overflow-hidden pt-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <img
+            <Image
               alt="App screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/dark-project-app-screenshot.png"
               width={2432}
               height={1442}
               className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"

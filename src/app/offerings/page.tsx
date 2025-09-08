@@ -579,19 +579,19 @@ export default function OfferingsPage() {
 function ServiceBlock({
   title,
   copy,
-  img,
+  Image,
   reverse,
 }: {
   title: string;
   copy: string;
-  img: string;
+  Image: string;
   reverse?: boolean;
 }) {
   return (
     <div className={`container grid gap-10 lg:grid-cols-2 items-center ${reverse ? "lg:grid-flow-dense" : ""}`}>
       {/* image */}
       <div className={`relative h-[54vh] bg-[#efe9df] ${reverse ? "lg:order-2" : ""}`}>
-        <Image src={img} alt={title} fill className="object-cover" />
+        <Image src={Image} alt={title} fill className="object-cover" />
       </div>
       {/* text */}
       <div className={`${reverse ? "lg:order-1" : ""}`}>

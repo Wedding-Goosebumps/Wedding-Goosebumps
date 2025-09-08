@@ -48,25 +48,25 @@ export default function GalleriesPage() {
       <section className="py-28 md:py-40">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
           <GalleryCard
-            img="/galleries-page/headers/Tanya.jpg"
+            Image="/galleries-page/headers/Tanya.jpg"
             heading="Crafted with love "
             subheading="Tanya and Aayush"
             slug="1"
           />
           <GalleryCard
-            img="/galleries-page/headers/Tatsav.jpg"
+            Image="/galleries-page/headers/Tatsav.jpg"
             heading="Timeless modern traditions"
             subheading="Tatsav & Vidhi"
             slug="2"
           />
           <GalleryCard
-            img="/galleries-page/headers/ashish.jpg"
+            Image="/galleries-page/headers/ashish.jpg"
             heading="Ethereal floral elegance"
             subheading="Ashish and Juhi"
             slug="3"
           />
           <GalleryCard
-            img="/galleries-page/headers/harshil.jpg"
+            Image="/galleries-page/headers/harshil.jpg"
             heading="Vibrant wedding luxury"
             subheading="Shashank & Muskan"
             slug="4"
@@ -91,37 +91,37 @@ export default function GalleriesPage() {
       <section className="py-18 md:py-24">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
           <GalleryCard
-            img="/galleries-page/headers/mohit.jpg"
+            Image="/galleries-page/headers/mohit.jpg"
             heading="Culture meets joy"
             subheading="Mohit & Hitika"
             slug="5"
           />
           <GalleryCard
-            img="/galleries-page/headers/dharam.jpg"
+            Image="/galleries-page/headers/dharam.jpg"
             heading="A majestic romance"
             subheading="Harshil & Akanksha"
             slug="6"
           />
           <GalleryCard
-            img="/galleries-page/headers/saval.jpg"
+            Image="/galleries-page/headers/saval.jpg"
             heading="Royal timeless luxury"
             subheading="Dharam & Rajivi "
             slug="7"
           />
           <GalleryCard
-            img="/galleries-page/headers/mukesh.jpg"
+            Image="/galleries-page/headers/mukesh.jpg"
             heading="Love through laughter"
             subheading="Saval & Romil "
             slug="8"
           />
           <GalleryCard
-            img="/galleries-page/headers/ivan.JPG"
+            Image="/galleries-page/headers/ivan.JPG"
             heading="A global love"
             subheading="Ivan & Maria"
             slug="9"
           />
           <GalleryCard
-            img="/galleries-page/headers/riya.jpg"
+            Image="/galleries-page/headers/riya.jpg"
             heading="Heritage in elegance"
             subheading="Mukesh and Yamini"
             slug="10"
@@ -219,12 +219,12 @@ export default function GalleriesPage() {
 
 /* One gallery card resembling the reference layout */
 function GalleryCard({
-  img,
+  Image,
   heading,
   subheading,
   slug, // ← use slug instead of href
 }: {
-  img: string;
+  Image: string;
   heading: string;
   subheading: string;
   slug: string;
@@ -234,7 +234,7 @@ function GalleryCard({
       <Link href={`/galleries/${slug}`} className="group block">
         <div className="relative w-full aspect-[3/4] bg-[#efe9df] overflow-hidden">
           {/* Keep object-cover here for thumbnail styling */}
-          <Image src={img} alt={heading} fill className="object-cover group-hover:scale-[1.01] transition-transform" />
+          <Image src={Image} alt={heading} fill className="object-cover group-hover:scale-[1.01] transition-transform" />
         </div>
 
         <h3 className="mt-6 font-epicene-display uppercase text-[20px] md:text-[22px] tracking-[0.02em]">

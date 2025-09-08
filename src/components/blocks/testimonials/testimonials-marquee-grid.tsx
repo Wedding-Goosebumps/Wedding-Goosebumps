@@ -154,98 +154,98 @@ export const testimonials: Testimonial[] = [
     name: "Manu Arora",
     quote:
       "What a fantastic AI Proactiv AI is, I just love it. It has completely transformed the way I approach problems and develop solutions.",
-    src: "https://i.pravatar.cc/150?img=1",
+    src: "https://i.pravatar.cc/150?Image=1",
     designation: "Tech Innovator & Entrepreneur",
   },
   {
     name: "Tyler Durden",
     quote:
       "I made a soap with the help of AI, it was so easy to use. I'm so glad this happened because it revolutionized my entire business model and production process.",
-    src: "https://i.pravatar.cc/150?img=2",
+    src: "https://i.pravatar.cc/150?Image=2",
     designation: "Creative Director & Business Owner",
   },
   {
     name: "Alice Johnson",
     quote:
       "This AI has transformed the way I work! It's like having a brilliant assistant who knows exactly what I need before I even ask.",
-    src: "https://i.pravatar.cc/150?img=3",
+    src: "https://i.pravatar.cc/150?Image=3",
     designation: "Senior Software Engineer",
   },
   {
     name: "Bob Smith",
     quote:
       "Absolutely revolutionary, a game-changer for our industry. It has streamlined our processes and enhanced our productivity dramatically.",
-    src: "https://i.pravatar.cc/150?img=4",
+    src: "https://i.pravatar.cc/150?Image=4",
     designation: "Industry Analyst",
   },
   {
     name: "Cathy Lee",
     quote:
       "I can't imagine going back to how things were before this AI. It has not only improved my work efficiency but also my daily life.",
-    src: "https://i.pravatar.cc/150?img=5",
+    src: "https://i.pravatar.cc/150?Image=5",
     designation: "Product Manager",
   },
   {
     name: "David Wright",
     quote:
       "It's like having a superpower! This AI tool has given us the ability to do things we never thought were possible in our field.",
-    src: "https://i.pravatar.cc/150?img=6",
+    src: "https://i.pravatar.cc/150?Image=6",
     designation: "Research Scientist",
   },
   {
     name: "Eva Green",
     quote:
       "The efficiency it brings is unmatched. It's a vital tool that has helped us cut costs and improve our end product significantly.",
-    src: "https://i.pravatar.cc/150?img=7",
+    src: "https://i.pravatar.cc/150?Image=7",
     designation: "Operations Director",
   },
   {
     name: "Frank Moore",
     quote:
       "A robust solution that fits perfectly into our workflow. It has enhanced our team's capabilities and allowed us to tackle more complex projects.",
-    src: "https://i.pravatar.cc/150?img=8",
+    src: "https://i.pravatar.cc/150?Image=8",
     designation: "Project Manager",
   },
   {
     name: "Grace Hall",
     quote:
       "It's incredibly intuitive and easy to use. Even those without technical expertise can leverage its power to improve their workflows.",
-    src: "https://i.pravatar.cc/150?img=9",
+    src: "https://i.pravatar.cc/150?Image=9",
     designation: "Marketing Specialist",
   },
   {
     name: "Henry Ford",
     quote:
       "It has saved us countless hours. Highly recommended for anyone looking to enhance their efficiency and productivity.",
-    src: "https://i.pravatar.cc/150?img=10",
+    src: "https://i.pravatar.cc/150?Image=10",
     designation: "Operations Analyst",
   },
   {
     name: "Ivy Wilson",
     quote:
       "A must-have tool for any professional. It's revolutionized the way we approach problem-solving and decision-making.",
-    src: "https://i.pravatar.cc/150?img=11",
+    src: "https://i.pravatar.cc/150?Image=11",
     designation: "Business Consultant",
   },
   {
     name: "Jack Brown",
     quote:
       "The results are always impressive. This AI has helped us to not only meet but exceed our performance targets.",
-    src: "https://i.pravatar.cc/150?img=12",
+    src: "https://i.pravatar.cc/150?Image=12",
     designation: "Performance Manager",
   },
   {
     name: "Kathy Adams",
     quote:
       "It helps us achieve what was once thought impossible. The AI's capabilities are groundbreaking and have opened new avenues for us.",
-    src: "https://i.pravatar.cc/150?img=13",
+    src: "https://i.pravatar.cc/150?Image=13",
     designation: "Innovation Lead",
   },
   {
     name: "Leo Carter",
     quote:
       "Transformative technology with real impact. It has streamlined our operations and brought unprecedented efficiency to our processes.",
-    src: "https://i.pravatar.cc/150?img=14",
+    src: "https://i.pravatar.cc/150?Image=14",
     designation: "Technology Strategist",
   },
 ];

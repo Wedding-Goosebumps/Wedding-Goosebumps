@@ -206,7 +206,7 @@ export const Compare = ({
               }}
               transition={{ duration: 0 }}
             >
-              <img
+              <Image
                 alt="first image"
                 src={firstImage}
                 className={cn(
@@ -222,7 +222,7 @@ export const Compare = ({
 
       <AnimatePresence initial={false}>
         {secondImage ? (
-          <motion.img
+          <motion.Image
             className={cn(
               "absolute top-0 left-0 z-[19]  rounded-2xl w-full h-full select-none",
               secondImageClassname

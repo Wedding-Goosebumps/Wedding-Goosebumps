@@ -207,7 +207,7 @@ const LogoCloud = () => {
           },
         ].map((logo) => (
           <div key={logo.name} className="flex items-center">
-            <img
+            <Image
               src={logo.src}
               alt={logo.name}
               className="h-10 w-auto object-contain transition-all dark:invert dark:filter"
@@ -310,7 +310,7 @@ export const IphoneMockup = ({ image, children }: IphoneMockupProps) => {
         <div className="relative h-full w-full overflow-hidden rounded-[35px] bg-white dark:bg-neutral-950">
           <div className="absolute inset-0 top-[2.3rem]">
             {image && (
-              <img src={image} alt="App screenshot" className="object-cover" />
+              <Image src={image} alt="App screenshot" className="object-cover" />
             )}
             {children}
           </div>

@@ -48,9 +48,9 @@ export default function WithProductScreenshotOnLeft() {
             </div>
           </div>
           <div className="flex items-start justify-end lg:order-first">
-            <img
+            <Image
               alt="Product screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+              src="https://tailwindcss.com/plus-assets/Image/component-images/project-app-screenshot.png"
               width={2432}
               height={1442}
               className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228"

@@ -86,7 +86,7 @@ export const DirectionAwareHover = ({
               ease: "easeOut",
             }}
           >
-            <img
+            <Image
               alt="image"
               className={cn(
                 "h-full w-full object-cover scale-[1.15]",
