@@ -4,25 +4,27 @@ import Image from "next/image";
 
 export default function KindWords() {
   return (
-    <section className="bg-ivory text-charcoal py-24 sm:py-32 lg:py-40 overflow-hidden">
+  <section className="bg-ivory text-charcoal py-0 overflow-hidden">
       <div className="mx-auto max-w-none px-0">
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] items-start gap-y-12 lg:gap-x-20">
 
           {/* LEFT — small portrait at extreme left */}
-          <div className="order-2 lg:order-1 flex justify-start lg:mt-80 pl-0">
+          <div className="order-2 lg:order-1 flex justify-start lg:mt-80 pl-0 ml-6">
             <div className="relative w-[280px] sm:w-[320px] md:w-[300px] aspect-[3/4]">
               <Image
                 src="/kind-words-section/Copy%20of%20DSC02686.jpg"
                 alt="Champagne tower"
                 fill
                 className="object-cover"
-                priority
+                loading={0 < 10 ? 'eager' : 'lazy'}
+                priority={0 < 10}
+                quality={75}
               />
             </div>
           </div>
 
           {/* CENTER — quote block, stretched */}
-          <div className="order-1 lg:order-2 relative text-center px-6 lg:px-0 mt-40">
+          <div className="order-1 lg:order-2 relative text-center px-4 lg:px-0 mt-40">
 
             {/* vertical label with hairline */}
             <div
@@ -40,12 +42,12 @@ export default function KindWords() {
   service
 </h2>
 
-<h3 className="font-lora text-xs tracking-[0.2em] uppercase mb-8 max-w-[350px] ml-auto leading-none text-right">
+<h3 className="font-lora text-xs tracking-[0.2em] uppercase mb-11 max-w-[350px] ml-auto leading-none text-right">
               Attention to detail and exceptional, personalized attentiveness
             </h3>
 
 {/* body copy */}
-<p className="mt-6 max-w-[800px] font-lora text-[16.5px] leading-[1.9] text-charcoal/85 text-right ml-auto">
+<p className="mt-6 max-w-[800px] font-lora text-[15.5px] leading-[1.9] text-charcoal/85 text-right ml-auto">
   We take on a limited number of weddings each year, ensuring every celebration
   receives the time, creativity, and emotional investment it deserves.{" "}
   <i>
@@ -70,6 +72,9 @@ export default function KindWords() {
                 alt="Groom kissing bride’s forehead"
                 fill
                 className="object-cover"
+                loading={0 < 10 ? 'eager' : 'lazy'}
+                priority={0 < 10}
+                quality={75}
               />
             </div>
           </div>

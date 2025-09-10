@@ -13,6 +13,70 @@ const HERO = {
 };
 
 export default function GalleriesPage() {
+  // Prepare gallery card data as an array
+  const galleryCards = [
+    {
+      image: "/galleries-page/headers/Tanya.jpg",
+      heading: "Crafted with love ",
+      subheading: "Tanya and Aayush",
+      slug: "1",
+    },
+    {
+      image: "/galleries-page/headers/Tatsav.jpg",
+      heading: "Timeless modern traditions",
+      subheading: "Tatsav & Vidhi",
+      slug: "2",
+    },
+    {
+      image: "/galleries-page/headers/ashish.jpg",
+      heading: "Ethereal floral elegance",
+      subheading: "Ashish and Juhi",
+      slug: "3",
+    },
+    {
+      image: "/galleries-page/headers/harshil.jpg",
+      heading: "Vibrant wedding luxury",
+      subheading: "Shashank & Muskan",
+      slug: "4",
+    },
+    {
+      image: "/galleries-page/headers/mohit.jpg",
+      heading: "Culture meets joy",
+      subheading: "Mohit & Hitika",
+      slug: "5",
+    },
+    {
+      image: "/galleries-page/headers/dharam.jpg",
+      heading: "A majestic romance",
+      subheading: "Harshil & Akanksha",
+      slug: "6",
+    },
+    {
+      image: "/galleries-page/headers/saval.jpg",
+      heading: "Royal timeless luxury",
+      subheading: "Dharam & Rajivi ",
+      slug: "7",
+    },
+    {
+      image: "/galleries-page/headers/mukesh.jpg",
+      heading: "Love through laughter",
+      subheading: "Saval & Romil ",
+      slug: "8",
+    },
+    {
+      image: "/galleries-page/headers/ivan.JPG",
+      heading: "A global love",
+      subheading: "Ivan & Maria",
+      slug: "9",
+    },
+    {
+      image: "/galleries-page/headers/riya.jpg",
+      heading: "Heritage in elegance",
+      subheading: "Mukesh and Yamini",
+      slug: "10",
+    },
+  ];
+
   return (
     <main className="bg-ivory text-charcoal">
       <Navigation />
@@ -47,30 +111,16 @@ export default function GalleriesPage() {
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
       <section className="py-28 md:py-40">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
-          <GalleryCard
-            Image="/galleries-page/headers/Tanya.jpg"
-            heading="Crafted with love "
-            subheading="Tanya and Aayush"
-            slug="1"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/Tatsav.jpg"
-            heading="Timeless modern traditions"
-            subheading="Tatsav & Vidhi"
-            slug="2"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/ashish.jpg"
-            heading="Ethereal floral elegance"
-            subheading="Ashish and Juhi"
-            slug="3"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/harshil.jpg"
-            heading="Vibrant wedding luxury"
-            subheading="Shashank & Muskan"
-            slug="4"
-          />
+          {galleryCards.slice(0, 4).map((card, idx) => (
+            <GalleryCard
+              key={card.slug}
+              image={card.image}
+              heading={card.heading}
+              subheading={card.subheading}
+              slug={card.slug}
+              idx={idx}
+            />
+          ))}
         </div>
       </section>
 
@@ -90,42 +140,16 @@ export default function GalleriesPage() {
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
       <section className="py-18 md:py-24">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
-          <GalleryCard
-            Image="/galleries-page/headers/mohit.jpg"
-            heading="Culture meets joy"
-            subheading="Mohit & Hitika"
-            slug="5"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/dharam.jpg"
-            heading="A majestic romance"
-            subheading="Harshil & Akanksha"
-            slug="6"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/saval.jpg"
-            heading="Royal timeless luxury"
-            subheading="Dharam & Rajivi "
-            slug="7"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/mukesh.jpg"
-            heading="Love through laughter"
-            subheading="Saval & Romil "
-            slug="8"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/ivan.JPG"
-            heading="A global love"
-            subheading="Ivan & Maria"
-            slug="9"
-          />
-          <GalleryCard
-            Image="/galleries-page/headers/riya.jpg"
-            heading="Heritage in elegance"
-            subheading="Mukesh and Yamini"
-            slug="10"
-          />
+          {galleryCards.slice(4).map((card, idx) => (
+            <GalleryCard
+              key={card.slug}
+              image={card.image}
+              heading={card.heading}
+              subheading={card.subheading}
+              slug={card.slug}
+              idx={idx + 4}
+            />
+          ))}
         </div>
       </section>
 
@@ -168,14 +192,14 @@ export default function GalleriesPage() {
         </div>
       </section>
 
-      <section className="bg-ivory text-charcoal py-13 sm:py-23">
-        <div className="max-w-4xl mx-auto px-8">
+  <section className="bg-ivory text-charcoal py-6 sm:py-10">
+        <div className="max-w-4xl mx-auto px-3">
           <h2 className="font-commuter-sans text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
             ABOUT WEDDING GOOSEBUMPS
           </h2>
           <div className="h-[2.5px] w-30 bg-[#D9D5CF]" />
 
-          <p className="mt-6 font-lora text-[18px] md:text-[19px] leading-[1.9]">
+          <p className="mt-3 font-lora text-[18px] md:text-[19px] leading-[1.9]">
             Wedding Goosebump is a premier wedding designing and planning studio
             based in India, specializing in crafting soul-stirring luxury
             destination weddings across Europe, the Middle East, and India. From
@@ -217,24 +241,32 @@ export default function GalleriesPage() {
   );
 }
 
-/* One gallery card resembling the reference layout */
 function GalleryCard({
-  Image,
+  image,
   heading,
   subheading,
-  slug, // ← use slug instead of href
+  slug,
+  idx,
 }: {
-  Image: string;
+  image: string;
   heading: string;
   subheading: string;
   slug: string;
+  idx: number;
 }) {
   return (
     <article>
       <Link href={`/galleries/${slug}`} className="group block">
         <div className="relative w-full aspect-[3/4] bg-[#efe9df] overflow-hidden">
-          {/* Keep object-cover here for thumbnail styling */}
-          <Image src={Image} alt={heading} fill className="object-cover group-hover:scale-[1.01] transition-transform" />
+          <Image
+            src={image}
+            alt={heading}
+            fill
+            className="object-cover group-hover:scale-[1.01] transition-transform"
+            loading={idx < 4 ? "eager" : "lazy"}
+            priority={idx < 4}
+            quality={75}
+          />
         </div>
 
         <h3 className="mt-6 font-epicene-display uppercase text-[20px] md:text-[22px] tracking-[0.02em]">

@@ -35,22 +35,22 @@ export default function GallerySection() {
   const next = () => setGroupIndex((i) => (i === lastIndex ? 0 : i + 1));
 
   return (
-    <section className="bg-ivory pt-24 lg:pt-32 pb-12 lg:pb-16">
+  <section className="bg-ivory py-18">
       {/* — Heading & intro copy */}
       <div className="container mx-auto px-6 lg:px-8 text-center mb-1">
         {/* WE CREATE → Commuter Sans 400 */}
         <h3 className="font-commuter-sans font-normal text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
           WE CREATE
         </h3>
-
         {/* UNFORGETTABLE word only → Epicene Display Light 400 */}
         <h2 className="font-[Epicene_Display] font-light uppercase text-charcoal text-4xl lg:text-5xl xl:text-6xl mb-1 leading-tight tracking-tight">
         <span className="font-cormorant" style={{fontWeight: 60}}>unforgettable</span>{" "}
         <span className="font-cormorant" style={{fontWeight: 60}}>experiences</span>
         </h2>
+        <div className="h-[2.5px] w-30 bg-[#D9D5CF] mx-auto my-8" />
 
         {/* “Wedding Goosebump is a full-service” → Newsreader 300 italic */}
-        <p className="mx-auto max-w-2xl font-lora text-lg leading-relaxed text-charcoal">
+        <p className="mx-auto max-w-2xl font-lora text-lg leading-relaxed text-charcoal pb-10">
 
             Wedding Goosebumps is a full-service
           {" "}
@@ -84,6 +84,9 @@ export default function GallerySection() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 50vw, 25vw"
+                    loading={idx < 10 ? 'eager' : 'lazy'}
+                    priority={idx < 10}
+                    quality={75}
                   />
                 </div>
               ))}

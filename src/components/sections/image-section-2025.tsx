@@ -14,7 +14,7 @@ export const ImageGallery: React.FC = () => {
   ];
 
   return (
-    <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-[#F8F5F0] text-charcoal">
+  <section className="py-20 bg-[#F8F5F0] text-charcoal">
       <div className="w-screen relative left-1/2 -translate-x-1/2">
         <div className="grid gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
           
@@ -25,7 +25,9 @@ export const ImageGallery: React.FC = () => {
               alt="Quintessential Aesthetics"
               fill
               className="object-cover"
-              priority
+              loading={0 < 10 ? 'eager' : 'lazy'}
+              priority={0 < 10}
+              quality={75}
             />
           </div>
 
@@ -44,6 +46,9 @@ export const ImageGallery: React.FC = () => {
                     alt={`Gallery ${i + 1}`}
                     fill
                     className="object-cover"
+                    loading={i < 10 ? 'eager' : 'lazy'}
+                    priority={i < 10}
+                    quality={75}
                   />
                 </div>
               ))}
@@ -70,10 +75,9 @@ export const ImageGallery: React.FC = () => {
                 stunning, and uniquely yours.
               </p>
               <div className="pt-2">
-                <p className="font-lora text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">
-                  HOW WE DO IT
-                </p>
-                <div className="w-12 h-px bg-charcoal/40 mt-2" />
+<p className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1 inline-block">
+  HOW WE DO IT
+</p>
               </div>
             </div>
           </div>

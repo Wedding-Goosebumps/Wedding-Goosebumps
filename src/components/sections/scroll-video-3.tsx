@@ -4,7 +4,7 @@
 import React from "react";
 import Image from "next/image";
 
-const TEXT_LOGO_URL = "/logo/text-logo.svg";
+const TEXT_LOGO_URL = "/logo//logo/Text Logo.png";
 
 export default function VideoFullBleed() {
   return (

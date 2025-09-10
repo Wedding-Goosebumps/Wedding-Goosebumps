@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const OfferingsSection = () => (
-  <section className="bg-ivory text-charcoal py-13 sm:py-23">
+  <section className="bg-ivory text-charcoal py-6 pb-23">
     <div className="max-w-4xl mx-auto px-8"> {/* equal margins: px controls sides */}
       {/* small uppercase heading + underline */}
       <h2 className="font-commuter-sans text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
@@ -28,7 +28,7 @@ const OfferingsSection = () => (
       </p>
 
       {/* offerings link */}
-      <Link href="/offerings" className="inline-block mt-2">
+      <Link href="/offerings" className="inline-block mt-2  ">
         <span className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1">
           OUR OFFERINGS
         </span>

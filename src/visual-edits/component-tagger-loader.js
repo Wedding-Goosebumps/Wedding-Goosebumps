@@ -366,11 +366,11 @@ const getSemanticName = (node, mapContext, imageAliases) => {
     const tagName = getName();
     if (!tagName)
         return null;
-    // For Next.js Image components, always return 'img' so the name is a valid HTML tag.
+    // For Next.js Image components, always return 'Image' so the name is a valid HTML tag.
     if (isNextImageAlias(imageAliases, tagName)) {
-        return 'img';
+        return 'Image';
     }
-    return isNextImageAlias(imageAliases, tagName) ? 'img' : tagName;
+    return isNextImageAlias(imageAliases, tagName) ? 'Image' : tagName;
 };
 /* ───────────────────────────────────────────── Loader */
 function componentTagger(src, map) {

@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const ServiceLevelSection = () => {
   return (
-    <section className="bg-ivory text-charcoal py-20 md:py-32">
+  <section className="bg-[#FFFFFF] text-charcoal py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-1 items-center">
 
           {/* TEXT SIDE */}
           <div className="lg:col-span-2 flex flex-col items-end text-right">
-            <h2 className="font-playfair-display text-6xl md:text-7xl lg:text-[50px] uppercase leading-none">
+            <h2 className="font-playfair-display text-6xl md:text-7xl lg:text-[50px] uppercase leading-none mb-2">
               MEET THE HEART BEHIND{" "}
               <span className="italic lowercase font-light align-baseline">
                 the
@@ -37,21 +37,24 @@ const ServiceLevelSection = () => {
             </p>
 
             <Link href="/about">
-              <span className="font-lora text-xs uppercase tracking-[0.2em] border-b-2 border-charcoal pb-1 inline-block">
-                THE SOUL OF WEDDING GOOSEBUMPS
-              </span>
+              <p className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1 inline-block">
+THE SOUL OF WEDDING GOOSEBUMPS
+</p>
             </Link>
           </div>
 
           {/* IMAGE SIDE — full image visible, centered */}
           <div className="lg:col-span-3 w-full flex justify-center py-2">
             <Image
-              src="/service-level-section/Copy of MM_09664.jpg"
-              alt="Ali and couple on stairs"
-              width={1100}
-              height={1700}
-              className="w-full max-w-lg h-auto object-contain"
-              sizes="(max-width: 1032px) 110vw, 80vw"
+                  src="/service-level-section/Copy of MM_09664.jpg"
+                  alt="Ali and couple on stairs"
+                  width={1100}
+                  height={1700}
+                  className="w-full max-w-lg h-auto object-contain"
+                  sizes="(max-width: 1032px) 110vw, 80vw"
+                  loading="eager"
+                  priority={true}
+                  quality={75}
             />
           </div>
         </div>

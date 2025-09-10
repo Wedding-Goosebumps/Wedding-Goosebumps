@@ -42,7 +42,9 @@ export default function AboutPage() {
                 alt="Wedding Goosebumps"
                 fill
                 className="object-cover object-[50%_1%]"
-                priority
+                loading={0 < 10 ? "eager" : "lazy"}
+                priority={0 < 10}
+                quality={75}
               />
             </div>
 
@@ -57,21 +59,19 @@ export default function AboutPage() {
 
               {/* Four images row */}
 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 pr-6">
-  {[
-    "/about-page/slide1/1.jpg",
-    "/about-page/slide1/2.jpg",
-    "/about-page/slide1/4.jpg",
-    "/about-page/slide1/3.jpg",
-  ].map((src, i) => (
+  {["/about-page/slide1/1.jpg","/about-page/slide1/2.jpg","/about-page/slide1/4.jpg","/about-page/slide1/3.jpg",].map((src, idx) => (
     <div
-      key={i}
-      className="relative aspect-[3/4] bg-[#efe9df] p-2" // portrait ratio + padding
+      key={idx}
+      className="relative aspect-[3/4] bg-[#efe9df] p-2"
     >
       <Image
         src={src}
-        alt={`Gallery ${i + 1}`}
+        alt={`Gallery ${idx + 1}`}
         fill
         className="object-cover"
+        loading={idx < 10 ? "eager" : "lazy"}
+        priority={idx < 10}
+        quality={75}
       />
     </div>
   ))}
@@ -111,6 +111,9 @@ export default function AboutPage() {
           alt="Ali Waris Khan"
           fill
           className="object-cover"
+          loading={0 < 10 ? "eager" : "lazy"}
+          priority={0 < 10}
+          quality={75}
         />
       </div>
 
@@ -199,7 +202,9 @@ export default function AboutPage() {
           alt="Earlier work"
           fill
           className="object-cover"
-          priority
+          loading={0 < 10 ? "eager" : "lazy"}
+          priority={0 < 10}
+          quality={75}
         />
       </div>
 
@@ -252,6 +257,9 @@ export default function AboutPage() {
           alt="Events"
           fill
           className="object-cover"
+          loading={0 < 10 ? "eager" : "lazy"}
+          priority={0 < 10}
+          quality={75}
         />
       </div>
     </div>
@@ -282,10 +290,13 @@ export default function AboutPage() {
       {/* LEFT IMAGE — flush to left margin */}
       <div className="relative h-[42vh] md:h-[48vh] lg:h-[60vh] bg-[#efe9df]">
         <Image
-          src="/about-page/slide6/1.jpg"      // left image
+          src="/about-page/slide6/1.jpg"
           alt="Detail A"
           fill
           className="object-cover"
+          loading={0 < 10 ? "eager" : "lazy"}
+          priority={0 < 10}
+          quality={75}
         />
       </div>
 
@@ -320,11 +331,13 @@ export default function AboutPage() {
       {/* RIGHT IMAGE — flush to right margin */}
       <div className="relative h-[64vh] md:h-[72vh] lg:h-[100vh] bg-[#efe9df]">
         <Image
-          src="/about-page/slide6/main.JPG"   // right image
+          src="/about-page/slide6/main.JPG"
           alt="Testimonial main"
           fill
           className="object-cover"
-          priority
+          loading={0 < 10 ? "eager" : "lazy"}
+          priority={0 < 10}
+          quality={75}
         />
       </div>
     </div>
@@ -337,10 +350,10 @@ export default function AboutPage() {
 <Slide className="!py-0">
   <div className="grid gap-8 lg:grid-cols-2">
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" />
+      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={75} />
     </div>
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" />
+      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={75} />
     </div>
   </div>
 
@@ -389,8 +402,10 @@ export default function AboutPage() {
     src="/about-page/slide8/main.jpg"
     alt="Inquire Background"
     fill
-    className="object-cover object-[50%_35%]" /* adjust focal point as needed */
-    priority
+    className="object-cover object-[50%_35%]"
+    loading={0 < 10 ? "eager" : "lazy"}
+    priority={0 < 10}
+    quality={75}
   />
 
   {/* Centered overlay – styled like your reference */}
