@@ -430,7 +430,7 @@ export default function AboutPage() {
       hover:after:bg-white transition
     "
   >
-    Work with Jennifer
+    Work with Us
   </Link>
 </div>
 
