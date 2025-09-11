@@ -89,11 +89,11 @@ export default function GalleriesPage() {
             <div className="absolute inset-0 bg-black/15" />
           </div>
           <div className="relative hidden md:block">
-            <Image src="/galleries-page/slide1/2.jpg" alt="Gallery hero 2" fill className="object-cover" />
+              <Image src="/galleries-page/slide1/2.jpg" alt="Gallery hero 2" fill className="object-cover" loading="eager" priority={true} quality={30} />
             <div className="absolute inset-0 bg-black/15" />
           </div>
           <div className="relative hidden md:block">
-            <Image src="/galleries-page/slide1/3.jpg" alt="Gallery hero 3" fill className="object-cover" />
+              <Image src="/galleries-page/slide1/3.jpg" alt="Gallery hero 3" fill className="object-cover" loading="eager" priority={true} quality={30} />
             <div className="absolute inset-0 bg-black/15" />
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function GalleriesPage() {
       </section>
 
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
-      <section className="py-28 md:py-40">
+      <section className="bg-white py-14 md:py-20">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
           {galleryCards.slice(0, 4).map((card, idx) => (
             <GalleryCard
@@ -138,7 +138,7 @@ export default function GalleriesPage() {
       </section>
 
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
-      <section className="py-18 md:py-24">
+  <section className="bg-white py-14 md:py-20">
         <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
           {galleryCards.slice(4).map((card, idx) => (
             <GalleryCard
@@ -153,32 +153,35 @@ export default function GalleriesPage() {
         </div>
       </section>
 
-      <section className="bg-ivory pt-24 lg:pt-32 pb-16">
+  <section className="bg-ivory pt-6 lg:pt-12 pb-16">
         {/* — Heading & intro copy */}
-        <div className="container mx-auto px-6 lg:px-8 text-center mb-2">
-          <h3 className="font-commuter-sans font-normal text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
-            WE CREATE
-          </h3>
+        <div className="container mx-auto px-6 lg:px-8 text-center mb-1 mt-10">
+        {/* WE CREATE → Commuter Sans 400 */}
+        <h3 className="font-commuter-sans font-normal text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
+          WE CREATE
+        </h3>
+        {/* UNFORGETTABLE word only → Epicene Display Light 400 */}
+        <h2 className="font-[Epicene_Display] font-light uppercase text-charcoal text-4xl lg:text-5xl xl:text-6xl mb-1 leading-tight tracking-tight">
+        <span className="font-cormorant" style={{fontWeight: 60}}>unforgettable</span>{" "}
+        <span className="font-cormorant" style={{fontWeight: 60}}>experiences</span>
+        </h2>
+        <div className="h-[2.5px] w-30 bg-[#D9D5CF] mx-auto my-8" />
 
-          <h2 className="font-[Epicene_Display] font-light uppercase text-charcoal text-4xl lg:text-5xl xl:text-6xl mb-2 leading-tight tracking-tight">
-            <span className="font-cormorant" style={{ fontWeight: 60 }}>
-              unforgettable
-            </span>{" "}
-            <span className="font-cormorant" style={{ fontWeight: 60 }}>
-              experiences
-            </span>
-          </h2>
+        {/* “Wedding Goosebump is a full-service” → Newsreader 300 italic */}
+        <p className="mx-auto max-w-2xl font-lora text-lg leading-relaxed text-charcoal pb-10">
 
-          <p className="mx-auto max-w-2xl font-lora text-lg leading-relaxed text-charcoal">
-            Wedding Goosebumps is a full-service{" "}
-            <em className="italic">luxury wedding design and planning studio,</em>{" "}
-            crafting emotionally immersive, couture destination weddings across
-            the world’s most iconic locations.
-          </p>
-        </div>
+            Wedding Goosebumps is a full-service
+          {" "}
+          <em className="italic">
+            luxury wedding design and planning studio,
+          </em>{" "}
+          crafting emotionally immersive, couture destination weddings across
+          the world’s most iconic locations.
+        </p>
+      </div>
 
         {/* — Single image, centered, responsive, no cropping */}
-        <div className="mx-auto max-w-[1200px] px-3 lg:px-5">
+        <div className="mx-auto max-w-[1200px] px-3 lg:px-6">
           <figure className="relative w-full">
             <Image
               src={HERO.src}
@@ -186,42 +189,47 @@ export default function GalleriesPage() {
               width={HERO.width}
               height={HERO.height}
               className="w-full h-auto max-h-[60vh] object-contain"
-              priority
+                  loading="eager"
+                  priority={true}
+                  quality={30}
             />
           </figure>
         </div>
       </section>
 
-  <section className="bg-ivory text-charcoal py-6 sm:py-10">
-        <div className="max-w-4xl mx-auto px-3">
-          <h2 className="font-commuter-sans text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
-            ABOUT WEDDING GOOSEBUMPS
-          </h2>
-          <div className="h-[2.5px] w-30 bg-[#D9D5CF]" />
+<section className="bg-ivory text-charcoal py-6 pb-23">
+    <div className="max-w-4xl mx-auto px-8"> {/* equal margins: px controls sides */}
+      {/* small uppercase heading + underline */}
+      <h2 className="font-commuter-sans text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
+        ABOUT WEDDING GOOSEBUMPS
+      </h2>
+      <div className="h-[2.5px] w-30 bg-[#D9D5CF]" />
 
-          <p className="mt-3 font-lora text-[18px] md:text-[19px] leading-[1.9]">
-            Wedding Goosebump is a premier wedding designing and planning studio
-            based in India, specializing in crafting soul-stirring luxury
-            destination weddings across Europe, the Middle East, and India. From
-            the shores of Lake Como to the royal palaces of Rajasthan,&nbsp;
-            <em className="italic">
-              we turn once-in-a-lifetime moments into emotionally immersive
-              celebrations.
-            </em>{" "}
-            We take the stress out of planning a wedding away from home. Our expert
-            team bridges cultures, languages, and local nuances — handling
-            everything from logistics to luxury detailing with precision and heart.
-            Whether you dream of a cliffside vow in Santorini or a regal baraat in
-            Jaipur, we’re here to turn your vision into goosebump-worthy reality.
-          </p>
+      {/* body copy */}
+      <p className="mt-6 font-lora text-[18px] md:text-[19px] leading-[1.9]">
+        Wedding Goosebump is a premier wedding designing and planning studio
+        based in India, specializing in crafting soul-stirring luxury
+        destination weddings across Europe, the Middle East, and India. From
+        the shores of Lake Como to the royal palaces of Rajasthan,&nbsp;
+        <em className="italic">
+          we turn once-in-a-lifetime moments into emotionally immersive
+          celebrations.
+        </em>{" "}
+        We take the stress out of planning a wedding away from home. Our expert
+        team bridges cultures, languages, and local nuances — handling
+        everything from logistics to luxury detailing with precision and heart.
+        Whether you dream of a cliffside vow in Santorini or a regal baraat in
+        Jaipur, we’re here to turn your vision into goosebump-worthy reality.
+      </p>
 
-          <Link href="/offerings" className="inline-block mt-2">
-            <span className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1">
-              OUR OFFERINGS
-            </span>
-          </Link>
-        </div>
-      </section>
+      {/* offerings link */}
+      <Link href="/offerings" className="inline-block mt-2  ">
+        <span className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1">
+          OUR OFFERINGS
+        </span>
+      </Link>
+    </div>
+  </section>
 
       {/* ────────────────────────────── SLIDE 3 — Full-bleed video */}
       <section className="relative w-screen h-[70vh] md:h-[100vh] overflow-hidden">
@@ -263,9 +271,9 @@ function GalleryCard({
             alt={heading}
             fill
             className="object-cover group-hover:scale-[1.01] transition-transform"
-            loading={idx < 4 ? "eager" : "lazy"}
-            priority={idx < 4}
-            quality={75}
+              loading={idx < 10 ? 'eager' : 'lazy'}
+              priority={idx < 10}
+              quality={30}
           />
         </div>
 
@@ -275,7 +283,7 @@ function GalleryCard({
 
         <div className="mt-3 h-[2px] w-16 bg-charcoal/15" />
 
-        <p className="mt-3 text-[12px] tracking-[0.25em] uppercase text-charcoal/70">
+        <p className="mt-3 text-[12px] tracking-[0.25em] uppercase text-gold  border-gold pb-1">
           {subheading}
         </p>
       </Link>

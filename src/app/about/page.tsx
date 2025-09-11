@@ -16,7 +16,7 @@ function Slide({
 }) {
   // Normal page sections (no snap / full-screen locking)
   return (
-    <section className={`py-15 lg:py-20 bg-ivory text-charcoal ${className}`}>
+    <section className={`py-0 lg:py-0 bg-ivory text-charcoal ${className}`}>
       <div className="mx-auto w-full max-w-[1200px] px-6">{children}</div>
     </section>
   );
@@ -31,12 +31,12 @@ export default function AboutPage() {
       </div>
 
       {/* Slide 1: full‑bleed image on the left (kept as-is) */}
-      <section className="pt-0 pb-16 lg:pt-0 lg:pb-24 bg-white text-charcoal">
+      <section className="pt-0 pb-0 lg:pt-0 lg:pb-0 bg-white text-charcoal">
         {/* Full‑bleed wrapper that ignores the usual max‑width and padding */}
         <div className="w-screen relative left-1/2 -translate-x-1/2">
           <div className="grid gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
             {/* LEFT: big image, touches the viewport's left edge */}
-        <div className="relative h-[90vh] lg:h-[90vh] bg-white">
+        <div className="relative h-[100vh] lg:h-[100vh] bg-white">
               <Image
                 src="/about-page/slide1/main.jpg"
                 alt="Wedding Goosebumps"
@@ -99,8 +99,8 @@ export default function AboutPage() {
       </section>
 
 {/* Slide 2 */}
-<Slide className="mt-6">
-  <div className="mx-auto max-w-7xl px-2.5 lg:px-5">
+<Slide className="mt-20 lg:mt-30">
+  <div className="mx-auto max-w-7xl px-3 lg:px-6">
     <div className="grid gap-12 lg:grid-cols-[480px_1fr] items-start">
       {/* Left image */}
       <div className="relative aspect-[3/4] bg-[#efe9df]">
@@ -151,7 +151,7 @@ export default function AboutPage() {
 
 {/* Slide 3 — Framed statement panel (smaller version) */}
 <Slide>
-  <div className="w-full">
+  <div className="w-full mt-20 lg:mt-30 mb-20 lg:mb-30">
   <div className="mx-auto max-w-6xl bg-white border border-charcoal/10 shadow-sm px-6 md:px-10 py-10 md:py-14">
 
       {/* top divider with monogram */}
@@ -187,7 +187,7 @@ export default function AboutPage() {
 </Slide>
 
 {/* Slide 4 — edge‑to‑edge images, centered copy */}
-<Slide className="py-20 lg:py-28">
+<Slide className=" bg-white">
   {/* full-bleed so edge images can hit margins */}
   <div className="w-screen relative left-1/2 -translate-x-1/2">
     {/* 3 cols: [slim left image] [text (with label pinned)] [right image] */}

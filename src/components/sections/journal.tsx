@@ -5,7 +5,7 @@ const fonscolombeWeddingImage = "/journal-section/Copy of DEV00489.jpg";
 
 const JournalSection = () => {
   return (
-  <section className="bg-[#FFFF] text-charcoal py-24">
+  <section className="bg-[#FFFF] text-charcoal py-24 ">
       <div className="container mx-auto px-6 max-w-[1100px]">
         
         {/* — Section Intro */}
@@ -40,7 +40,7 @@ const JournalSection = () => {
           </div>
 
           {/* Right: Philosophy copy (word-for-word) */}
-          <div className="lg:col-span-6 flex flex-col items-start mt-22 justify-center">
+          <div className="lg:col-span-6 flex flex-col items-start mt-24 justify-center">
             <p className="font-lora text-[12px] uppercase tracking-[0.2em] text-charcoal/80 mb-3">
               THE ART OF GOOSEBUMPS
             </p>
