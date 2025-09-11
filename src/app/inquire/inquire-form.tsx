@@ -78,7 +78,7 @@ export default function InquiryForm() {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          rows={4}
+          rows={1}
           className="w-full border-b border-gray-400 focus:outline-none bg-transparent py-2 resize-none"
         />
       </div>
