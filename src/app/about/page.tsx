@@ -44,7 +44,7 @@ export default function AboutPage() {
                 className="object-cover object-[50%_1%]"
                 loading={0 < 10 ? "eager" : "lazy"}
                 priority={0 < 10}
-                quality={10}
+                quality={30}
               />
             </div>
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
                       className="object-cover"
                       loading={idx < 10 ? "eager" : "lazy"}
                       priority={idx < 10}
-                      quality={10}
+                      quality={30}
                     />
                   </div>
                 ))}
@@ -111,7 +111,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={10}
+          quality={30}
         />
       </div>
 
@@ -201,7 +201,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={10}
+          quality={30}
         />
       </div>
 
@@ -257,7 +257,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={10}
+          quality={30}
         />
       </div>
     </div>
@@ -294,7 +294,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={10}
+          quality={30}
         />
       </div>
 
@@ -335,7 +335,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={10}
+          quality={30}
         />
       </div>
     </div>
@@ -348,10 +348,10 @@ export default function AboutPage() {
 <Slide className="!py-0 mt-18">
   <div className="grid gap-8 lg:grid-cols-2">
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={10} />
+      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={30} />
     </div>
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={10} />
+      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={30} />
     </div>
   </div>
 
@@ -403,7 +403,7 @@ export default function AboutPage() {
     className="object-cover object-[50%_35%]"
     loading={0 < 10 ? "eager" : "lazy"}
     priority={0 < 10}
-    quality={10}
+    quality={30}
   />
 
   {/* Centered overlay – styled like your reference */}
