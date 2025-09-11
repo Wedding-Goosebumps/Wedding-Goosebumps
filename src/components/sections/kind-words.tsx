@@ -18,7 +18,7 @@ export default function KindWords() {
                 className="object-cover"
                 loading={0 < 10 ? 'eager' : 'lazy'}
                 priority={0 < 10}
-                quality={75}
+                quality={30}
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function KindWords() {
                 className="object-cover"
                 loading={0 < 10 ? 'eager' : 'lazy'}
                 priority={0 < 10}
-                quality={75}
+                quality={30}
               />
             </div>
           </div>

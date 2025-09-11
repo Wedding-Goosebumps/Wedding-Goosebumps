@@ -54,7 +54,7 @@ THE SOUL OF WEDDING GOOSEBUMPS
                   sizes="(max-width: 1032px) 110vw, 80vw"
                   loading="eager"
                   priority={true}
-                  quality={75}
+                  quality={30}
             />
           </div>
         </div>

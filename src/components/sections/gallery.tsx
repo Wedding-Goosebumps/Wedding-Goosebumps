@@ -86,7 +86,7 @@ export default function GallerySection() {
                     sizes="(max-width: 1024px) 50vw, 25vw"
                     loading={idx < 10 ? 'eager' : 'lazy'}
                     priority={idx < 10}
-                    quality={75}
+                    quality={30}
                   />
                 </div>
               ))}

@@ -27,7 +27,7 @@ export const ImageGallery: React.FC = () => {
               className="object-cover"
               loading={0 < 10 ? 'eager' : 'lazy'}
               priority={0 < 10}
-              quality={75}
+              quality={30}
             />
           </div>
 
@@ -48,7 +48,7 @@ export const ImageGallery: React.FC = () => {
                     className="object-cover"
                     loading={i < 10 ? 'eager' : 'lazy'}
                     priority={i < 10}
-                    quality={75}
+                    quality={30}
                   />
                 </div>
               ))}
