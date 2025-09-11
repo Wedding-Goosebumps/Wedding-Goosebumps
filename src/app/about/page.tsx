@@ -44,7 +44,7 @@ export default function AboutPage() {
                 className="object-cover object-[50%_1%]"
                 loading={0 < 10 ? "eager" : "lazy"}
                 priority={0 < 10}
-                quality={30}
+                quality={10}
               />
             </div>
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
                       className="object-cover"
                       loading={idx < 10 ? "eager" : "lazy"}
                       priority={idx < 10}
-                      quality={30}
+                      quality={10}
                     />
                   </div>
                 ))}
@@ -111,7 +111,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          quality={10}
         />
       </div>
 
@@ -201,12 +201,12 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          quality={10}
         />
       </div>
 
       {/* TEXT BLOCK (label is pinned to its left) */}
-      <div className="relative px-6 lg:px-8 mt-80">
+      <div className="relative px-6 lg:px-8 mt-45">
         {/* Pinned vertical label + underline */}
         {/* Pinned vertical label + underline */}
 {/* Pinned vertical label with full underline */}
@@ -222,7 +222,7 @@ export default function AboutPage() {
 
 
 
-        <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-10 px-12 lg:px-16 pr-6 lg:pr-8  text-left">
+        <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-10 px-13 lg:px-17 pr-6 lg:pr-8  text-left">
           Prior to starting his own business,
         </h3>
 
@@ -241,7 +241,7 @@ export default function AboutPage() {
         <div className="mt-8">
           <Link
             href="/inquire"
-            className="inline-flex items-center justify-center px-6 py-3 border border-[#C2A770] text-[#C2A770] hover:bg-[#C2A770] hover:text-white transition-colors tracking-[0.2em] uppercase text-xs font-lora ml-16.5"
+            className="inline-flex items-center justify-center px-6 py-3 border border-[#C2A770] text-[#C2A770] hover:bg-[#C2A770] hover:text-white transition-colors tracking-[0.2em] uppercase text-xs font-lora ml-16.5 mb-20"
           >
             Get in touch
           </Link>
@@ -249,7 +249,7 @@ export default function AboutPage() {
       </div>
 
       {/* RIGHT IMAGE (tall, flush right) */}
-      <div className="relative h-[64vh] md:h-[100vh] lg:h-[100vh] bg-[#efe9df]">
+      <div className="relative h-[64vh] md:h-[130vh] lg:h-[130vh] bg-[#efe9df]">
         <Image
           src="/about-page/slide4/2.jpg"
           alt="Events"
@@ -257,7 +257,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          quality={10}
         />
       </div>
     </div>
@@ -294,7 +294,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          quality={10}
         />
       </div>
 
@@ -335,7 +335,7 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          quality={10}
         />
       </div>
     </div>
@@ -348,10 +348,10 @@ export default function AboutPage() {
 <Slide className="!py-0 mt-18">
   <div className="grid gap-8 lg:grid-cols-2">
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={30} />
+      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={10} />
     </div>
     <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={30} />
+      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={10} />
     </div>
   </div>
 
@@ -403,7 +403,7 @@ export default function AboutPage() {
     className="object-cover object-[50%_35%]"
     loading={0 < 10 ? "eager" : "lazy"}
     priority={0 < 10}
-    quality={30}
+    quality={10}
   />
 
   {/* Centered overlay – styled like your reference */}
