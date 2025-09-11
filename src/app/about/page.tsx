@@ -14,10 +14,9 @@ function Slide({
   children: React.ReactNode;
   className?: string;
 }) {
-  // Normal page sections (no snap / full-screen locking)
   return (
     <section className={`py-0 lg:py-0 bg-ivory text-charcoal ${className}`}>
-      <div className="mx-auto w-full max-w-[1200px] px-6">{children}</div>
+      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">{children}</div>
     </section>
   );
 }
@@ -34,9 +33,9 @@ export default function AboutPage() {
       <section className="pt-0 pb-0 lg:pt-0 lg:pb-0 bg-white text-charcoal">
         {/* Full‑bleed wrapper that ignores the usual max‑width and padding */}
         <div className="w-screen relative left-1/2 -translate-x-1/2">
-          <div className="grid gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
+          <div className="grid gap-8 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start w-full" style={{minWidth: 0}}>
             {/* LEFT: big image, touches the viewport's left edge */}
-        <div className="relative h-[100vh] lg:h-[100vh] bg-white">
+            <div className="relative h-[60vw] max-h-[100vh] bg-white" style={{minWidth: 0}}>
               <Image
                 src="/about-page/slide1/main.jpg"
                 alt="Wedding Goosebumps"
@@ -44,21 +43,22 @@ export default function AboutPage() {
                 className="object-cover object-[50%_1%]"
                 loading={0 < 10 ? "eager" : "lazy"}
                 priority={0 < 10}
-                quality={30}
+                sizes="100vw"
+                style={{width: '100%', height: '100%'}}
               />
             </div>
 
             {/* RIGHT: content stays on your normal grid/measure, now with white background */}
-            <div className="bg-white h-full px-6 lg:px-0 pr-6 flex flex-col justify-center">
+            <div className="bg-white h-full px-4 pr-4 flex flex-col justify-center" style={{minWidth: 0}}>
               {/* Optional wordmark area (centered, like your reference) */}
               <div className="text-center mb-4">
                 <h2 className="font-commuter-sans text-[13px] tracking-[0.3em] uppercase pt-4">
-                WEDDING GOOSEBUMPS
+                  WEDDING GOOSEBUMPS
                 </h2>
               </div>
 
               {/* Four images row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 pr-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-10 pr-0 sm:pr-6">
                 {['/about-page/slide1/1.jpg','/about-page/slide1/2.jpg','/about-page/slide1/4.jpg','/about-page/slide1/3.jpg',].map((src, idx) => (
                   <div
                     key={idx}
@@ -71,22 +71,22 @@ export default function AboutPage() {
                       className="object-cover"
                       loading={idx < 10 ? "eager" : "lazy"}
                       priority={idx < 10}
-                      quality={30}
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
                     />
                   </div>
                 ))}
               </div>
 
               {/* Headline + subcopy */}
-              <div className="max-w-[680px] my-14 md:my-20">
-                <h1 className="font-epicene-display font-light uppercase leading-[1.08] text-[28px] md:text-[38px] lg:text-[47px]">WEDDING  GOOSEBUMPS
+              <div className="max-w-[680px] my-10">
+                <h1 className="font-epicene-display font-light uppercase leading-[1.08] text-[4vw]" style={{fontSize: 'min(4vw, 47px)'}}>WEDDING  GOOSEBUMPS
                 </h1>
-                <p className="mt-2 font-commuter-sans text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85">
+                <p className="mt-2 font-commuter-sans text-[2vw] uppercase tracking-[0.3em] text-charcoal/85" style={{fontSize: 'min(2vw, 13px)'}}>
                   FULL SERVICE DESTINATION WEDDING AND <br />
                   DESIGN BOUTIQUE 
                 </p>
                 <div className="mt-4 h-[2px] w-16 bg-[#D9D5CF]" />
-                <p className="mt-6 font-newsreader text-[15px] leading-[1.95] text-charcoal/90">
+                <p className="mt-6 font-newsreader text-[2vw] leading-[1.95] text-charcoal/90" style={{fontSize: 'min(2vw, 15px)'}}>
                   We serve a discerning global clientele who seek more than just a wedding
                   <i>— they seek an unforgettable experience.</i> From first vision to final toast,
                   we navigate cultures, traditions, and trends with ease, creating
@@ -99,11 +99,11 @@ export default function AboutPage() {
       </section>
 
 {/* Slide 2 */}
-<Slide className="mt-20 lg:mt-30">
-  <div className="mx-auto max-w-7xl px-3 lg:px-6">
-    <div className="grid gap-12 lg:grid-cols-[480px_1fr] items-start">
+<Slide className="mt-10">
+  <div className="mx-auto max-w-7xl px-3">
+    <div className="grid gap-8 lg:grid-cols-[480px_1fr] items-start w-full" style={{minWidth: 0}}>
       {/* Left image */}
-      <div className="relative aspect-[3/4] bg-[#efe9df]">
+      <div className="relative aspect-[3/4] bg-[#efe9df]" style={{minWidth: 0}}>
         <Image
           src="/about-page/slide2/Photo.jpg"
           alt="Ali Waris Khan"
@@ -111,17 +111,16 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          sizes="100vw"
+          style={{width: '100%', height: '100%'}}
         />
       </div>
-
       {/* Right text column */}
-      <div className="max-w-[620px] mt-6">
-        <p className="font-cormorant italic text-[16px] md:text-[18px] text-charcoal/80 mb-6 ">
+      <div className="max-w-[620px] mt-6" style={{minWidth: 0}}>
+        <p className="font-cormorant italic text-[2vw] text-charcoal/80 mb-6 " style={{fontSize: 'min(2vw, 18px)'}}>
           Ali has been creating luxury weddings and events since 2010
         </p>
-
-        <p className="font-lora text-[17px] leading-[1.85] text-charcoal/90 mb-8">
+        <p className="font-lora text-[2vw] leading-[1.85] text-charcoal/90 mb-8" style={{fontSize: 'min(2vw, 17px)'}}>
           With over 15 years in the luxury wedding world, Ali Waris Khan has become one of the
           most trusted names in destination wedding planning and design across India and beyond.
           His approach is rooted in a deep respect for each couple’s story, blending meticulous
@@ -130,19 +129,16 @@ export default function AboutPage() {
           celebration is not only flawlessly executed but also a true reflection of the couple’s
           personality, heritage, and dreams.
         </p>
-
-        <h2 className="font-epicene-display font-light uppercase text-[28px] md:text-[36px] leading-[1.15] tracking-wide mb-8">
+        <h2 className="font-epicene-display font-light uppercase text-[3vw] leading-[1.15] tracking-wide mb-8" style={{fontSize: 'min(3vw, 36px)'}}>
           His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
         </h2>
-
-        <p className="font-cormorant italic text-[17px] leading-[1.8] text-charcoal/80 mb-1">
+        <p className="font-cormorant italic text-[2vw] leading-[1.8] text-charcoal/80 mb-1" style={{fontSize: 'min(2vw, 17px)'}}>
           Is different in that he offers his couples a truly hands-on experience. He accepts a
           limited number of weddings per year, which allows him to give 100% of his attention to
           each and every couple.<br />
           He is known for his inherent people skills, strong organization skills as well as
           his design talents.
         </p>
-
       </div>
     </div>
   </div>
@@ -151,9 +147,8 @@ export default function AboutPage() {
 
 {/* Slide 3 — Framed statement panel (smaller version) */}
 <Slide>
-  <div className="w-full mt-20 lg:mt-30 mb-20 lg:mb-30">
-  <div className="mx-auto max-w-6xl bg-white border border-charcoal/10 shadow-sm px-6 md:px-10 py-10 md:py-14">
-
+  <div className="w-full mt-10 mb-10">
+    <div className="mx-auto max-w-6xl bg-white border border-charcoal/10 shadow-sm px-4 py-8">
       {/* top divider with monogram */}
       <div className="flex items-center gap-6 mb-6">
         <div className="h-px flex-1 bg-charcoal/20" />
@@ -187,13 +182,11 @@ export default function AboutPage() {
 </Slide>
 
 {/* Slide 4 — edge‑to‑edge images, centered copy */}
-<Slide className=" bg-white">
-  {/* full-bleed so edge images can hit margins */}
+<Slide className="bg-white">
   <div className="w-screen relative left-1/2 -translate-x-1/2">
-    {/* 3 cols: [slim left image] [text (with label pinned)] [right image] */}
-    <div className="grid items-start gap-y-10 gap-x-8 lg:grid-cols-[minmax(260px,200px)_minmax(640px,1fr)_minmax(420px,560px)]">
+    <div className="grid items-start gap-y-8 gap-x-4 lg:grid-cols-[minmax(180px,260px)_minmax(320px,640px)_minmax(220px,560px)] w-full" style={{minWidth: 0}}>
       {/* LEFT IMAGE (slimmer) */}
-  <div className="relative h-[44vh] md:h-[50vh] lg:h-[56vh] bg-[#efe9df] mt-43">
+      <div className="relative h-[28vw] max-h-[56vh] bg-[#efe9df] mt-10" style={{minWidth: 0}}>
         <Image
           src="/about-page/slide4/1.jpg"
           alt="Earlier work"
@@ -201,32 +194,31 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          sizes="100vw"
+          style={{width: '100%', height: '100%'}}
         />
       </div>
 
       {/* TEXT BLOCK (label is pinned to its left) */}
-      <div className="relative px-6 lg:px-8 mt-45">
+      <div className="relative px-4 sm:px-6 lg:px-8 mt-10" style={{minWidth: 0}}>
         {/* Pinned vertical label + underline */}
         {/* Pinned vertical label + underline */}
-{/* Pinned vertical label with full underline */}
-<div className="pointer-events-none absolute left-2 lg:left-3 top-1">
-  <div className="h-full w-px bg-charcoal/15" />
-  <span
-    className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50"
+        {/* Pinned vertical label with full underline */}
+        <div className="pointer-events-none absolute left-2 lg:left-3 top-1">
+          <div className="h-full w-px bg-charcoal/15" />
+          <span
+            className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50"
             style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-  >
-    HOW IT ALL STARTED
-  </span>
-</div>
+          >
+            HOW IT ALL STARTED
+          </span>
+        </div>
 
-
-
-        <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-10 px-13 lg:px-17 pr-6 lg:pr-8  text-left">
+        <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-10 px-4 sm:px-13 lg:px-17 pr-6 lg:pr-8  text-left">
           Prior to starting his own business,
         </h3>
 
-        <p className="font-newsreader text-[16.5px] leading-[1.95] text-charcoal/90  px-12 lg:px-16 pr-6 lg:pr-8 mb-12 text-left">
+        <p className="font-newsreader text-[16.5px] leading-[1.95] text-charcoal/90  px-4 sm:px-12 lg:px-16 pr-6 lg:pr-8 mb-12 text-left">
           Before founding Wedding Goosebumps, Ali spent years as the Director of a
           leading events and entertainment company, delivering spectacular celebrations
           across India and abroad. This role refined his <em>expertise in managing large-scale,
@@ -249,7 +241,7 @@ export default function AboutPage() {
       </div>
 
       {/* RIGHT IMAGE (tall, flush right) */}
-      <div className="relative h-[64vh] md:h-[130vh] lg:h-[130vh] bg-[#efe9df]">
+      <div className="relative h-[40vw] max-h-[56vh] bg-[#efe9df]" style={{minWidth: 0}}>
         <Image
           src="/about-page/slide4/2.jpg"
           alt="Events"
@@ -257,7 +249,8 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          sizes="100vw"
+          style={{width: '100%', height: '100%'}}
         />
       </div>
     </div>
@@ -267,9 +260,9 @@ export default function AboutPage() {
 
       {/* Slide 5 */}
       <Slide className="p-0 m-0">
-  <div className="w-screen h-screen relative left-1/2 -translate-x-1/2">
+  <div className="w-screen h-[40vh] sm:h-[60vh] lg:h-screen relative left-1/2 -translate-x-1/2">
     <video
-      src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4" // <-- corrected extension
+      src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4"
       autoPlay
       muted
       loop
@@ -280,13 +273,13 @@ export default function AboutPage() {
 </Slide>
 
       {/* Slide 6 — Kind words: edge-to-edge images + centered testimonial */}
-<Slide className="py-13 lg:py-18">
+<Slide className="py-8">
   {/* full-bleed wrapper so left/right images can touch the page edges */}
   <div className="w-screen relative left-1/2 -translate-x-1/2">
     {/* [left image] [center text] [right image] with equal inner gaps */}
-    <div className="grid items-center gap-y-12 gap-x-12 lg:grid-cols-[minmax(280px,200px)_minmax(640px,1fr)_minmax(420px,560px)]">
+    <div className="grid items-center gap-y-8 gap-x-8 lg:grid-cols-[minmax(180px,280px)_minmax(320px,640px)_minmax(220px,560px)] w-full" style={{minWidth: 0}}>
       {/* LEFT IMAGE — flush to left margin */}
-      <div className="relative h-[42vh] md:h-[48vh] lg:h-[60vh] bg-[#efe9df]">
+      <div className="relative h-[28vw] max-h-[60vh] bg-[#efe9df]">
         <Image
           src="/about-page/slide6/1.jpg"
           alt="Detail A"
@@ -294,12 +287,13 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          sizes="100vw"
+          style={{width: '100%', height: '100%'}}
         />
       </div>
 
       {/* CENTER: testimonial block */}
-              <div className="relative px-12 lg:px-16 pr-6 lg:pr-8 mt-35 text-right">
+              <div className="relative px-4 sm:px-12 lg:px-16 pr-6 lg:pr-8 mt-10 sm:mt-35 text-right">
         {/* vertical label + thin rule on the right side */}
         <div className="hidden md:flex absolute right-0 top-8 bottom-8 items-center">
           <div className="h-full w-px bg-charcoal/15" />
@@ -327,7 +321,7 @@ export default function AboutPage() {
         </div>
 
       {/* RIGHT IMAGE — flush to right margin */}
-      <div className="relative h-[64vh] md:h-[72vh] lg:h-[100vh] bg-[#efe9df]">
+      <div className="relative h-[40vw] max-h-[100vh] bg-[#efe9df]" style={{minWidth: 0}}>
         <Image
           src="/about-page/slide6/main.JPG"
           alt="Testimonial main"
@@ -335,7 +329,8 @@ export default function AboutPage() {
           className="object-cover"
           loading={0 < 10 ? "eager" : "lazy"}
           priority={0 < 10}
-          quality={30}
+          sizes="100vw"
+          style={{width: '100%', height: '100%'}}
         />
       </div>
     </div>
@@ -345,18 +340,16 @@ export default function AboutPage() {
 
       {/* Slide 7 */}
       {/* Slide — Two Images */}
-<Slide className="!py-0 mt-18">
-  <div className="grid gap-8 lg:grid-cols-2">
-    <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} quality={30} />
+<Slide className="!py-0 mt-8">
+  <div className="grid gap-4 lg:grid-cols-2 w-full" style={{minWidth: 0}}>
+    <div className="relative aspect-[3/4] bg-[#efe9df]" style={{minWidth: 0}}>
+      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} sizes="100vw" style={{width: '100%', height: '100%'}} />
     </div>
-    <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} quality={30} />
+    <div className="relative aspect-[3/4] bg-[#efe9df]" style={{minWidth: 0}}>
+      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} sizes="100vw" style={{width: '100%', height: '100%'}} />
     </div>
   </div>
-
-  {/* Text section */}
-  <div className="relative py-12 lg:py-16 px-6 sm:px-10 lg:px-20 flex flex-col items-start">
+  <div className="relative py-8 px-4 flex flex-col items-start" style={{minWidth: 0}}>
     
 
     {/* Vertical right label */}
@@ -394,7 +387,7 @@ export default function AboutPage() {
 
 
 {/* Slide 8 — centered overlay on full image */}
-<Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[90vh] overflow-hidden">
+<Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[60vh] overflow-hidden">
   {/* Full background image */}
   <Image
     src="/about-page/slide8/main.jpg"
@@ -403,7 +396,8 @@ export default function AboutPage() {
     className="object-cover object-[50%_35%]"
     loading={0 < 10 ? "eager" : "lazy"}
     priority={0 < 10}
-    quality={30}
+    sizes="100vw"
+    style={{width: '100%', height: '100%'}}
   />
 
   {/* Centered overlay – styled like your reference */}

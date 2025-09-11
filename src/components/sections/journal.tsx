@@ -35,7 +35,6 @@ const JournalSection = () => {
               className="w-full h-auto object-cover"
               loading={0 < 10 ? 'eager' : 'lazy'}
               priority={0 < 10}
-              quality={30}
             />
           </div>
 

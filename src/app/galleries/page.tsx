@@ -89,11 +89,11 @@ export default function GalleriesPage() {
             <div className="absolute inset-0 bg-black/15" />
           </div>
           <div className="relative hidden md:block">
-              <Image src="/galleries-page/slide1/2.jpg" alt="Gallery hero 2" fill className="object-cover" loading="eager" priority={true} quality={30} />
+              <Image src="/galleries-page/slide1/2.jpg" alt="Gallery hero 2" fill className="object-cover" loading="eager" priority={true} />
             <div className="absolute inset-0 bg-black/15" />
           </div>
           <div className="relative hidden md:block">
-              <Image src="/galleries-page/slide1/3.jpg" alt="Gallery hero 3" fill className="object-cover" loading="eager" priority={true} quality={30} />
+              <Image src="/galleries-page/slide1/3.jpg" alt="Gallery hero 3" fill className="object-cover" loading="eager" priority={true} />
             <div className="absolute inset-0 bg-black/15" />
           </div>
         </div>
@@ -191,7 +191,6 @@ export default function GalleriesPage() {
               className="w-full h-auto max-h-[60vh] object-contain"
                   loading="eager"
                   priority={true}
-                  quality={30}
             />
           </figure>
         </div>
@@ -273,7 +272,6 @@ function GalleryCard({
             className="object-cover group-hover:scale-[1.01] transition-transform"
               loading={idx < 10 ? 'eager' : 'lazy'}
               priority={idx < 10}
-              quality={30}
           />
         </div>
 
