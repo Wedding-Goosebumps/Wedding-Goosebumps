@@ -17,7 +17,7 @@ function Slide({
   // Normal page sections (no snap / full-screen locking)
   return (
     <section className={`py-0 lg:py-0 bg-ivory text-charcoal ${className}`}>
-      <div className="mx-auto w-full max-w-[1200px] px-6">{children}</div>
+  <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 ">{children}</div>
     </section>
   );
 }
@@ -34,9 +34,9 @@ export default function AboutPage() {
       <section className="pt-0 pb-0 lg:pt-0 lg:pb-0 bg-white text-charcoal">
         {/* Full‑bleed wrapper that ignores the usual max‑width and padding */}
         <div className="w-screen relative left-1/2 -translate-x-1/2">
-          <div className="grid gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
+          <div className="grid grid-cols-1 gap-12 lg:gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
             {/* LEFT: big image, touches the viewport's left edge */}
-        <div className="relative h-[100vh] lg:h-[100vh] bg-white">
+        <div className="relative h-[100vh] lg:h-[110vh] bg-white">
               <Image
                 src="/about-page/slide1/main.jpg"
                 alt="Wedding Goosebumps"
@@ -50,8 +50,8 @@ export default function AboutPage() {
             {/* RIGHT: content stays on your normal grid/measure, now with white background */}
             <div className="bg-white h-full px-6 lg:px-0 pr-6 flex flex-col justify-center">
               {/* Optional wordmark area (centered, like your reference) */}
-              <div className="text-center mb-4">
-                <h2 className="font-commuter-sans text-[13px] tracking-[0.3em] uppercase pt-4">
+              <div className="text-center mb-9">
+                <h2 className="font-commuter-sans text-[13px] tracking-[0.3em] uppercase mt-11">
                 WEDDING GOOSEBUMPS
                 </h2>
               </div>
@@ -76,10 +76,10 @@ export default function AboutPage() {
               </div>
 
               {/* Headline + subcopy */}
-              <div className="max-w-[680px] my-14 md:my-20">
+              <div className="max-w-[680px] my-6 md:my-10">
                 <h1 className="font-epicene-display font-light uppercase leading-[1.08] text-[28px] md:text-[38px] lg:text-[47px]">WEDDING  GOOSEBUMPS
                 </h1>
-                <p className="mt-2 font-commuter-sans text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85">
+                <p className="mt-0 font-commuter-sans text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85">
                   FULL SERVICE DESTINATION WEDDING AND <br />
                   DESIGN BOUTIQUE 
                 </p>
@@ -190,7 +190,7 @@ export default function AboutPage() {
     {/* 3 cols: [slim left image] [text (with label pinned)] [right image] */}
     <div className="grid items-start gap-y-10 gap-x-8 lg:grid-cols-[minmax(260px,200px)_minmax(640px,1fr)_minmax(420px,560px)]">
       {/* LEFT IMAGE (slimmer) */}
-  <div className="relative h-[44vh] md:h-[50vh] lg:h-[56vh] bg-[#efe9df] mt-43">
+<div className="relative w-full aspect-[3/4] bg-[#efe9df] mt-43">
         <Image
           src="/about-page/slide4/1.jpg"
           alt="Earlier work"
@@ -339,7 +339,7 @@ export default function AboutPage() {
       {/* Slide 7 */}
       {/* Slide — Two Images */}
 <Slide className="!py-0 mt-18">
-  <div className="grid gap-8 lg:grid-cols-2">
+  <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
     <div className="relative aspect-[3/4] bg-[#efe9df]">
       <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} />
     </div>
@@ -370,7 +370,7 @@ export default function AboutPage() {
     <h2 className="font-epicene-display text-[38px] md:text-[48px] leading-tight text-charcoal mb-1.5">
       APPROACHABILITY
     </h2>
-    <p className="font-newsreader text-[16.5px] leading-[1.95] text-charcoal/90 max-w-3xl mb-6">
+    =<p className="font-newsreader text-base md:text-lg leading-[1.95] text-charcoal/90 max-w-3xl mb-6">
       Our goal is to provide our clients with the utmost level of service throughout the planning
       and design process as there is never a question too big or too small.
     </p>
