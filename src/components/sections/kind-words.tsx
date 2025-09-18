@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function KindWords() {
   return (
-  <section className="bg-ivory text-charcoal py-0 overflow-hidden">
+  <section className="bg-ivory text-charcoal py-8 sm:py-12 md:py-16 lg:py-0 overflow-hidden">
       <div className="mx-auto max-w-none px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] items-start gap-y-12 lg:gap-x-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] items-start gap-y-8 sm:gap-y-12 lg:gap-x-12 xl:gap-x-20">
 
           {/* LEFT — small portrait at extreme left */}
-          <div className="order-2 lg:order-1 flex justify-start lg:mt-80 pl-0 ml-6">
-            <div className="relative w-[280px] sm:w-[320px] md:w-[300px] aspect-[3/4]">
+          <div className="order-2 lg:order-1 flex justify-center lg:justify-start lg:mt-40 xl:mt-60 2xl:mt-80 pl-0 lg:ml-4 xl:ml-6">
+            <div className="relative w-[200px] sm:w-[240px] md:w-[280px] lg:w-[240px] xl:w-[280px] 2xl:w-[300px] aspect-[3/4]">
               <Image
                 src="/kind-words-section/Copy%20of%20DSC02686.jpg"
                 alt="Champagne tower"
@@ -23,7 +23,7 @@ export default function KindWords() {
           </div>
 
           {/* CENTER — quote block, stretched */}
-          <div className="order-1 lg:order-2 relative text-center px-4 lg:px-0 mt-40">
+          <div className="order-1 lg:order-2 relative text-center px-4 lg:px-0 mt-8 sm:mt-16 md:mt-24 lg:mt-40">
 
             {/* vertical label with hairline */}
             <div
@@ -33,7 +33,7 @@ export default function KindWords() {
             </div>
 
 {/* giant serif quote */}
-<h2 className="font-playfair-display text-6xl md:text-7xl lg:text-[50px] uppercase leading-none text-right">
+<h2 className="font-playfair-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[50px] uppercase leading-none text-center lg:text-right">
   The Highest level{" "}
   <span className="italic lowercase font-light align-baseline">
     of
@@ -41,12 +41,12 @@ export default function KindWords() {
   service
 </h2>
 
-<h3 className="font-lora text-xs tracking-[0.2em] uppercase mb-11 max-w-[350px] ml-auto leading-none text-right">
+<h3 className="font-lora text-[10px] sm:text-xs tracking-[0.2em] uppercase mb-8 sm:mb-10 lg:mb-11 max-w-[350px] mx-auto lg:ml-auto leading-none text-center lg:text-right">
               Attention to detail and exceptional, personalized attentiveness
             </h3>
 
 {/* body copy */}
-<p className="mt-6 max-w-[800px] font-lora text-[15.5px] leading-[1.9] text-charcoal/85 text-right ml-auto">
+<p className="mt-4 sm:mt-6 max-w-[800px] font-lora text-sm sm:text-[15.5px] leading-[1.8] sm:leading-[1.9] text-charcoal/85 text-center lg:text-right mx-auto lg:ml-auto">
   We take on a limited number of weddings each year, ensuring every celebration
   receives the time, creativity, and emotional investment it deserves.{" "}
   <i>

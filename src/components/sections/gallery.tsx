@@ -35,41 +35,40 @@ export default function GallerySection() {
   const next = () => setGroupIndex((i) => (i === lastIndex ? 0 : i + 1));
 
   return (
-  <section className="bg-ivory py-18">
+  <section className="bg-ivory py-12 sm:py-16 md:py-18">
       {/* — Heading & intro copy */}
-      <div className="container mx-auto px-6 lg:px-8 text-center mb-1">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-1">
         {/* WE CREATE → Commuter Sans 400 */}
-        <h3 className="font-commuter-sans font-normal text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
+        <h3 className="font-commuter-sans font-normal text-xs sm:text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
           WE CREATE
         </h3>
         {/* UNFORGETTABLE word only → Epicene Display Light 400 */}
-        <h2 className="font-[Epicene_Display] font-light uppercase text-charcoal text-4xl lg:text-5xl xl:text-6xl mb-1 leading-tight tracking-tight">
-        <span className="font-cormorant" style={{fontWeight: 60}}>unforgettable</span>{" "}
-        <span className="font-cormorant" style={{fontWeight: 60}}>experiences</span>
+        <h2 className="font-[Epicene_Display] font-light uppercase text-charcoal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 leading-tight tracking-tight">
+        <span className="font-cormorant font-extralight">unforgettable</span>{" "}
+        <span className="font-cormorant font-extralight">experiences</span>
         </h2>
-        <div className="h-[2.5px] w-30 bg-[#D9D5CF] mx-auto my-8" />
+        <div className="h-[2.5px] w-20 sm:w-24 md:w-30 bg-[#D9D5CF] mx-auto my-6 sm:my-8" />
 
-        {/* “Wedding Goosebump is a full-service” → Newsreader 300 italic */}
-        <p className="mx-auto max-w-2xl font-lora text-lg leading-relaxed text-charcoal pb-10">
-
+        {/* "Wedding Goosebump is a full-service" → Newsreader 300 italic */}
+        <p className="mx-auto max-w-2xl font-lora text-base sm:text-lg leading-relaxed text-charcoal pb-8 sm:pb-10">
             Wedding Goosebumps is a full-service
           {" "}
           <em className="italic">
             luxury wedding design and planning studio,
           </em>{" "}
           crafting emotionally immersive, couture destination weddings across
-          the world’s most iconic locations.
+          the world's most iconic locations.
         </p>
       </div>
 
       {/* — Carousel wrapper */}
-      <div className="relative mx-auto max-w-4xl h-[500px] lg:h-[600px]">
+      <div className="relative mx-auto max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
         {/* — Images container (overflow-hidden) */}
         <div className="relative h-full overflow-hidden">
           {groups.map((group, gi) => (
             <div
               key={gi}
-              className={`absolute top-0 left-0 flex w-full h-full gap-4 px-12 transition-opacity duration-700 ease-in-out ${
+              className={`absolute top-0 left-0 flex w-full h-full gap-2 sm:gap-3 md:gap-4 px-4 sm:px-8 md:px-12 transition-opacity duration-700 ease-in-out ${
                 gi === groupIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             >
@@ -83,7 +82,7 @@ export default function GallerySection() {
                     alt={`Gallery image ${gi * slidesToShow + idx + 1}`}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 25vw"
                     loading={idx < 10 ? 'eager' : 'lazy'}
                     priority={idx < 10}
                   />
@@ -97,11 +96,11 @@ export default function GallerySection() {
         <button
           onClick={prev}
           aria-label="Previous slide"
-          className="absolute left-0 -ml-14 top-1/2 -translate-y-1/2 w-14 h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
+          className="absolute left-0 -ml-8 sm:-ml-10 md:-ml-14 top-1/2 -translate-y-1/2 w-8 sm:w-10 md:w-14 h-8 sm:h-9 md:h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-white"
+            className="w-4 h-4 sm:w-5 sm:h-5 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -115,11 +114,11 @@ export default function GallerySection() {
         <button
           onClick={next}
           aria-label="Next slide"
-          className="absolute right-0 -mr-14 top-1/2 -translate-y-1/2 w-14 h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
+          className="absolute right-0 -mr-8 sm:-mr-10 md:-mr-14 top-1/2 -translate-y-1/2 w-8 sm:w-10 md:w-14 h-8 sm:h-9 md:h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-white"
+            className="w-4 h-4 sm:w-5 sm:h-5 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

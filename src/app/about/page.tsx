@@ -16,8 +16,8 @@ function Slide({
 }) {
   // Normal page sections (no snap / full-screen locking)
   return (
-    <section className={`py-0 lg:py-0 bg-ivory text-charcoal ${className}`}>
-  <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 ">{children}</div>
+    <section className={`py-8 sm:py-12 lg:py-16 bg-ivory text-charcoal ${className}`}>
+      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">{children}</div>
     </section>
   );
 }
@@ -30,61 +30,61 @@ export default function AboutPage() {
         <Navigation />
       </div>
 
-      {/* Slide 1: full‑bleed image on the left (kept as-is) */}
-      <section className="pt-0 pb-0 lg:pt-0 lg:pb-0 bg-white text-charcoal">
-        {/* Full‑bleed wrapper that ignores the usual max‑width and padding */}
+      {/* Slide 1: Hero section with fixed overlapping */}
+      <section className="pt-0 pb-0 bg-white text-charcoal">
         <div className="w-screen relative left-1/2 -translate-x-1/2">
-          <div className="grid grid-cols-1 gap-12 lg:gap-18 lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start">
-            {/* LEFT: big image, touches the viewport's left edge */}
-        <div className="relative h-[100vh] lg:h-[110vh] bg-white">
+          <div className="flex flex-col lg:grid lg:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr]">
+            {/* LEFT: big image */}
+            <div className="relative h-[40vh] sm:h-[50vh] lg:h-[100vh] xl:h-[110vh] bg-white order-2 lg:order-1">
               <Image
                 src="/about-page/slide1/main.jpg"
                 alt="Wedding Goosebumps"
                 fill
-                className="object-cover object-[50%_1%]"
-                loading={0 < 10 ? "eager" : "lazy"}
-                priority={0 < 10}
+                className="object-cover object-center"
+                loading="eager"
+                priority
               />
             </div>
 
-            {/* RIGHT: content stays on your normal grid/measure, now with white background */}
-            <div className="bg-white h-full px-6 lg:px-0 pr-6 flex flex-col justify-center">
-              {/* Optional wordmark area (centered, like your reference) */}
-              <div className="text-center mb-9">
-                <h2 className="font-commuter-sans text-[13px] tracking-[0.3em] uppercase mt-11">
-                WEDDING GOOSEBUMPS
+            {/* RIGHT: content with no overlap */}
+            <div className="bg-white min-h-[60vh] lg:h-full px-4 sm:px-6 lg:px-8 lg:pr-6 flex flex-col justify-center py-12 lg:py-0 order-1 lg:order-2">
+              {/* Wordmark */}
+              <div className="text-center mb-8 lg:mb-9">
+                <h2 className="font-commuter-sans text-[11px] md:text-[13px] tracking-[0.3em] uppercase">
+                  WEDDING GOOSEBUMPS
                 </h2>
               </div>
 
-              {/* Four images row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 pr-6">
+              {/* Four images row - ensure they don't get cut */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-6 mb-8 lg:mb-10">
                 {['/about-page/slide1/1.jpg','/about-page/slide1/2.jpg','/about-page/slide1/4.jpg','/about-page/slide1/3.jpg',].map((src, idx) => (
                   <div
                     key={idx}
-                    className="relative aspect-[3/4] bg-[#efe9df] p-2"
+                    className="relative aspect-[3/4] bg-[#efe9df] overflow-hidden"
                   >
                     <Image
                       src={src}
                       alt={`Gallery ${idx + 1}`}
                       fill
                       className="object-cover"
-                      loading={idx < 10 ? "eager" : "lazy"}
-                      priority={idx < 10}
+                      loading={idx < 4 ? "eager" : "lazy"}
+                      priority={idx < 4}
                     />
                   </div>
                 ))}
               </div>
 
               {/* Headline + subcopy */}
-              <div className="max-w-[680px] my-6 md:my-10">
-                <h1 className="font-epicene-display font-light uppercase leading-[1.08] text-[28px] md:text-[38px] lg:text-[47px]">WEDDING  GOOSEBUMPS
+              <div className="max-w-[680px]">
+                <h1 className="font-epicene-display font-light uppercase leading-[1.08] text-[28px] sm:text-[36px] lg:text-[47px] mb-4">
+                  WEDDING GOOSEBUMPS
                 </h1>
-                <p className="mt-0 font-commuter-sans text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85">
-                  FULL SERVICE DESTINATION WEDDING AND <br />
+                <p className="font-commuter-sans text-[11px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85 mb-4">
+                  FULL SERVICE DESTINATION WEDDING AND <br className="hidden sm:block" />
                   DESIGN BOUTIQUE 
                 </p>
-                <div className="mt-4 h-[2px] w-16 bg-[#D9D5CF]" />
-                <p className="mt-6 font-newsreader text-[15px] leading-[1.95] text-charcoal/90">
+                <div className="h-[2px] w-16 bg-[#D9D5CF] mb-6" />
+                <p className="font-newsreader text-[15px] leading-[1.8] sm:leading-[1.95] text-charcoal/90">
                   We serve a discerning global clientele who seek more than just a wedding
                   <i>— they seek an unforgettable experience.</i> From first vision to final toast,
                   we navigate cultures, traditions, and trends with ease, creating
@@ -96,340 +96,323 @@ export default function AboutPage() {
         </div>
       </section>
 
-{/* Slide 2 */}
-<Slide className="mt-20 lg:mt-30">
-  <div className="mx-auto max-w-7xl px-3 lg:px-6">
-    <div className="grid gap-12 lg:grid-cols-[480px_1fr] items-start">
-      {/* Left image */}
-      <div className="relative aspect-[3/4] bg-[#efe9df]">
-        <Image
-          src="/about-page/slide2/Photo.jpg"
-          alt="Ali Waris Khan"
-          fill
-          className="object-cover"
-          loading={0 < 10 ? "eager" : "lazy"}
-          priority={0 < 10}
-        />
-      </div>
+      {/* Slide 2 - Fixed image cutting */}
+      <Slide className="mt-16 lg:mt-20 xl:mt-30">
+        <div className="mx-auto max-w-7xl px-0">
+          <div className="grid gap-10 lg:gap-12 lg:grid-cols-[480px_1fr] items-start">
+            {/* Left image - ensure proper aspect ratio */}
+            <div className="relative w-full h-[500px] sm:h-[600px] lg:h-[640px] bg-[#efe9df] overflow-hidden">
+              <Image
+                src="/about-page/slide2/Photo.jpg"
+                alt="Ali Waris Khan"
+                fill
+                className="object-cover object-center"
+                loading="eager"
+                priority
+              />
+            </div>
 
-      {/* Right text column */}
-      <div className="max-w-[620px] mt-6">
-        <p className="font-cormorant italic text-[16px] md:text-[18px] text-charcoal/80 mb-6 ">
-          Ali has been creating luxury weddings and events since 2010
-        </p>
+            {/* Right text column */}
+            <div className="max-w-[620px] mt-4 lg:mt-6">
+              <p className="font-cormorant italic text-[16px] md:text-[18px] text-charcoal/80 mb-6">
+                Ali has been creating luxury weddings and events since 2010
+              </p>
 
-        <p className="font-lora text-[17px] leading-[1.85] text-charcoal/90 mb-8">
-          With over 15 years in the luxury wedding world, Ali Waris Khan has become one of the
-          most trusted names in destination wedding planning and design across India and beyond.
-          His approach is rooted in a deep respect for each couple’s story, blending meticulous
-          planning with an intuitive sense of style and emotion. Over the years, he has built strong
-          relationships with the finest venues, artisans, and creative collaborators, ensuring every
-          celebration is not only flawlessly executed but also a true reflection of the couple’s
-          personality, heritage, and dreams.
-        </p>
+              <p className="font-lora text-[16px] md:text-[17px] leading-[1.85] text-charcoal/90 mb-8">
+                With over 15 years in the luxury wedding world, Ali Waris Khan has become one of the
+                most trusted names in destination wedding planning and design across India and beyond.
+                His approach is rooted in a deep respect for each couple's story, blending meticulous
+                planning with an intuitive sense of style and emotion. Over the years, he has built strong
+                relationships with the finest venues, artisans, and creative collaborators, ensuring every
+                celebration is not only flawlessly executed but also a true reflection of the couple's
+                personality, heritage, and dreams.
+              </p>
 
-        <h2 className="font-epicene-display font-light uppercase text-[28px] md:text-[36px] leading-[1.15] tracking-wide mb-8">
-          His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
-        </h2>
+              <h2 className="font-epicene-display font-light uppercase text-[28px] md:text-[36px] leading-[1.15] tracking-wide mb-8">
+                His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
+              </h2>
 
-        <p className="font-cormorant italic text-[17px] leading-[1.8] text-charcoal/80 mb-1">
-          Is different in that he offers his couples a truly hands-on experience. He accepts a
-          limited number of weddings per year, which allows him to give 100% of his attention to
-          each and every couple.<br />
-          He is known for his inherent people skills, strong organization skills as well as
-          his design talents.
-        </p>
-
-      </div>
-    </div>
-  </div>
-</Slide>
-
-
-{/* Slide 3 — Framed statement panel (smaller version) */}
-<Slide>
-  <div className="w-full mt-20 lg:mt-30 mb-20 lg:mb-30">
-  <div className="mx-auto max-w-6xl bg-white border border-charcoal/10 shadow-sm px-6 md:px-10 py-10 md:py-14">
-
-      {/* top divider with monogram */}
-      <div className="flex items-center gap-6 mb-6">
-        <div className="h-px flex-1 bg-charcoal/20" />
-        <span className="font-epicene-display italic text-2xl md:text-3xl text-[#B5A484]">WG</span>
-        <div className="h-px flex-1 bg-charcoal/20" />
-      </div>
-
-      {/* small uppercase kicker */}
-      <p className="text-center font-commuter-sans text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-charcoal/70 mb-4">
-        WE OFFER BESPOKE EVENT PLANNING SERVICES
-      </p>
-
-      {/* big centered headline (reduced size) */}
-      <h3 className="text-center font-newsreader uppercase text-charcoal leading-[1.6] tracking-[0.08em] text-[15px] md:text-[18px] lg:text-[20px] max-w-3xl mx-auto">
-        TAILORED TO FIT THE NEEDS OF HIS CLIENTS AND GOES ABOVE AND
-        BEYOND TO CRAFT A SEAMLESSLY EXECUTED WEDDING PLANNING AND
-        DESIGN EXPERIENCE FOR HIS COUPLES AND THEIR GUESTS.
-      </h3>
-
-      {/* button (kept your styling) */}
-      <div className="mt-8 flex justify-center">
-        <Link
-          href="/inquire"
-          className="inline-flex items-center justify-center px-10 py-3 bg-[#C2A770] hover:bg-[#B79A63] transition-colors text-white tracking-[0.18em] uppercase text-xs md:text-sm font-lora"
-        >
-          GET IN TOUCH
-        </Link>
-      </div>
-    </div>
-  </div>
-</Slide>
-
-{/* Slide 4 — edge‑to‑edge images, centered copy */}
-<Slide className=" bg-white">
-  {/* full-bleed so edge images can hit margins */}
-  <div className="w-screen relative left-1/2 -translate-x-1/2">
-    {/* 3 cols: [slim left image] [text (with label pinned)] [right image] */}
-    <div className="grid items-start gap-y-10 gap-x-8 lg:grid-cols-[minmax(260px,200px)_minmax(640px,1fr)_minmax(420px,560px)]">
-      {/* LEFT IMAGE (slimmer) */}
-<div className="relative w-full aspect-[3/4] bg-[#efe9df] mt-43">
-        <Image
-          src="/about-page/slide4/1.jpg"
-          alt="Earlier work"
-          fill
-          className="object-cover"
-          loading={0 < 10 ? "eager" : "lazy"}
-          priority={0 < 10}
-        />
-      </div>
-
-      {/* TEXT BLOCK (label is pinned to its left) */}
-      <div className="relative px-6 lg:px-8 mt-45">
-        {/* Pinned vertical label + underline */}
-        {/* Pinned vertical label + underline */}
-{/* Pinned vertical label with full underline */}
-<div className="pointer-events-none absolute left-2 lg:left-3 top-1">
-  <div className="h-full w-px bg-charcoal/15" />
-  <span
-    className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50"
-            style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-  >
-    HOW IT ALL STARTED
-  </span>
-</div>
-
-
-
-        <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-10 px-13 lg:px-17 pr-6 lg:pr-8  text-left">
-          Prior to starting his own business,
-        </h3>
-
-        <p className="font-newsreader text-[16.5px] leading-[1.95] text-charcoal/90  px-12 lg:px-16 pr-6 lg:pr-8 mb-12 text-left">
-          Before founding Wedding Goosebumps, Ali spent years as the Director of a
-          leading events and entertainment company, delivering spectacular celebrations
-          across India and abroad. This role refined his <em>expertise in managing large-scale,
-          high-profile events with precision, creativity, and cultural sensitivity.</em> <br/><br />His ability
-          to remain calm under pressure, think strategically, and adapt seamlessly to
-          diverse settings ensures every wedding — whether in a royal palace, a serene
-          beach resort, or an international destination — is flawlessly executed. Paired with
-          his innate design sensibility and passion for storytelling, Ali offers couples a
-          world-class, five-star experience that transcends borders.
-        </p>
-
-        <div className="mt-8">
-          <Link
-            href="/inquire"
-            className="inline-flex items-center justify-center px-6 py-3 border border-[#C2A770] text-[#C2A770] hover:bg-[#C2A770] hover:text-white transition-colors tracking-[0.2em] uppercase text-xs font-lora ml-16.5 mb-20"
-          >
-            Get in touch
-          </Link>
-        </div>
-      </div>
-
-      {/* RIGHT IMAGE (tall, flush right) */}
-      <div className="relative h-[64vh] md:h-[130vh] lg:h-[130vh] bg-[#efe9df]">
-        <Image
-          src="/about-page/slide4/2.jpg"
-          alt="Events"
-          fill
-          className="object-cover"
-          loading={0 < 10 ? "eager" : "lazy"}
-          priority={0 < 10}
-        />
-      </div>
-    </div>
-  </div>
-</Slide>
-
-
-      {/* Slide 5 */}
-      <Slide className="p-0 m-0">
-  <div className="w-screen h-screen relative left-1/2 -translate-x-1/2">
-    <video
-      src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4" // <-- corrected extension
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-full object-cover"
-    />
-  </div>
-</Slide>
-
-      {/* Slide 6 — Kind words: edge-to-edge images + centered testimonial */}
-<Slide className="py-13 lg:py-18">
-  {/* full-bleed wrapper so left/right images can touch the page edges */}
-  <div className="w-screen relative left-1/2 -translate-x-1/2">
-    {/* [left image] [center text] [right image] with equal inner gaps */}
-    <div className="grid items-center gap-y-12 gap-x-12 lg:grid-cols-[minmax(280px,200px)_minmax(640px,1fr)_minmax(420px,560px)]">
-      {/* LEFT IMAGE — flush to left margin */}
-      <div className="relative h-[42vh] md:h-[48vh] lg:h-[60vh] bg-[#efe9df]">
-        <Image
-          src="/about-page/slide6/1.jpg"
-          alt="Detail A"
-          fill
-          className="object-cover"
-          loading={0 < 10 ? "eager" : "lazy"}
-          priority={0 < 10}
-        />
-      </div>
-
-      {/* CENTER: testimonial block */}
-              <div className="relative px-12 lg:px-16 pr-6 lg:pr-8 mt-35 text-right">
-        {/* vertical label + thin rule on the right side */}
-        <div className="hidden md:flex absolute right-0 top-8 bottom-8 items-center">
-          <div className="h-full w-px bg-charcoal/15" />
-          <span
-            className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50"
-            style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-          >
-            KIND WORDS
-          </span>
-        </div>
-
-        {/* content */}
-          <div className="px-6 sm:px-10 lg:px-14 py-10 lg:py-14">
-            <div className="max-w-3xl ml-auto text-right">
-              <blockquote className="font-epicene-display text-charcoal text-[28px] md:text-[36px] lg:text-[42px] leading-tight mb-8">
-                “Ali is truly a one-of-a-kind planner.”
-              </blockquote>
-              <p className="font-newsreader text-[16.5px] leading-[1.95] text-charcoal/90">
-              It would be an understatement to say he was instrumental in bringing our wedding vision to
-              life. Our planning journey with him was effortless, enjoyable, and completely stress-free.
-              Thank you, Ali, for turning our special day into an unforgettable celebration.
+              <p className="font-cormorant italic text-[16px] md:text-[17px] leading-[1.8] text-charcoal/80">
+                Is different in that he offers his couples a truly hands-on experience. He accepts a
+                limited number of weddings per year, which allows him to give 100% of his attention to
+                each and every couple.<br />
+                He is known for his inherent people skills, strong organization skills as well as
+                his design talents.
               </p>
             </div>
           </div>
         </div>
+      </Slide>
 
-      {/* RIGHT IMAGE — flush to right margin */}
-      <div className="relative h-[64vh] md:h-[72vh] lg:h-[100vh] bg-[#efe9df]">
+      {/* Slide 3 — Framed statement panel with mobile improvements */}
+      <Slide>
+        <div className="w-full mt-12 sm:mt-16 lg:mt-20 xl:mt-30 mb-12 sm:mb-16 lg:mb-20 xl:mb-30">
+          <div className="mx-auto max-w-6xl bg-white border border-charcoal/10 shadow-sm px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-14">
+            {/* top divider with monogram */}
+            <div className="flex items-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+              <div className="h-px flex-1 bg-charcoal/20" />
+              <span className="font-epicene-display italic text-xl sm:text-2xl md:text-3xl text-[#B5A484]">WG</span>
+              <div className="h-px flex-1 bg-charcoal/20" />
+            </div>
+
+            {/* small uppercase kicker */}
+            <p className="text-center font-commuter-sans text-[9px] sm:text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-charcoal/70 mb-3 sm:mb-4">
+              WE OFFER BESPOKE EVENT PLANNING SERVICES
+            </p>
+
+            {/* big centered headline (responsive size) */}
+            <h3 className="text-center font-newsreader uppercase text-charcoal leading-[1.5] sm:leading-[1.6] tracking-[0.06em] sm:tracking-[0.08em] text-[14px] sm:text-[15px] md:text-[18px] lg:text-[20px] max-w-3xl mx-auto">
+              TAILORED TO FIT THE NEEDS OF HIS CLIENTS AND GOES ABOVE AND
+              BEYOND TO CRAFT A SEAMLESSLY EXECUTED WEDDING PLANNING AND
+              DESIGN EXPERIENCE FOR HIS COUPLES AND THEIR GUESTS.
+            </h3>
+
+            {/* button */}
+            <div className="mt-6 sm:mt-8 flex justify-center">
+              <Link
+                href="/inquire"
+                className="inline-flex items-center justify-center px-8 sm:px-10 py-3 bg-[#C2A770] hover:bg-[#B79A63] transition-colors text-white tracking-[0.18em] uppercase text-xs md:text-sm font-lora"
+              >
+                GET IN TOUCH
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Slide>
+
+      {/* Slide 4 — Fixed mobile layout and image cutting */}
+      <Slide className="bg-white">
+        <div className="w-screen relative left-1/2 -translate-x-1/2">
+          {/* Mobile: stack vertically with proper spacing */}
+          <div className="flex flex-col lg:grid lg:grid-cols-[200px_1fr_420px] xl:grid-cols-[260px_1fr_560px] gap-8 lg:gap-8">
+            
+            {/* LEFT IMAGE - hidden on mobile, proper height on desktop */}
+            <div className="relative w-full h-[400px] lg:h-[500px] xl:h-[600px] bg-[#efe9df] hidden lg:block overflow-hidden lg:mt-16">
+              <Image
+                src="/about-page/slide4/1.jpg"
+                alt="Earlier work"
+                fill
+                className="object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+
+            {/* TEXT BLOCK - separate on mobile */}
+            <div className="relative px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+              {/* Mobile label */}
+              <p className="font-commuter-sans text-[11px] tracking-[0.3em] uppercase text-charcoal/50 mb-6 lg:hidden">
+                HOW IT ALL STARTED
+              </p>
+
+              {/* Vertical label - desktop only */}
+              <div className="pointer-events-none absolute left-3 top-16 bottom-4 hidden lg:block">
+                <div className="h-full w-px bg-charcoal/15" />
+                <span
+                  className="ml-2 text-[11px] tracking-[0.35em] uppercase text-charcoal/50 absolute top-8"
+                  style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+                >
+                  HOW IT ALL STARTED
+                </span>
+              </div>
+
+              <div className="lg:pl-16 xl:pl-20">
+                <h3 className="font-epicene-display font-light uppercase text-[28px] md:text-[34px] leading-[1.15] mb-8 lg:mb-10">
+                  Prior to starting his own business,
+                </h3>
+
+                <p className="font-newsreader text-[16px] md:text-[16.5px] leading-[1.95] text-charcoal/90 mb-10 lg:mb-12">
+                  Before founding Wedding Goosebumps, Ali spent years as the Director of a
+                  leading events and entertainment company, delivering spectacular celebrations
+                  across India and abroad. This role refined his <em>expertise in managing large-scale,
+                  high-profile events with precision, creativity, and cultural sensitivity.</em> <br/><br />His ability
+                  to remain calm under pressure, think strategically, and adapt seamlessly to
+                  diverse settings ensures every wedding — whether in a royal palace, a serene
+                  beach resort, or an international destination — is flawlessly executed. Paired with
+                  his innate design sensibility and passion for storytelling, Ali offers couples a
+                  world-class, five-star experience that transcends borders.
+                </p>
+
+                <Link
+                  href="/inquire"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-[#C2A770] text-[#C2A770] hover:bg-[#C2A770] hover:text-white transition-colors tracking-[0.2em] uppercase text-xs font-lora"
+                >
+                  Get in touch
+                </Link>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE - proper height, no cutting */}
+            <div className="relative h-[60vh] lg:h-[100vh] xl:h-[130vh] bg-[#efe9df] overflow-hidden">
+              <Image
+                src="/about-page/slide4/2.jpg"
+                alt="Events"
+                fill
+                className="object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </Slide>
+
+      {/* Slide 5 - Video with responsive height */}
+      <Slide className="p-0 m-0">
+        <div className="w-screen h-[50vh] sm:h-[60vh] md:h-[80vh] lg:h-screen relative left-1/2 -translate-x-1/2">
+          <video
+            src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </Slide>
+
+      {/* Slide 6 — Fixed testimonial layout */}
+      <Slide className="py-12 lg:py-18">
+        <div className="w-screen relative left-1/2 -translate-x-1/2">
+          <div className="flex flex-col lg:grid lg:grid-cols-[200px_1fr_420px] xl:grid-cols-[280px_1fr_560px] gap-8 lg:gap-12">
+            
+            {/* LEFT IMAGE - hidden on mobile, proper height */}
+            <div className="relative h-[400px] lg:h-[500px] xl:h-[600px] bg-[#efe9df] hidden lg:block overflow-hidden">
+              <Image
+                src="/about-page/slide6/1.jpg"
+                alt="Detail A"
+                fill
+                className="object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+
+            {/* CENTER: testimonial block - separate on mobile */}
+            <div className="relative px-4 sm:px-8 lg:px-12 xl:px-16 py-8 lg:py-12 text-left lg:text-right">
+              {/* Mobile label */}
+              <p className="font-commuter-sans text-[11px] tracking-[0.3em] uppercase text-charcoal/50 mb-6 lg:hidden">
+                KIND WORDS
+              </p>
+
+              {/* vertical label - desktop only */}
+              <div className="hidden lg:flex absolute right-0 top-16 bottom-8 items-start">
+                <div className="h-full w-px bg-charcoal/15" />
+                <span
+                  className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50 mt-8"
+                  style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+                >
+                  KIND WORDS
+                </span>
+              </div>
+
+              <div className="lg:pr-8">
+                <blockquote className="font-epicene-display text-charcoal text-[28px] md:text-[36px] lg:text-[42px] leading-tight mb-8">
+                  "Ali is truly a one-of-a-kind planner."
+                </blockquote>
+                <p className="font-newsreader text-[16px] md:text-[16.5px] leading-[1.95] text-charcoal/90">
+                  It would be an understatement to say he was instrumental in bringing our wedding vision to
+                  life. Our planning journey with him was effortless, enjoyable, and completely stress-free.
+                  Thank you, Ali, for turning our special day into an unforgettable celebration.
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE - proper height */}
+            <div className="relative h-[60vh] lg:h-[80vh] xl:h-[100vh] bg-[#efe9df] overflow-hidden">
+              <Image
+                src="/about-page/slide6/main.JPG"
+                alt="Testimonial main"
+                fill
+                className="object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </Slide>
+
+      {/* Slide 7 - Fixed image aspect ratios */}
+      <Slide className="!py-0 mt-16 lg:mt-18">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2">
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] bg-[#efe9df] overflow-hidden">
+            <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover object-center" loading="lazy" />
+          </div>
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] bg-[#efe9df] overflow-hidden">
+            <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover object-center" loading="lazy" />
+          </div>
+        </div>
+
+        {/* Text section - proper spacing */}
+        <div className="relative py-12 lg:py-16 px-4 sm:px-6 lg:px-20 flex flex-col items-start">
+          {/* Vertical right label - desktop only */}
+          <div className="absolute right-0 top-8 bottom-0 hidden lg:flex items-start">
+            <div className="h-full w-px bg-charcoal/15" />
+            <span
+              className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50 mt-8"
+              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+            >
+              VALUES
+            </span>
+          </div>
+
+          {/* Main text */}
+          <p className="uppercase tracking-[0.25em] text-[11px] md:text-[12px] text-charcoal/70 font-commuter-sans mb-2">
+            WE BELIEVE IN
+          </p>
+          <h2 className="font-epicene-display text-[38px] md:text-[48px] leading-tight text-charcoal mb-4">
+            APPROACHABILITY
+          </h2>
+          <p className="font-newsreader text-base md:text-lg leading-[1.95] text-charcoal/90 max-w-3xl mb-8">
+            Our goal is to provide our clients with the utmost level of service throughout the planning
+            and design process as there is never a question too big or too small.
+          </p>
+
+          <Link
+            href="#"
+            className="text-[12px] uppercase tracking-[0.25em] border-b border-charcoal/50 pb-1 hover:border-charcoal transition-colors"
+          >
+            See next value
+          </Link>
+        </div>
+      </Slide>
+
+      {/* Slide 8 — Final CTA with responsive improvements */}
+      <Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
+        {/* Full background image */}
         <Image
-          src="/about-page/slide6/main.JPG"
-          alt="Testimonial main"
+          src="/about-page/slide8/main.jpg"
+          alt="Inquire Background"
           fill
-          className="object-cover"
-          loading={0 < 10 ? "eager" : "lazy"}
-          priority={0 < 10}
+          className="object-cover object-[50%_35%]"
+          loading="lazy"
         />
-      </div>
-    </div>
-  </div>
-</Slide>
 
+        {/* Centered overlay with responsive text */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white [&_*]:!text-white px-4">
+          <h2
+            className="
+              font-epicene-display font-light uppercase
+              tracking-[0.06em] sm:tracking-[0.08em] leading-[1.06]
+              text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px]
+              drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]
+            "
+          >
+            Inquire to begin
+          </h2>
 
-      {/* Slide 7 */}
-      {/* Slide — Two Images */}
-<Slide className="!py-0 mt-18">
-  <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-    <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/1.jpg" alt="Gallery Left" fill className="object-cover" loading={0 < 10 ? "eager" : "lazy"} priority={0 < 10} />
-    </div>
-    <div className="relative aspect-[3/4] bg-[#efe9df]">
-      <Image src="/about-page/slide7/2.jpg" alt="Gallery Right" fill className="object-cover" loading={1 < 10 ? "eager" : "lazy"} priority={1 < 10} />
-    </div>
-  </div>
-
-  {/* Text section */}
-  <div className="relative py-12 lg:py-16 px-6 sm:px-10 lg:px-20 flex flex-col items-start">
-    
-
-    {/* Vertical right label */}
-    <div className="absolute right-0 top-0 bottom-0 flex items-center">
-      <div className="h-full w-px bg-charcoal/15" />
-      <span
-        className="ml-3 text-[11px] tracking-[0.35em] uppercase text-charcoal/50"
-        style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-      >
-        of
-      </span>
-    </div>
-
-    {/* Main text */}
-    <p className="uppercase tracking-[0.25em] text-[12px] text-charcoal/70 font-commuter-sans mb-1.5">
-      WE BELIEVE IN
-    </p>
-    <h2 className="font-epicene-display text-[38px] md:text-[48px] leading-tight text-charcoal mb-1.5">
-      APPROACHABILITY
-    </h2>
-    =<p className="font-newsreader text-base md:text-lg leading-[1.95] text-charcoal/90 max-w-3xl mb-6">
-      Our goal is to provide our clients with the utmost level of service throughout the planning
-      and design process as there is never a question too big or too small.
-    </p>
-
-    {/* Link */}
-    <Link
-      href="#"
-      className="mt-8 text-[12px] uppercase tracking-[0.25em] border-b border-charcoal/50 pb-1 hover:border-charcoal transition-colors"
-    >
-      See next value
-    </Link>
-  </div>
-</Slide>
-
-
-{/* Slide 8 — centered overlay on full image */}
-<Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[90vh] overflow-hidden">
-  {/* Full background image */}
-  <Image
-    src="/about-page/slide8/main.jpg"
-    alt="Inquire Background"
-    fill
-    className="object-cover object-[50%_35%]"
-    loading={0 < 10 ? "eager" : "lazy"}
-    priority={0 < 10}
-  />
-
-  {/* Centered overlay – styled like your reference */}
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white [&_*]:!text-white">
-  <h2
-    className="
-      font-epicene-display font-light uppercase
-      tracking-[0.08em] leading-[1.06]
-      text-[28px] md:text-[40px] lg:text-[48px]
-      drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]
-    "
-  >
-    Inquire to begin
-  </h2>
-
-  <Link
-    href="/inquire"
-    className="
-      relative mt-3 inline-block
-      font-commuter-sans uppercase tracking-[0.28em]
-      text-[10px] md:text-[11px]
-      after:content-[''] after:block after:h-[1px] after:bg-white/90
-      after:mt-2 after:w-[110%] after:mx-auto after:translate-x-[-5%]
-      hover:after:bg-white transition
-    "
-  >
-    Work with Us
-  </Link>
-</div>
-
-
-</Slide>
-
-
+          <Link
+            href="/inquire"
+            className="
+              relative mt-3 inline-block
+              font-commuter-sans uppercase tracking-[0.25em] sm:tracking-[0.28em]
+              text-[9px] sm:text-[10px] md:text-[11px]
+              after:content-[''] after:block after:h-[1px] after:bg-white/90
+              after:mt-2 after:w-[110%] after:mx-auto after:translate-x-[-5%]
+              hover:after:bg-white transition
+            "
+          >
+            Work with Us
+          </Link>
+        </div>
+      </Slide>
     </main>
   );
 }

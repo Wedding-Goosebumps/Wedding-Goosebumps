@@ -11,7 +11,7 @@ export default function VideoFullBleed() {
     // 1) w-screen makes it stretch full viewport width
     // 2) h-screen makes it full viewport height (remove if you want auto height)
     // 3) overflow-hidden clips any slight scaling artifacts
-    <section className="relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative w-screen h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen overflow-hidden flex flex-col items-center justify-center">
      
       <video
         className="absolute inset-0 w-full h-full object-cover"

@@ -110,7 +110,7 @@ export default function GalleriesPage() {
 
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
       <section className="bg-white py-14 md:py-20">
-        <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
+        <div className="mx-auto max-w-[900px] px-6 grid grid-cols-1 gap-16 md:gap-10 md:grid-cols-2">
           {galleryCards.slice(0, 4).map((card, idx) => (
             <GalleryCard
               key={card.slug}
@@ -139,7 +139,7 @@ export default function GalleriesPage() {
 
       {/* ────────────────────────────── SLIDE 2 — Two cards */}
   <section className="bg-white py-14 md:py-20">
-        <div className="mx-auto max-w-[900px] px-6 grid gap-16 md:gap-10 md:grid-cols-2">
+        <div className="mx-auto max-w-[900px] px-6 grid grid-cols-1 gap-16 md:gap-10 md:grid-cols-2">
           {galleryCards.slice(4).map((card, idx) => (
             <GalleryCard
               key={card.slug}

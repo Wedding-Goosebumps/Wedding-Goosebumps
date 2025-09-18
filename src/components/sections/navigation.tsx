@@ -46,20 +46,20 @@ export default function Navigation() {
         } ${isMenuOpen ? '!opacity-100 !translate-y-0 !pointer-events-auto' : ''}`}
       >
         <div className={`transition-colors duration-300 ${isMenuOpen ? 'bg-ivory' : 'bg-ivory/90 backdrop-blur-md'}`}>
-          <div className="mx-auto flex h-[88px] max-w-[1700px] items-center justify-between px-6 sm:px-10 lg:px-16">
+          <div className="mx-auto flex h-[72px] sm:h-[80px] md:h-[88px] max-w-[1700px] items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16">
             <Link href="/" className="
-     relative z-50 
-     h-24 md:h-30  
-     w-60 md:w-60   
-     shrink-0
-     mt-8
-   ">
+              relative z-50 
+              h-12 sm:h-14 md:h-16 lg:h-18  
+              w-36 sm:w-40 md:w-44 lg:w-48   
+              shrink-0
+              flex items-center
+            ">
               <Image
                 src={LOGO_URL}
                 alt="Wedding Goosebumps"
-                width={100} // set your desired width
-                height={40} // set your desired height
-                className="object-contain"
+                width={100}
+                height={40}
+                className="object-contain w-full h-full"
                 priority
               />
             </Link>
@@ -81,10 +81,10 @@ export default function Navigation() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="z-50 text-charcoal lg:hidden"
+              className="z-50 text-charcoal lg:hidden p-2"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {isMenuOpen ? <X size={24} className="sm:w-7 sm:h-7" /> : <Menu size={24} className="sm:w-7 sm:h-7" />}
             </button>
           </div>
         </div>
@@ -95,13 +95,13 @@ export default function Navigation() {
           isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <nav className="flex h-full flex-col items-center justify-center pt-[88px]">
-          <ul className="flex flex-col items-center gap-y-8">
+        <nav className="flex h-full flex-col items-center justify-center pt-[72px] sm:pt-[80px] md:pt-[88px]">
+          <ul className="flex flex-col items-center gap-y-6 sm:gap-y-8">
             {navLinks.map((link) => (
               <li key={`${link.name}-mobile`}>
                 <Link
                   href={link.href}
-                  className="font-lora text-sm tracking-[0.2em] text-charcoal"
+                  className="font-lora text-sm sm:text-base tracking-[0.2em] text-charcoal hover:text-gold transition-colors duration-300"
                 >
                   {link.name}
                 </Link>
