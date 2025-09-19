@@ -40,6 +40,9 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+/* -------- keep your existing @imports and :root vars as-is -------- */
+
+/* --- Replace the h1..h6 block inside @layer base with this --- */
 @layer base {
   html,
   body {
@@ -52,12 +55,14 @@
     overflow-x: hidden;
   }
 
+  /* HEADINGS: use Cormorant across the site */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-playfair-display);
-    font-family: var(--font-newsreader);
+    font-family: var(--font-cormorant);
     color: var(--color-charcoal);
     line-height: 1.2;
     margin-bottom: 0.5em;
+    /* Use a weight that matches the hero look — 300 (Tailwind font-light) */
+    font-weight: 300;
   }
 
   h1 { font-size: var(--text-h1); }
@@ -72,70 +77,31 @@
     font-family: 'Inter', sans-serif;
   }
 
-  a {
-    color: var(--color-gold);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  a:hover {
-    color: color-mix(in srgb, var(--color-gold) 80%, black);
-  }
-
-  /* Global Container for content */
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* Section Padding */
-  .section-padding-y {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  /* Responsive breakpoints for consistency */
-  @breakpoint sm { /* min-width: 640px */ }
-  @breakpoint md { /* min-width: 768px */ }
-  @breakpoint lg { /* min-width: 1024px */ }
-  @breakpoint xl { /* min-width: 1280px */ }
-  @breakpoint 2xl { /* min-width: 1536px */ }
-
-  /* Utilities often used like text accents */
-  .text-accent {
-    color: var(--color-gold);
-  }
-
-  /* Subtle border treatment */
-  .border-subtle {
-    border-color: color-mix(in srgb, var(--color-charcoal) 10%, transparent);
-    border-width: 1px;
-  }
+  /* ... rest of your base layer unchanged ... */
 }
 
-@font-face {
+/* Remove the broken/duplicate Epicene @font-face entries or comment them out.
+   If you don't need Epicene, delete the following blocks to prevent 404s: */
+
+/* @font-face {
   font-family: 'Epicene Display';
   src: url('/fonts/EpiceneDisplay-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
-}
-/* put this AFTER the h1–h6 block */
-.font-epicene-display {
-  font-family: 'Epicene Display', serif;
-  font-weight: 300; /* optional: or set via Tailwind class */
-}
+} */
 
-.font-cormorant {
-  font-family: var(--font-cormorant);
-} 
-
-/* globals.css */
-@font-face {
+/* @font-face {
   font-family: 'Epicene Display Light';
   src: url('/fonts/epicene-display-light.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-}
+} */
+
+/* Keep a small helper class if you want to still use Epicene somewhere else,
+   but ensure the file exists and the path/casing is correct before enabling it. */
+
+/* .font-epicene-display {
+  font-family: 'Epicene Display', serif;
+  font-weight: 300;
+} */
+
