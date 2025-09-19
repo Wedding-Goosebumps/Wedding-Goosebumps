@@ -304,9 +304,9 @@ export default function AboutPage() {
               </div>
 
               <div className="lg:pr-8">
-                <blockquote className="font-epicene-display text-charcoal text-[28px] md:text-[36px] lg:text-[42px] leading-tight mb-8">
+                <h5 className=" text-charcoal text-[28px] md:text-[36px] lg:text-[42px] leading-tight mb-8">
                   "Ali is truly a one-of-a-kind planner."
-                </blockquote>
+                </h5>
                 <p className="font-newsreader text-[16px] md:text-[16.5px] leading-[1.95] text-charcoal/90">
                   It would be an understatement to say he was instrumental in bringing our wedding vision to
                   life. Our planning journey with him was effortless, enjoyable, and completely stress-free.

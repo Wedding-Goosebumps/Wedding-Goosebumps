@@ -13,7 +13,7 @@ const JournalSection = () => {
           <p className="font-lora text-xs sm:text-sm text-charcoal/80 tracking-[0.3em] uppercase mb-2">
             DISCOVER OUR PHILOSOPHY
           </p>
-          <h2 className="font-playfair-display text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[48px] 2xl:text-[52px] tracking-tight leading-tight sm:leading-normal">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[48px] 2xl:text-[52px] tracking-tight leading-tight sm:leading-normal">
             Where Emotion Becomes Experience, Every Detail Tells a Story!
           </h2>
           <div className="w-8 sm:w-10 h-[1px] bg-charcoal/20 mx-auto my-3 sm:my-4" />

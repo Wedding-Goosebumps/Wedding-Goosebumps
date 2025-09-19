@@ -57,13 +57,13 @@ export const ImageGallery: React.FC = () => {
               <p className="text-[0.65rem] sm:text-[0.75rem] md:text-sm font-lora tracking-[0.2em] uppercase text-charcoal/80 mb-2">
                 WE DESIGN FROM THE SOUL OF YOUR STORY
               </p>
-              <h2 className="font-playfair-display text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-2 uppercase">
+              <h2 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-2 uppercase">
                 THE COUTURE
               </h2>
-              <h2 className="font-playfair-display text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-2 uppercase">
+              <h2 className=" text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-2 uppercase">
                 AESTHETICS <span className="italic lowercase">of</span>
               </h2>
-              <h2 className="font-playfair-display text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-4 sm:mb-6 uppercase">
+              <h2 className=" text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-tight text-charcoal mb-4 sm:mb-6 uppercase">
                 CELEBRATION
               </h2>
               <p className="font-lora text-xs sm:text-sm md:text-base leading-relaxed text-charcoal/90 mb-4 sm:mb-6">

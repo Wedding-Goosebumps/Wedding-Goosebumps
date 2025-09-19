@@ -33,7 +33,7 @@ export default function KindWords() {
             </div>
 
 {/* giant serif quote */}
-<h2 className="font-playfair-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[50px] uppercase leading-none text-center lg:text-right">
+<h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[50px] uppercase leading-none text-center lg:text-right">
   The Highest level{" "}
   <span className="italic lowercase font-light align-baseline">
     of
