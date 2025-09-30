@@ -189,7 +189,7 @@ export default function AboutPage() {
             {/* LEFT IMAGE - hidden on mobile, proper height on desktop */}
             <div className="relative w-full h-[400px] lg:h-[500px] xl:h-[600px] bg-[#efe9df] hidden lg:block overflow-hidden lg:mt-16">
               <Image
-                src="/about-page/slide4/1.jpg"
+                src="/about-page/slide-4/1.jpg"
                 alt="Earlier work"
                 fill
                 className="object-cover object-center"
@@ -244,7 +244,7 @@ export default function AboutPage() {
             {/* RIGHT IMAGE - proper height, no cutting */}
             <div className="relative h-[60vh] lg:h-[100vh] xl:h-[130vh] bg-[#efe9df] overflow-hidden">
               <Image
-                src="/about-page/slide4/2.jpg"
+                src="/about-page/slide-4/2.jpg"
                 alt="Events"
                 fill
                 className="object-cover object-center"
@@ -318,7 +318,7 @@ export default function AboutPage() {
             {/* RIGHT IMAGE - proper height */}
             <div className="relative h-[60vh] lg:h-[80vh] xl:h-[100vh] bg-[#efe9df] overflow-hidden">
               <Image
-                src="/about-page/slide6/main.JPG"
+                src="/about-page/slide6/main.jpg"
                 alt="Testimonial main"
                 fill
                 className="object-cover object-center"
