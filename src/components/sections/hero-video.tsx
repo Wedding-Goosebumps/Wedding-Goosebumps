@@ -30,9 +30,9 @@ export default function HeroVideo() {
         <Image
           src={TEXT_LOGO_URL}
           alt="WEDDING GOOSBUMPS"
-          width={800}
-          height={150}
-          className="h-auto w-full max-w-[280px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] invert brightness-0"
+          width={1000}
+          height={500}
+          className="h-auto w-full max-w-[384px] sm:max-w-[453px] md:max-w-[600px] lg:max-w-[670px] xl:max-w-[729px] invert brightness-0"
           priority
         />
       </div>

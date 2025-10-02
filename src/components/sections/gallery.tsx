@@ -35,7 +35,7 @@ export default function GallerySection() {
   const next = () => setGroupIndex((i) => (i === lastIndex ? 0 : i + 1));
 
   return (
-  <section className="bg-ivory py-12 sm:py-16 md:py-18">
+  <section className="bg-ivory py-4 sm:py-6 md:py-8">
       {/* — Heading & intro copy */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-1">
         {/* WE CREATE → Commuter Sans 400 */}
@@ -50,7 +50,7 @@ export default function GallerySection() {
         <div className="h-[2.5px] w-20 sm:w-24 md:w-30 bg-[#D9D5CF] mx-auto my-6 sm:my-8" />
 
         {/* "Wedding Goosebump is a full-service" → Newsreader 300 italic */}
-        <p className="mx-auto max-w-2xl font-lora text-base sm:text-lg leading-relaxed text-charcoal pb-8 sm:pb-10">
+        <p className="mx-auto max-w-2xl font-lora text-base sm:text-lg leading-relaxed text-charcoal pb-7 sm:pb-9">
             Wedding Goosebumps is a full-service
           {" "}
           <em className="italic">
@@ -62,13 +62,13 @@ export default function GallerySection() {
       </div>
 
       {/* — Carousel wrapper */}
-      <div className="relative mx-auto max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+      <div className="relative mx-auto max-w-[522px] sm:max-w-[683px] md:max-w-[836px] lg:max-w-[997px] h-[436px] sm:h-[501px] md:h-[577px] lg:h-[653px]">
         {/* — Images container (overflow-hidden) */}
         <div className="relative h-full overflow-hidden">
           {groups.map((group, gi) => (
             <div
               key={gi}
-              className={`absolute top-0 left-0 flex w-full h-full gap-2 sm:gap-3 md:gap-4 px-4 sm:px-8 md:px-12 transition-opacity duration-700 ease-in-out ${
+              className={`absolute top-0 left-0 flex w-full h-full gap-2 sm:gap-3 md:gap-4 px-2 sm:px-5 md:px-7 transition-opacity duration-700 ease-in-out ${
                 gi === groupIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             >
@@ -96,7 +96,7 @@ export default function GallerySection() {
         <button
           onClick={prev}
           aria-label="Previous slide"
-          className="absolute left-0 -ml-8 sm:-ml-10 md:-ml-14 top-1/2 -translate-y-1/2 w-8 sm:w-10 md:w-14 h-8 sm:h-9 md:h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
+          className="absolute left-0 -ml-7 sm:-ml-9 md:-ml-13 top-1/2 -translate-y-1/2 w-7 sm:w-9 md:w-13 h-7 sm:h-8 md:h-9 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function GallerySection() {
         <button
           onClick={next}
           aria-label="Next slide"
-          className="absolute right-0 -mr-8 sm:-mr-10 md:-mr-14 top-1/2 -translate-y-1/2 w-8 sm:w-10 md:w-14 h-8 sm:h-9 md:h-10 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
+          className="absolute right-0 -mr-7 sm:-mr-9 md:-mr-13 top-1/2 -translate-y-1/2 w-7 sm:w-9 md:w-13 h-7 sm:h-8 md:h-9 bg-[#E8E3DC] hover:bg-[#D8D3CC] flex items-center justify-center z-20 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

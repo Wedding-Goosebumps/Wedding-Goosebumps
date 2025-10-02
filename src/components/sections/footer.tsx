@@ -1,11 +1,21 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+// Footer gallery images
+const footerImages = [
+  { src: '/footer/footer-1.jpg', alt: 'Wedding gallery 1' },
+  { src: '/footer/footer-2.jpg', alt: 'Wedding gallery 2' },
+  { src: '/footer/footer-3.jpg', alt: 'Wedding gallery 3' },
+  { src: '/footer/footer-4.jpg', alt: 'Wedding gallery 4' },
+  { src: '/footer/footer-5.jpg', alt: 'Wedding gallery 5' },
+];
 
 const navLinks = [
-  { name: 'Inquire', href: '/inquire' },
-  { name: 'Galleries', href: '/galleries' },
-  { name: 'Offerings', href: '/offerings' },
-  { name: 'About', href: '/about' },
   { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Offerings', href: '/offerings' },
+  { name: 'Galleries', href: '/galleries' },
+  { name: 'Inquire', href: '/inquire' },
 ];
 
 export default function Footer() {
@@ -13,8 +23,37 @@ export default function Footer() {
     <footer className="bg-ivory text-charcoal font-lora">
       <div className="container mx-auto px-4 sm:px-6 md:px-10 pt-16 sm:pt-24 md:pt-32 pb-8 sm:pb-12 text-center">
 
+        {/* Navigation Links Above Images */}
+        <nav className="mb-12 sm:mb-16">
+          <ul className="flex items-center justify-center gap-x-8 sm:gap-x-12 md:gap-x-16 lg:gap-x-20 flex-wrap gap-y-6">
+            {navLinks.map((link) => (
+              <li key={link.name} className="relative group">
+                <Link href={link.href} className="text-[11px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.4em] text-charcoal hover:text-gold transition-colors duration-300 font-light block pb-2">
+                  {link.name}
+                </Link>
+                <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-charcoal/30 group-hover:bg-gold transition-colors duration-300"></div>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Image Gallery Row */}
+        <div className="grid grid-cols-5 gap-2 sm:gap-4 mb-12 sm:mb-16 max-w-4xl mx-auto">
+          {footerImages.map((image, index) => (
+            <div key={index} className="relative aspect-square overflow-hidden rounded">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 20vw, (max-width: 1024px) 15vw, 12vw"
+              />
+            </div>
+          ))}
+        </div>
+
         <div className="mb-8 sm:mb-12">
-          <h2 className="font-playfair-display text-[28px] sm:text-[36px] md:text-[42px] lg:text-5xl xl:text-6xl tracking-tight text-charcoal leading-none">
+          <h2 className="font-epicene-display uppercase text-[28px] sm:text-[36px] md:text-[42px] lg:text-5xl xl:text-6xl tracking-tight text-charcoal leading-none">
             Wedding Goosebumps
           </h2>
           <p className="mt-3 sm:mt-4 text-[8px] sm:text-[9px] md:text-xs uppercase tracking-[0.3em] font-light">
@@ -35,18 +74,6 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 sm:mt-24 md:mt-32 max-w-[1240px] mx-auto">
-          <nav className="mb-6 sm:mb-8">
-            <ul className="flex items-center justify-center gap-x-4 sm:gap-x-6 md:gap-x-10 flex-wrap gap-y-2 sm:gap-y-3">
-              {navLinks.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-[10px] sm:text-[11px] md:text-xs uppercase tracking-[0.2em] text-charcoal hover:text-gold transition-colors duration-300">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          
           <div className="text-center sm:text-right my-6 sm:my-8">
              <a href="#" className="text-[10px] sm:text-[11px] md:text-xs uppercase tracking-[0.2em] text-charcoal hover:text-gold transition-colors duration-300">
                 Back to the top

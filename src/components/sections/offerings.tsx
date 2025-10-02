@@ -2,16 +2,16 @@ import React from "react";
 import Link from "next/link";
 
 const OfferingsSection = () => (
-  <section className="bg-ivory text-charcoal py-6 sm:py-12 md:py-16 lg:py-20 pb-16 sm:pb-20 md:pb-23">
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+  <section className="bg-ivory text-charcoal py-8 sm:py-12 md:py-16 lg:py-20 pb-17 sm:pb-21 md:pb-24">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-7">
       {/* small uppercase heading + underline */}
-      <h2 className="font-commuter-sans text-[11px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
+      <h2 className="font-commuter-sans text-[10px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
         ABOUT WEDDING GOOSEBUMPS
       </h2>
-      <div className="h-[2.5px] w-20 sm:w-24 md:w-30 bg-[#D9D5CF]" />
+      <div className="h-[2.3px] w-18 sm:w-22 md:w-28 bg-[#D9D5CF]" />
 
       {/* body copy */}
-      <p className="mt-4 sm:mt-6 font-lora text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] leading-[1.8] sm:leading-[1.9]">
+      <p className="mt-4 sm:mt-6 font-lora text-[15px] sm:text-[16px] md:text-[17px] lg:text-[17px] leading-[1.8] sm:leading-[1.9]">
         Wedding Goosebump is a premier wedding designing and planning studio
         based in India, specializing in crafting soul-stirring luxury
         destination weddings across Europe, the Middle East, and India. From
@@ -29,7 +29,7 @@ const OfferingsSection = () => (
 
       {/* offerings link */}
       <Link href="/offerings" className="inline-block mt-2 sm:mt-4">
-        <span className="font-commuter-sans text-[11px] sm:text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold pb-1 hover:border-gold/70 transition-colors duration-300">
+        <span className="font-commuter-sans text-[10px] sm:text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.4px] border-gold pb-1 hover:border-gold/70 transition-colors duration-300">
           OUR OFFERINGS
         </span>
       </Link>

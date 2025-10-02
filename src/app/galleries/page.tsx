@@ -34,12 +34,6 @@ export default function GalleriesPage() {
       slug: "3",
     },
     {
-      image: "/galleries-page/headers/harshil.jpg",
-      heading: "Vibrant wedding luxury",
-      subheading: "Shashank & Muskan",
-      slug: "4",
-    },
-    {
       image: "/galleries-page/headers/mohit.jpg",
       heading: "Culture meets joy",
       subheading: "Mohit & Hitika",
@@ -62,12 +56,6 @@ export default function GalleriesPage() {
       heading: "Love through laughter",
       subheading: "Saval & Romil ",
       slug: "8",
-    },
-    {
-      image: "/galleries-page/headers/ivan.JPG",
-      heading: "A global love",
-      subheading: "Ivan & Maria",
-      slug: "9",
     },
     {
       image: "/galleries-page/headers/riya.jpg",

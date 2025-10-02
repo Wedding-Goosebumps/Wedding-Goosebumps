@@ -46,19 +46,19 @@ export default function Navigation() {
         } ${isMenuOpen ? '!opacity-100 !translate-y-0 !pointer-events-auto' : ''}`}
       >
         <div className={`transition-colors duration-300 ${isMenuOpen ? 'bg-ivory' : 'bg-ivory/90 backdrop-blur-md'}`}>
-          <div className="mx-auto flex h-[72px] sm:h-[80px] md:h-[88px] max-w-[1700px] items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="mx-auto flex h-[64px] sm:h-[72px] md:h-[81px] max-w-[1700px] items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16">
             <Link href="/" className="
               relative z-50 
-              h-12 sm:h-14 md:h-16 lg:h-18  
-              w-36 sm:w-40 md:w-44 lg:w-48   
+              h-8 sm:h-9 md:h-12 lg:h-14  
+              w-23 sm:w-28 md:w-31 lg:w-36   
               shrink-0
               flex items-center
             ">
               <Image
                 src={LOGO_URL}
                 alt="Wedding Goosebumps"
-                width={100}
-                height={40}
+                width={78}
+                height={31}
                 className="object-contain w-full h-full"
                 priority
               />
