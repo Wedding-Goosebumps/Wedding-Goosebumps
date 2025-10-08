@@ -75,7 +75,8 @@ export default function InquirePage() {
       <Navigation />
 
       <div className="min-h-screen flex">
-        <div className="w-1/2 relative">
+        {/* hide image < 760 width */}
+        <div className="hidden md:block w-1/2 relative">
           <Image
             src="/inquire-page/JIY06150.jpg"
             alt="Romantic Bride"
@@ -84,14 +85,15 @@ export default function InquirePage() {
           />
         </div>
 
-        <div className="w-1/2 bg-[#F8F5F0] flex flex-col">
+        {/* Form column - full width on mobile, half width on desktop */}
+        <div className="w-full md:w-1/2 bg-[#F8F5F0] flex flex-col">
           <div className="text-center pt-16 pb-8" />
-          <div className="flex-1 px-16 py-8">
+          <div className="flex-1 px-8 md:px-16 py-8">
             <div className="mb-8">
               <p className="text-xs uppercase tracking-[0.2em] text-charcoal/60 font-lora mb-4">
                 GET IN TOUCH
               </p>
-              <h2 className="font-epicene-display text-4xl text-charcoal leading-tight mb-6">
+              <h2 className="font-epicene-display text-3xl md:text-4xl text-charcoal leading-tight mb-6">
                 Lets create a goosebump <br /> moment together
               </h2>
               <p className="text-charcoal/70 leading-relaxed font-lora mb-8">
