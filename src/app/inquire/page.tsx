@@ -85,7 +85,6 @@ export default function InquirePage() {
           />
         </div>
 
-        {/* Form column - full width on mobile, half width on desktop */}
         <div className="w-full md:w-1/2 bg-[#F8F5F0] flex flex-col">
           <div className="text-center pt-16 pb-8" />
           <div className="flex-1 px-8 md:px-16 py-8">
