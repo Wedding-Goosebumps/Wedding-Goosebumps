@@ -171,9 +171,9 @@ export default function OfferingsPage() {
         <div
           className="
             bg-grey/5
-            mx-auto w-full max-w-[750px] px-3 sm:px-5
+            mx-auto w-full max-w-[900px] px-3 sm:px-5
             mb-8 sm:mb-10 md:mb-11
-            h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] xl:h-[560px]
+            h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[700px] 2xl:h-[750px]
           "
         >
           {/* Inner slideshow container with overflow hidden */}
@@ -203,7 +203,7 @@ export default function OfferingsPage() {
         </div>
 
         {/* Text content */}
-        <div className="mx-auto w-full max-w-[880px] px-3 sm:px-5 text-center">
+        <div className="mx-auto w-full max-w-[1000px] px-3 sm:px-5 text-center">
           {/* small overline */}
           <p className="uppercase tracking-[0.24em] sm:tracking-[0.28em] text-[9px] sm:text-[10px] text-charcoal/60 mb-2 sm:mb-3">
             Our approach
@@ -277,31 +277,31 @@ export default function OfferingsPage() {
           </div>
 
           {/* Dynamic Slider Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-20 items-start">
             {/* LEFT: Text Content */}
             <div className="flex flex-col h-full order-2 lg:order-1">
               <div className="flex-grow">
                 {/* Title */}
-                <h3 className="font-epicene-display uppercase text-[17px] sm:text-[20px] md:text-[23px] leading-tight text-charcoal">
+                <h3 className="font-epicene-display uppercase text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] xl:text-[30px] leading-[1.1] text-charcoal mb-4 sm:mb-5 md:mb-6">
                   {OFFERINGS_DATA[currentOffering].title}
                 </h3>
                 
                 {/* Description */}
-                <div className="mt-2 sm:mt-3 font-lora text-[13px] sm:text-[14px] leading-[1.7] sm:leading-[1.8] text-charcoal/80 max-w-[50ch] space-y-3">
+                <div className="font-lora text-[14px] sm:text-[15px] md:text-[16px] leading-[1.75] sm:leading-[1.8] md:leading-[1.85] text-charcoal/85 space-y-4 sm:space-y-5">
                   {OFFERINGS_DATA[currentOffering].description.map((paragraph, idx) => (
-                    <p key={idx}>{paragraph}</p>
+                    <p key={idx} className="max-w-[55ch] lg:max-w-[60ch]">{paragraph}</p>
                   ))}
                 </div>
               </div>
               
               {/* Navigation Controls */}
-              <div className="mt-6 sm:mt-8 flex items-center justify-between">
+              <div className="mt-8 sm:mt-10 md:mt-12 flex items-center justify-between">
                 <button
                   onClick={prevOffering}
                   aria-label="Previous offering"
-                  className="text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.16em] uppercase text-charcoal/80 hover:text-gold transition-colors group flex items-center gap-1.5"
+                  className="text-[11px] sm:text-[12px] tracking-[0.16em] sm:tracking-[0.18em] uppercase text-charcoal/75 hover:text-gold transition-colors group flex items-center gap-2"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-2.5 h-2.5 sm:w-3 sm:h-3 transition-transform group-hover:-translate-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3 sm:w-3.5 sm:h-3.5 transition-transform group-hover:-translate-x-1">
                     <path fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z" clipRule="evenodd" />
                   </svg>
                   PREV
@@ -309,10 +309,10 @@ export default function OfferingsPage() {
                 <button
                   onClick={nextOffering}
                   aria-label="Next offering"
-                  className="text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.16em] uppercase text-charcoal/80 hover:text-gold transition-colors group flex items-center gap-1.5"
+                  className="text-[11px] sm:text-[12px] tracking-[0.16em] sm:tracking-[0.18em] uppercase text-charcoal/75 hover:text-gold transition-colors group flex items-center gap-2"
                 >
                   NEXT OFFERING
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-2.5 h-2.5 sm:w-3 sm:h-3 transition-transform group-hover:translate-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3 sm:w-3.5 sm:h-3.5 transition-transform group-hover:translate-x-1">
                      <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
                   </svg>
                 </button>
@@ -320,7 +320,7 @@ export default function OfferingsPage() {
             </div>
 
             {/* RIGHT: Image */}
-            <div className="relative h-[40px] sm:h-[420px] md:h-[500px] lg:h-[580px] bg-[#efe9df] order-1 lg:order-2">
+            <div className="relative h-[400px] sm:h-[450px] md:h-[520px] lg:h-[600px] xl:h-[650px] bg-[#efe9df] order-1 lg:order-2">
                <Image
                   key={currentOffering}
                   src={OFFERINGS_DATA[currentOffering].image}
