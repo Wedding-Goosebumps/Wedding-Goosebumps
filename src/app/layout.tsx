@@ -3,6 +3,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import "./globals.css";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Wedding Goosebumps",
@@ -34,6 +35,7 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />{children}
   <VisualEditsMessenger />
+  <Analytics />
 </body>
     </html>
   );
