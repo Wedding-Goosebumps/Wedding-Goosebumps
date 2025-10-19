@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ErrorReporter from "@/components/ErrorReporter";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Wedding Goosebumps",
   description: "Wedding Goosebumps ",
+  // can add more metadata as required
 };
 
 export default function RootLayout({
