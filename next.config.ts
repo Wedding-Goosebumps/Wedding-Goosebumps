@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
       { source: "/logo/:path*",           destination: `${ASSET_HOST}/logo/:path*` },
       { source: "/about/:path*",          destination: `${ASSET_HOST}/about/:path*` },
       { source: "/about-page/:path*",     destination: `${ASSET_HOST}/about-page/:path*` },
+      { source: "/footer/:path*",         destination: `${ASSET_HOST}/footer/:path*` },
       { source: "/galleries-page/:path*", destination: `${ASSET_HOST}/galleries-page/:path*` },
       { source: "/gallery/:path*",        destination: `${ASSET_HOST}/gallery/:path*` },
       { source: "/journal-section/:path*",     destination: `${ASSET_HOST}/journal-section/:path*` },
