@@ -2,7 +2,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const ASSET_HOST = process.env.NEXT_PUBLIC_ASSET_BASE!; // R2 CDN
+const ASSET_HOST = process.env.NEXT_PUBLIC_ASSET_BASE ?? "https://img.weddinggoosebumps.com";// R2 CDN
 
 
 const nextConfig: NextConfig = {
