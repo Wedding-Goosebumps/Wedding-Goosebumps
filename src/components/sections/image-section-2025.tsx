@@ -31,13 +31,13 @@ export const ImageGallery: React.FC = () => {
               <p className="text-[0.6rem] sm:text-[0.64rem] md:text-[0.7rem] font-lora tracking-[0.2em] uppercase text-charcoal/80 mb-1.2">
                 WE DESIGN FROM THE SOUL OF YOUR STORY
               </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
                 THE COUTURE
               </h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
                 AESTHETICS <span className="italic lowercase">of</span>
               </h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-3 sm:mb-4 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-3 sm:mb-4 uppercase">
                 CELEBRATION
               </h2>
               <p className="font-lora text-xs sm:text-sm leading-relaxed text-charcoal/90 mb-4 sm:mb-5">
