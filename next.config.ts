@@ -2,13 +2,8 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const isVercel = process.env.VERCEL === "1";
-const ASSET_HOST = process.env.NEXT_PUBLIC_ASSET_BASE!; // R2 CDN
+const ASSET_HOST = process.env.NEXT_PUBLIC_ASSET_BASE ?? "https://img.weddinggoosebumps.com";// R2 CDN
 
-const LOADER = path.resolve(
-  __dirname,
-  "src/visual-edits/component-tagger-loader.js"
-);
 
 const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
@@ -27,6 +22,7 @@ const nextConfig: NextConfig = {
       { source: "/logo/:path*",           destination: `${ASSET_HOST}/logo/:path*` },
       { source: "/about/:path*",          destination: `${ASSET_HOST}/about/:path*` },
       { source: "/about-page/:path*",     destination: `${ASSET_HOST}/about-page/:path*` },
+      { source: "/footer/:path*",         destination: `${ASSET_HOST}/footer/:path*` },
       { source: "/galleries-page/:path*", destination: `${ASSET_HOST}/galleries-page/:path*` },
       { source: "/gallery/:path*",        destination: `${ASSET_HOST}/gallery/:path*` },
       { source: "/journal-section/:path*",     destination: `${ASSET_HOST}/journal-section/:path*` },
@@ -38,10 +34,6 @@ const nextConfig: NextConfig = {
       { source: "/inquire-page/:path*", destination: `${ASSET_HOST}/inquire-page/:path*` },
     ];
   },
-
-  ...(isVercel ? {} : {
-    turbopack: { rules: { "*.{jsx,tsx}": { loaders: [LOADER] } } },
-  }),
 
   webpack: (config) => {
     config.resolve.alias = config.resolve.alias || {};
