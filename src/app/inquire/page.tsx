@@ -74,7 +74,7 @@ export default function InquirePage() {
     <main className="min-h-screen">
       <Navigation />
 
-      <div className="h-[73vh] flex">
+      <div className="min-h-screen flex">
         {/* hide image < 760 width */}
         <div className="hidden md:block w-1/2 relative">
           <Image
