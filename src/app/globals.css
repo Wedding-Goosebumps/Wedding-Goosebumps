@@ -52,7 +52,12 @@
     font-size: var(--text-base);
     line-height: 1.75;
     scroll-behavior: smooth;
+    /* Permanently eliminate horizontal scroll; keep fallback then prefer clip */
     overflow-x: hidden;
+    overflow-x: clip;
+    /* Stabilize layout when vertical scrollbar appears/disappears (only on end side) */
+    scrollbar-gutter: stable;
+    width: 100%;
   }
 
   /* HEADINGS: use Cormorant across the site */
@@ -78,6 +83,30 @@
   }
 
   /* ... rest of your base layer unchanged ... */
+}
+
+/* Utility: lock only vertical scrolling (used for mobile menu) */
+.scroll-lock {
+  overflow-y: hidden;
+  overscroll-behavior-y: contain;
+}
+
+/* Utility: Full-bleed container without subpixel gaps */
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: clip;
+}
+@supports (width: 100svw) {
+  .full-bleed {
+    width: 100svw;
+    margin-left: -50svw;
+    margin-right: -50svw;
+  }
 }
 
 /* Remove the broken/duplicate Epicene @font-face entries or comment them out.

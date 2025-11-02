@@ -32,7 +32,7 @@ export default function AboutPage() {
 
       {/* Slide 1: Hero section with fixed overlapping */}
       <section className="pt-0 pb-0 bg-white text-charcoal">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[480px_1fr] xl:grid-cols-[520px_1fr] 2xl:grid-cols-[560px_1fr]">
             {/* LEFT: big image */}
             <div className="relative h-[40vh] sm:h-[52vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] bg-white order-2 lg:order-1">
@@ -97,7 +97,7 @@ export default function AboutPage() {
       </section>
 
       {/* Slide 2 - Fixed image cutting */}
-      <Slide className="mt-12 lg:mt-16 xl:mt-20">
+  <Slide className="mt-12 lg:mt-16 xl:mt-20">
         <div className="mx-auto max-w-6xl px-0">
           <div className="grid gap-8 lg:gap-10 xl:gap-12 lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] items-start">
             {/* Left image - ensure proper aspect ratio */}
@@ -182,7 +182,7 @@ export default function AboutPage() {
 
       {/* Slide 4 — Fixed mobile layout and image cutting */}
       <Slide className="bg-white">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           {/* Mobile: stack vertically with proper spacing */}
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[220px_1fr_480px] gap-6 lg:gap-6 xl:gap-8">
             
@@ -257,7 +257,7 @@ export default function AboutPage() {
 
       {/* Slide 5 - Video with responsive height */}
       <Slide className="p-0 m-0">
-        <div className="w-screen h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] relative left-1/2 -translate-x-1/2">
+        <div className="relative full-bleed h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh]">
           <video
             src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4"
             autoPlay
@@ -271,7 +271,7 @@ export default function AboutPage() {
 
       {/* Slide 6 — Fixed testimonial layout */}
       <Slide className="py-8 lg:py-14">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[240px_1fr_480px] gap-6 lg:gap-10">
             
             {/* LEFT IMAGE - hidden on mobile, proper height */}
@@ -368,7 +368,7 @@ export default function AboutPage() {
       </Slide>
 
       {/* Slide 8 — Final CTA with responsive improvements */}
-      <Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
+  <Slide className="relative !py-0 full-bleed h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
         {/* Full background image */}
         <Image
           src="/about-page/slide8/main.jpg"
