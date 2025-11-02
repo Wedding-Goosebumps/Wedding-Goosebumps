@@ -74,7 +74,7 @@ export default function InquirePage() {
     <main className="min-h-screen">
       <Navigation />
 
-      <div className="min-h-screen flex">
+      <div className="h-[73vh] flex">
         {/* hide image < 760 width */}
         <div className="hidden md:block w-1/2 relative">
           <Image
@@ -93,7 +93,7 @@ export default function InquirePage() {
                 GET IN TOUCH
               </p>
               <h2 className="font-epicene-display text-3xl md:text-4xl text-charcoal leading-tight mb-6">
-                Lets create a goosebump <br /> moment together
+                Lets create a goosebumps <br /> moment together
               </h2>
               <p className="text-charcoal/70 leading-relaxed font-lora mb-8">
                 Please fill out our contact form or send us an email.
