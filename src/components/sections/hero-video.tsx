@@ -16,7 +16,7 @@ export default function HeroVideo() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-auto h-auto min-w-full min-h-full translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src={HERO_VIDEO_URL} type="video/mp4" />
         Your browser does not support the video tag.

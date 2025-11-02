@@ -176,7 +176,7 @@ export default function GalleriesPage() {
               alt={HERO.alt}
               width={HERO.width}
               height={HERO.height}
-              className="w-full h-auto max-h-[60vh] object-contain"
+              className="w-full h-auto max-h-[55vh] object-contain"
                   loading="eager"
                   priority={true}
             />

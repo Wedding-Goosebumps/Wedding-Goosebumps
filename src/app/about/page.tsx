@@ -32,10 +32,10 @@ export default function AboutPage() {
 
       {/* Slide 1: Hero section with fixed overlapping */}
       <section className="pt-0 pb-0 bg-white text-charcoal">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[480px_1fr] xl:grid-cols-[520px_1fr] 2xl:grid-cols-[560px_1fr]">
             {/* LEFT: big image */}
-            <div className="relative h-[40vh] sm:h-[52vh] lg:h-[88vh] xl:h-[94vh] 2xl:h-[100vh] bg-white order-2 lg:order-1">
+            <div className="relative h-[40vh] sm:h-[52vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] bg-white order-2 lg:order-1">
               <Image
                 src="/about-page/slide1/main.jpg"
                 alt="Wedding Goosebumps"
@@ -97,11 +97,11 @@ export default function AboutPage() {
       </section>
 
       {/* Slide 2 - Fixed image cutting */}
-      <Slide className="mt-12 lg:mt-16 xl:mt-20">
+  <Slide className="mt-12 lg:mt-16 xl:mt-20">
         <div className="mx-auto max-w-6xl px-0">
           <div className="grid gap-8 lg:gap-10 xl:gap-12 lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] items-start">
             {/* Left image - ensure proper aspect ratio */}
-            <div className="relative w-full h-[430px] sm:h-[510px] lg:h-[530px] xl:h-[600px] bg-[#efe9df] overflow-hidden">
+            <div className="relative w-full h-[430px] sm:h-[510px] lg:h-[650px] xl:h-[650px] bg-[#efe9df] overflow-hidden">
               <Image
                 src="/about-page/slide2/Photo.jpg"
                 alt="Ali Waris Khan"
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
               </h2>
 
-              <p className="font-cormorant italic text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80">
+              <p className="font-cormorant text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80">
                 Is different in that he offers his couples a truly hands-on experience. He accepts a
                 limited number of weddings per year, which allows him to give 100% of his attention to
                 each and every couple.<br />
@@ -182,7 +182,7 @@ export default function AboutPage() {
 
       {/* Slide 4 — Fixed mobile layout and image cutting */}
       <Slide className="bg-white">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           {/* Mobile: stack vertically with proper spacing */}
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[220px_1fr_480px] gap-6 lg:gap-6 xl:gap-8">
             
@@ -242,7 +242,7 @@ export default function AboutPage() {
             </div>
 
             {/* RIGHT IMAGE - proper height, no cutting */}
-            <div className="relative h-[50vh] lg:h-[75vh] xl:h-[90vh] bg-[#efe9df] overflow-hidden">
+            <div className="relative h-[50vh] lg:h-[75vh] xl:h-[75vh] bg-[#efe9df] overflow-hidden">
               <Image
                 src="/about-page/slide-4/2.jpg"
                 alt="Events"
@@ -257,7 +257,7 @@ export default function AboutPage() {
 
       {/* Slide 5 - Video with responsive height */}
       <Slide className="p-0 m-0">
-        <div className="w-screen h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[100vh] relative left-1/2 -translate-x-1/2">
+        <div className="relative full-bleed h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh]">
           <video
             src="/videos/about-page-vids/TATSAV VIDHI HIGHLIGHT 20sec 18.mp4"
             autoPlay
@@ -271,7 +271,7 @@ export default function AboutPage() {
 
       {/* Slide 6 — Fixed testimonial layout */}
       <Slide className="py-8 lg:py-14">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[240px_1fr_480px] gap-6 lg:gap-10">
             
             {/* LEFT IMAGE - hidden on mobile, proper height */}
@@ -304,7 +304,7 @@ export default function AboutPage() {
               </div>
 
               <div className="lg:pr-6">
-                <h5 className="text-charcoal text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] leading-tight mb-6">
+                <h5 className="mt-50 text-charcoal text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] leading-tight mb-6">
                   "Ali is truly a one-of-a-kind planner."
                 </h5>
                 <p className="font-newsreader text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
@@ -364,18 +364,11 @@ export default function AboutPage() {
             Our goal is to provide our clients with the utmost level of service throughout the planning
             and design process as there is never a question too big or too small.
           </p>
-
-          <Link
-            href="#"
-            className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] border-b border-charcoal/50 pb-1 hover:border-charcoal transition-colors"
-          >
-            See next value
-          </Link>
         </div>
       </Slide>
 
       {/* Slide 8 — Final CTA with responsive improvements */}
-      <Slide className="relative !py-0 w-screen left-1/2 -translate-x-1/2 h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
+  <Slide className="relative !py-0 full-bleed h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
         {/* Full background image */}
         <Image
           src="/about-page/slide8/main.jpg"

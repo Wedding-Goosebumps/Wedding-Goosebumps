@@ -14,7 +14,7 @@ export default function VideoFullBleed() {
     <section className="relative w-screen h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen overflow-hidden flex flex-col items-center justify-center">
      
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-[85vh] object-cover"
         src="/videos/home-page-vids/MOHIT WED VIDEO 4K 20 Sec 9.mp4"
         autoPlay
         muted

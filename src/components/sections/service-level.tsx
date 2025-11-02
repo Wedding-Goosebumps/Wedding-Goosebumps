@@ -11,7 +11,7 @@ const ServiceLevelSection = () => {
 
           {/* TEXT SIDE */}
           <div className="lg:col-span-2 flex flex-col items-center lg:items-end text-center lg:text-right mb-8 lg:mb-0">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[46px] uppercase leading-none mb-1.7">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl uppercase leading-none mb-1.7">
               MEET THE HEART BEHIND{" "}
               <span className="italic lowercase font-light align-baseline">
                 the

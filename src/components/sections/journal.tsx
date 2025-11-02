@@ -44,7 +44,7 @@ const JournalSection = () => {
               THE ART OF GOOSEBUMPS
             </p>
 
-            <h3 className="font-playfair-display text-[21px] sm:text-[22px] md:text-[24px] lg:text-[25px] leading-snug mb-4">
+            <h3 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug mb-4">
               Why we do what we do.
             </h3>
 
