@@ -320,7 +320,7 @@ export default function OfferingsPage() {
             </div>
 
             {/* RIGHT: Image */}
-            <div className="relative h-[400px] sm:h-[450px] md:h-[520px] lg:h-[600px] xl:h-[650px] bg-[#efe9df] order-1 lg:order-2">
+            <div className="relative h-[400px] sm:h-[450px] md:h-[55vh] lg:h-[65vh] xl:h-[65vh] bg-[#efe9df] order-1 lg:order-2">
                <Image
                   key={currentOffering}
                   src={OFFERINGS_DATA[currentOffering].image}
@@ -338,7 +338,7 @@ export default function OfferingsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           
           {/* LEFT — Big Image Column: Responsive heights */}
-          <div className="lg:sticky lg:top-0 h-[35vh] sm:h-[42vh] md:h-[58vh] lg:h-[105vh]">
+          <div className="lg:sticky lg:top-0 h-[35vh] sm:h-[42vh] md:h-[58vh] lg:h-[95vh]">
             <div className="relative w-full h-full">
               <Image
                 src="/offerings-page/images-sec/main.jpg"
