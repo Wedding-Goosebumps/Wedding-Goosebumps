@@ -33,7 +33,7 @@ export default function KindWords() {
             </div>
 
 {/* giant serif quote */}
-<h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[45px] uppercase leading-none text-center lg:text-right">
+<h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl uppercase leading-none text-center lg:text-right">
   The Highest level{" "}
   <span className="italic lowercase font-light align-baseline">
     of
@@ -69,7 +69,7 @@ export default function KindWords() {
 
           {/* RIGHT — big hero portrait at extreme right */}
           <div className="order-3 flex justify-end pr-0">
-            <div className="relative w-[358px] sm:w-[422px] md:w-[458px] lg:w-[550px] aspect-[3/4]">
+            <div className="relative w-[358px] sm:w-[422px] md:w-[450px] lg:w-[500px] aspect-[3/4]">
               <Image
                 src="/kind-words-section/main%20image%20DSC03052.jpg"
                 alt="Groom kissing bride’s forehead"
