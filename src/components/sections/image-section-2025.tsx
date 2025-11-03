@@ -14,9 +14,9 @@ export const ImageGallery: React.FC = () => {
 
   return (
     <section className="py-13 sm:py-16 md:py-20 bg-[#F8F5F0] text-charcoal">
-      <div className="w-screen relative left-1/2 -translate-x-1/2">
+      <div className="full-bleed overflow-hidden">
         <div className="grid gap-8 sm:gap-12 md:gap-16 lg:gap-18 lg:grid-cols-[minmax(400px,600px)_1fr] xl:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start   ">
-          <div className="relative h-[65vh] sm:h-[80vh] md:h-[94vh] lg:h-[113vh] xl:h-[120vh] bg-[#efe9df]">
+          <div className="relative h-[65vh] sm:h-[65vh] md:h-[65vh] lg:h-[80vh] xl:h-[90vh] bg-[#efe9df]">
             <Image src={MAIN_Image} alt="Quintessential Aesthetics" fill className="object-cover" loading="eager" priority />
           </div>
           <div className="px-3 sm:px-4 lg:px-0 lg:pr-4">
@@ -31,13 +31,13 @@ export const ImageGallery: React.FC = () => {
               <p className="text-[0.6rem] sm:text-[0.64rem] md:text-[0.7rem] font-lora tracking-[0.2em] uppercase text-charcoal/80 mb-1.2">
                 WE DESIGN FROM THE SOUL OF YOUR STORY
               </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
                 THE COUTURE
               </h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-1.5 uppercase">
                 AESTHETICS <span className="italic lowercase">of</span>
               </h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-3 sm:mb-4 uppercase">
+              <h2 className="text-l sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-charcoal mb-3 sm:mb-4 uppercase">
                 CELEBRATION
               </h2>
               <p className="font-lora text-xs sm:text-sm leading-relaxed text-charcoal/90 mb-4 sm:mb-5">

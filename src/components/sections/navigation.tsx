@@ -35,7 +35,14 @@ export default function Navigation() {
   }, [pathname]);
   
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
+    // Lock only vertical scroll without touching global horizontal overflow clamp
+    const body = document.body;
+    if (isMenuOpen) {
+      body.classList.add('scroll-lock');
+    } else {
+      body.classList.remove('scroll-lock');
+    }
+    return () => body.classList.remove('scroll-lock');
   }, [isMenuOpen]);
 
   return (
