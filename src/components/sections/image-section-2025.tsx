@@ -16,7 +16,7 @@ export const ImageGallery: React.FC = () => {
     <section className="py-13 sm:py-16 md:py-20 bg-[#F8F5F0] text-charcoal">
       <div className="full-bleed overflow-hidden">
         <div className="grid gap-8 sm:gap-12 md:gap-16 lg:gap-18 lg:grid-cols-[minmax(400px,600px)_1fr] xl:grid-cols-[600px_1fr] 2xl:grid-cols-[640px_1fr] items-start   ">
-          <div className="relative h-[65vh] sm:h-[65vh] md:h-[65vh] lg:h-[80vh] xl:h-[90vh] bg-[#efe9df]">
+          <div className="relative h-[85vh] sm:h-[85vh] md:h-[90vh] lg:h-[90vh] xl:h-[100vh] bg-[#efe9df]">
             <Image src={MAIN_Image} alt="Quintessential Aesthetics" fill className="object-cover" loading="eager" priority />
           </div>
           <div className="px-3 sm:px-4 lg:px-0 lg:pr-4">

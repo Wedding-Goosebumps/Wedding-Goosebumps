@@ -86,8 +86,8 @@ export default function InquirePage() {
         </div>
 
         <div className="w-full md:w-1/2 bg-[#F8F5F0] flex flex-col">
-          <div className="text-center pt-16 pb-8" />
-          <div className="flex-1 px-8 md:px-16 py-8">
+          <div className="text-center pt-6 pb-4" />
+          <div className="flex-1 px-8 md:px-16 py-4">
             <div className="mb-8">
               <p className="text-xs uppercase tracking-[0.2em] text-charcoal/60 font-lora mb-4">
                 GET IN TOUCH
