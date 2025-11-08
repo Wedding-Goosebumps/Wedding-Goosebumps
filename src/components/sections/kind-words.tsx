@@ -42,10 +42,13 @@ export default function KindWords() {
 </h2>
 
 <div className="flex justify-center lg:justify-end">
-  <h3 className="font-lora text-[10px] sm:text-[12px] tracking-[0.2em] uppercase mb-7 sm:mb-9 lg:mb-10 max-w-[343px] leading-none text-center lg:text-right">
+  <h3 className="font-lora text-[10px] sm:text-[12px] tracking-[0.2em] uppercase mb-4 sm:mb-5 lg:mb-6 max-w-[343px] leading-none text-center lg:text-right">
     Attention to detail and exceptional, personalized attentiveness
   </h3>
 </div>
+
+{/* thin divider */}
+<div className="mx-auto lg:ml-auto lg:mr-0 mt-2 mb-7 sm:mb-9 lg:mb-10 h-[2px] w-[120px] bg-charcoal/15" />
 
 {/* body copy */}
 <p className="mt-4 sm:mt-5 max-w-[754px] font-lora text-sm sm:text-[14.6px] leading-[1.8] sm:leading-[1.9] text-charcoal/85 text-center lg:text-right mx-auto lg:ml-auto">
@@ -60,10 +63,6 @@ export default function KindWords() {
     we bring the same level of artistry, precision, and heart to every event we curate.
   </span>
 </p>
-
-
-            {/* thin divider */}
-            <div className="mx-auto mt-6 h-[2px] w-[120px] bg-charcoal/15" />
 
           </div>
 

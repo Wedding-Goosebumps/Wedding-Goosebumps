@@ -35,9 +35,9 @@ export default function GallerySection() {
   const next = () => setGroupIndex((i) => (i === lastIndex ? 0 : i + 1));
 
   return (
-  <section className="bg-ivory py-4 sm:py-6 md:py-8">
+  <section className="bg-ivory py-2 sm:py-3 md:py-5">
       {/* — Heading & intro copy */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-1">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center ">
         {/* WE CREATE → Commuter Sans 400 */}
         <h3 className="font-commuter-sans font-normal text-xs sm:text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
           WE CREATE

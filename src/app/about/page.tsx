@@ -146,7 +146,7 @@ export default function AboutPage() {
 
       {/* Slide 3 — Framed statement panel with mobile improvements */}
       <Slide>
-        <div className="w-full mt-8 sm:mt-12 lg:mt-16 xl:mt-20 mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
+        <div className="w-full mt-2 sm:mt-5 lg:mt-8 xl:mt-10 mb-10 sm:mb-15 lg:mb-20 xl:mb-24">
           <div className="mx-auto max-w-5xl bg-white border border-charcoal/10 shadow-sm px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
             {/* top divider with monogram */}
             <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
@@ -270,7 +270,7 @@ export default function AboutPage() {
       </Slide>
 
       {/* Slide 6 — Fixed testimonial layout */}
-      <Slide className="py-8 lg:py-14">
+      <Slide className="py-16 lg:py-24">
         <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[240px_1fr_480px] gap-6 lg:gap-10">
             
