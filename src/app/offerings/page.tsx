@@ -19,6 +19,15 @@ export default function OfferingsPage() {
   const [current, setCurrent] = useState(0);
   const hoverRef = useRef(false);
 
+  // Handlers for the slideshow
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % SLIDES.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
+  };
+
   // Data for the new Offerings Slider
   const OFFERINGS_DATA = [
     {
@@ -90,7 +99,7 @@ export default function OfferingsPage() {
       <Navigation />
 
       {/* Hero Section - Responsive */}
-      <section className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
+      <section className="relative w-full h-[50vh] sm:h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
         <Image
           src="/offerings-page/hero.jpg"
           alt="Full Service Luxury Wedding Design and Planning"
@@ -178,7 +187,7 @@ export default function OfferingsPage() {
         >
           {/* Inner slideshow container with overflow hidden */}
           <div
-            className="relative w-full h-full overflow-hidden "
+            className="relative w-full h-full overflow-hidden  group"
             onMouseEnter={() => (hoverRef.current = true)}
             onMouseLeave={() => (hoverRef.current = false)}
             
@@ -200,6 +209,28 @@ export default function OfferingsPage() {
                 </div>
               ))}
             </div>
+
+            {/* Left Arrow */}
+            <button
+              onClick={prevSlide}
+              aria-label="Previous slide"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-charcoal/75 hover:text-gold transition-all p-2 sm:p-3 rounded-full shadow-md opacity-0 group-hover:opacity-100"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
+                <path fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z" clipRule="evenodd" />
+              </svg>
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextSlide}
+              aria-label="Next slide"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-charcoal/75 hover:text-gold transition-all p-2 sm:p-3 rounded-full shadow-md opacity-0 group-hover:opacity-100"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </button>
           </div>
         </div>
 
