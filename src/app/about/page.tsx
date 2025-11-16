@@ -57,7 +57,7 @@ export default function AboutPage() {
 
               {/* Four images row - ensure they don't get cut */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mb-6 lg:mb-8">
-                {['/about-page/slide1/1.jpg','/about-page/slide1/2.jpg','/about-page/slide1/4.jpg','/about-page/slide1/3.jpg',].map((src, idx) => (
+                {['/about-page/slide1/1.jpg', '/about-page/slide1/2.jpg', '/about-page/slide1/4.jpg', '/about-page/slide1/3.jpg',].map((src, idx) => (
                   <div
                     key={idx}
                     className="relative aspect-[3/4] bg-[#efe9df] overflow-hidden"
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 </h1>
                 <p className="font-commuter-sans text-[10px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/85 mb-3.5">
                   FULL SERVICE DESTINATION WEDDING AND <br className="hidden sm:block" />
-                  DESIGN BOUTIQUE 
+                  DESIGN BOUTIQUE
                 </p>
                 <div className="h-[2px] w-12 sm:w-14 bg-[#D9D5CF] mb-4 sm:mb-5" />
                 <p className="font-newsreader text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
@@ -97,8 +97,8 @@ export default function AboutPage() {
       </section>
 
       {/* Slide 2 - Fixed image cutting */}
-  <Slide className="mt-12 lg:mt-16 xl:mt-20">
-        <div className="mx-auto max-w-6xl px-0">
+      <Slide className="mt-12 lg:mt-16 xl:mt-20">
+        <div className="mx-auto w-full max-w-[1000px] px-5 sm:px-7">
           <div className="grid gap-8 lg:gap-10 xl:gap-12 lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] items-start">
             {/* Left image - ensure proper aspect ratio */}
             <div className="relative w-full h-[430px] sm:h-[510px] lg:h-[650px] xl:h-[650px] bg-[#efe9df] overflow-hidden">
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
       {/* Slide 3 — Framed statement panel with mobile improvements */}
       <Slide>
-        <div className="w-full mt-8 sm:mt-12 lg:mt-16 xl:mt-20 mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
+        <div className="w-full mt-6 sm:mt-8 lg:mt-12 xl:mt-16 mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
           <div className="mx-auto max-w-5xl bg-white border border-charcoal/10 shadow-sm px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
             {/* top divider with monogram */}
             <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
@@ -185,7 +185,7 @@ export default function AboutPage() {
         <div className="full-bleed">
           {/* Mobile: stack vertically with proper spacing */}
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[220px_1fr_480px] gap-6 lg:gap-6 xl:gap-8">
-            
+
             {/* LEFT IMAGE - hidden on mobile, proper height on desktop */}
             <div className="relative w-full h-[320px] lg:h-[400px] xl:h-[480px] bg-[#efe9df] hidden lg:block overflow-hidden lg:mt-12">
               <Image
@@ -224,7 +224,7 @@ export default function AboutPage() {
                   Before founding Wedding Goosebumps, Ali spent years as the Director of a
                   leading events and entertainment company, delivering spectacular celebrations
                   across India and abroad. This role refined his <em>expertise in managing large-scale,
-                  high-profile events with precision, creativity, and cultural sensitivity.</em> <br/><br />His ability
+                    high-profile events with precision, creativity, and cultural sensitivity.</em> <br /><br />His ability
                   to remain calm under pressure, think strategically, and adapt seamlessly to
                   diverse settings ensures every wedding — whether in a royal palace, a serene
                   beach resort, or an international destination — is flawlessly executed. Paired with
@@ -273,7 +273,7 @@ export default function AboutPage() {
       <Slide className="py-8 lg:py-14">
         <div className="full-bleed">
           <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[240px_1fr_480px] gap-6 lg:gap-10">
-            
+
             {/* LEFT IMAGE - hidden on mobile, proper height */}
             <div className="relative h-[320px] lg:h-[400px] xl:h-[480px] bg-[#efe9df] hidden lg:block overflow-hidden">
               <Image
@@ -368,7 +368,7 @@ export default function AboutPage() {
       </Slide>
 
       {/* Slide 8 — Final CTA with responsive improvements */}
-  <Slide className="relative !py-0 full-bleed h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
+      <Slide className="relative !py-0 full-bleed h-[60vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] xl:h-[100vh] overflow-hidden">
         {/* Full background image */}
         <Image
           src="/about-page/slide8/main.jpg"
