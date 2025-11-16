@@ -43,7 +43,8 @@ export default function KindWords() {
 
 <div className="flex justify-center lg:justify-end">
   <h3 className="font-lora text-[10px] sm:text-[12px] tracking-[0.2em] uppercase mb-7 sm:mb-9 lg:mb-10 max-w-[343px] leading-none text-center lg:text-right">
-    Attention to detail and exceptional, personalized attentiveness
+    Attention to detail and exceptional, <br /><br />
+    personalized attentiveness
   </h3>
 </div>
 
