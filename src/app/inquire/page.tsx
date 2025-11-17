@@ -26,9 +26,9 @@ function ContactInfoBanner() {
           <div className="flex-1 flex flex-col items-center justify-center px-6 py-8">
             <h4 className="font-epicene-display text-lg text-[#b6a78f] mb-2 tracking-wide">Find Us On</h4>
           <div className="flex flex-col gap-1 mt-1">
-            <a href="#" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">INSTAGRAM</a>
-            <a href="#" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">FACEBOOK</a>
-            <a href="#" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">YOUTUBE</a>
+            <a href="https://www.instagram.com/weddinggoosebumps?igsh=MWYybHN6cGQwbno4cQ==" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">INSTAGRAM</a>
+            <a href="https://www.facebook.com/share/1CpzZMFybm/" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">FACEBOOK</a>
+            <a href="https://pin.it/vC0ez3Sw5" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">PINTEREST</a>
           </div>
         </div>
       </div>
