@@ -132,7 +132,7 @@ export default function AboutPage() {
                 His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
               </h2>
 
-              <p className="font-cormorant text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80">
+              <p className="font-lora italic text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80">
                 Is different in that he offers his couples a truly hands-on experience. He accepts a
                 limited number of weddings per year, which allows him to give 100% of his attention to
                 each and every couple.<br />
@@ -305,7 +305,7 @@ export default function AboutPage() {
 
               <div className="lg:pr-6">
                 <h5 className="mt-50 text-charcoal text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] leading-tight mb-6">
-                  "Ali is truly a one-of-a-kind planner."
+                  "Ali is truly a <br />one-of-a-kind planner."
                 </h5>
                 <p className="font-newsreader text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
                   It would be an understatement to say he was instrumental in bringing our wedding vision to
