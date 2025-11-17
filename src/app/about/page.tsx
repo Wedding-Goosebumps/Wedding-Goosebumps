@@ -84,7 +84,7 @@ export default function AboutPage() {
                   DESIGN BOUTIQUE
                 </p>
                 <div className="h-[2px] w-12 sm:w-14 bg-[#D9D5CF] mb-4 sm:mb-5" />
-                <p className="font-newsreader text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
+                <p className="font-lora text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
                   We serve a discerning global clientele who seek more than just a wedding
                   <i>— they seek an unforgettable experience.</i> From first vision to final toast,
                   we navigate cultures, traditions, and trends with ease, creating
