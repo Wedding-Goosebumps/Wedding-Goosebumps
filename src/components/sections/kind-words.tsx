@@ -48,6 +48,9 @@ export default function KindWords() {
   </h3>
 </div>
 
+{/* thin divider */}
+<div className="mx-auto lg:ml-auto lg:mr-0 mt-2 mb-7 sm:mb-9 lg:mb-10 h-[2px] w-[120px] bg-charcoal/15" />
+
 {/* body copy */}
 <p className="mt-4 sm:mt-5 max-w-[754px] font-lora text-sm sm:text-[14.6px] leading-[1.8] sm:leading-[1.9] text-charcoal/85 text-center lg:text-right mx-auto lg:ml-auto">
   We take on a limited number of weddings each year, ensuring every celebration
@@ -61,10 +64,6 @@ export default function KindWords() {
     we bring the same level of artistry, precision, and heart to every event we curate.
   </span>
 </p>
-
-
-            {/* thin divider */}
-            <div className="mx-auto mt-6 h-[2px] w-[120px] bg-charcoal/15" />
 
           </div>
 

@@ -175,21 +175,22 @@ export default function OfferingsPage() {
       </section>
 
       {/* Our Approach Section - Responsive Slideshow */}
-      <section className="py-13 sm:py-16 md:py-20">
+      <section className="py-8 sm:py-12 md:py-16 bg-[#ffffff]">
         {/* Centered slideshow container */}
         <div
           className="
             bg-grey/5
             mx-auto w-full max-w-[900px] px-3 sm:px-5
-            mb-8 sm:mb-10 md:mb-11
+            mb-10 sm:mb-12 md:mb-14
             h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[700px] 2xl:h-[750px]
           "
         >
           {/* Inner slideshow container with overflow hidden */}
           <div
-            className="relative w-full h-full overflow-hidden group"
+            className="relative w-full h-full overflow-hidden  group"
             onMouseEnter={() => (hoverRef.current = true)}
             onMouseLeave={() => (hoverRef.current = false)}
+            
           >
             {/* Slide track */}
             <div
@@ -234,7 +235,7 @@ export default function OfferingsPage() {
         </div>
 
         {/* Text content */}
-        <div className="mx-auto w-full max-w-[1000px] px-3 sm:px-5 text-center">
+        <div className="mx-auto w-full max-w-[1000px] px-3 sm:px-5 text-center ">
           {/* small overline */}
           <p className="uppercase tracking-[0.24em] sm:tracking-[0.28em] text-[9px] sm:text-[10px] text-charcoal/60 mb-2 sm:mb-3">
             Our approach
@@ -251,14 +252,13 @@ export default function OfferingsPage() {
             first idea to the final farewell.
           </p>
 
-          {/* divider with monogram */}
-          <div className="mt-4 sm:mt-6 flex items-center justify-center gap-3">
-            <span className="block h-[1px] w-16 sm:w-26 md:w-32 bg-charcoal/15" />
-            <span className="block h-[1px] w-16 sm:w-26 md:w-32 bg-charcoal/15" />
+          {/* divider */}
+          <div className="mt-6 sm:mt-8 flex items-center justify-center">
+            <span className="block h-[1px] w-24 sm:w-32 md:w-40 bg-charcoal/15" />
           </div>
 
           {/* body paragraph */}
-          <p className="mt-4 sm:mt-6 font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 max-w-[780px] mx-auto">
+          <p className="mt-6 sm:mt-8 font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 max-w-[780px] mx-auto">
             We take the time to understand you both — your personalities, your vision, and your story — and
             then craft a bespoke design concept that is a true reflection of who you are. With a handpicked
             team of world-class vendors, we bring that vision to life with precision and artistry. Your comfort,
