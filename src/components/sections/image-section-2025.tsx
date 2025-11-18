@@ -37,7 +37,7 @@ export const ImageGallery: React.FC = () => {
               <h2 className="text-l sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight text-charcoal mb-1.5 uppercase">
                 <span className="italic lowercase">of</span>{'\u00A0'} CELEBRATION
               </h2>
-              <p className="font-lora text-xs sm:text-sm leading-relaxed text-charcoal/90 mb-4 sm:mb-5">
+              <p className="font-lora text-[15px] sm:text-[16px] md:text-[17px] lg:text-[17px] leading-relaxed text-charcoal/90 mb-4 sm:mb-5">
                 Throughout our collaborative design journey, we dive deep into our couples' stories — <em>their
                 cultures, family legacies, and shared dreams.</em> These conversations become the heartbeat of
                 our process. We use every detail to design weddings that are emotionally resonant, visually

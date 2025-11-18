@@ -82,6 +82,13 @@ export default function Footer() {
 
           <div className="w-full h-px bg-charcoal/20 my-6 sm:my-8"></div>
 
+          {/* Social links (single line) - matching inquire page styling */}
+          <div className="flex items-center justify-center gap-6 mb-4">
+            <a href="https://www.instagram.com/weddinggoosebumps?igsh=MWYybHN6cGQwbno4cQ==" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">INSTAGRAM</a>
+            <a href="https://pin.it/vC0ez3Sw5" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">PINTEREST</a>
+            <a href="https://www.facebook.com/share/1CpzZMFybm/" className="text-[13px] text-charcoal/80 font-lora hover:text-gold transition">FACEBOOK</a>
+          </div>
+
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.1em]">
             <p className="mb-2 sm:mb-0">
               copyright 2025 wedding goosebumps

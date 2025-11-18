@@ -13,9 +13,11 @@ const JournalSection = () => {
           <p className="font-lora text-xs sm:text-sm text-charcoal/80 tracking-[0.3em] uppercase mb-2">
             DISCOVER OUR PHILOSOPHY
           </p>
-          <h2 className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[39px] xl:text-[44px] 2xl:text-[48px] tracking-tight leading-tight sm:leading-normal">
-            Where Emotion Becomes Experience, Every Detail Tells a Story!
-          </h2>
+            <h2 className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[39px] xl:text-[44px] 2xl:text-[48px] tracking-tight leading-tight sm:leading-normal">
+            Where Emotion Becomes Experience,
+            <br />
+            Every Detail Tells a Story!
+            </h2>
           <div className="w-8 sm:w-10 h-[1px] bg-charcoal/20 mx-auto my-3 sm:my-4" />
           <p className="font-lora text-sm sm:text-base md:text-[16px] max-w-2xl mx-auto leading-relaxed">
             Each celebration is a soulful canvas — <i>rich with meaning, memory, and magic.</i>

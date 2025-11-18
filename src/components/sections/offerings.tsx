@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const OfferingsSection = () => (
-  <section className="bg-ivory text-charcoal py-8 sm:py-12 md:py-16 lg:py-20">
+  <section className="bg-ivory text-charcoal py-8 sm:py-12 md:py-16 lg:py-20 pb-17 sm:pb-21 md:pb-24 mb-10">
     <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-7">
       {/* small uppercase heading + underline */}
       <h2 className="font-commuter-sans text-[10px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
