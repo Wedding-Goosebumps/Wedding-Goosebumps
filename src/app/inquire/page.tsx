@@ -14,9 +14,9 @@ function ContactInfoBanner() {
         {/* Contact Us */}
           <div className="flex-1 flex flex-col items-center justify-center px-6 py-8">
             <h4 className="font-epicene-display text-lg text-[#b6a78f] mb-2 tracking-wide">Contact Us</h4>
-          <p className="text-[14px] text-charcoal/80 leading-relaxed font-lora">
+            <p className="text-[14px] text-charcoal/80 leading-relaxed font-lora">
             Please fill out the form below, or you can<br />
-            contact us at <a href="tel:+917004734213" className="text-gold hover:underline">+917004734213</a>.<br />
+            contact us at <a href="tel:+917004734213" className="text-gold font-bold text-[18px] hover:underline tracking-wide">+917004734213</a>.<br />
             We&apos;ll get back to you within 48 hours!
           </p>
         </div>
