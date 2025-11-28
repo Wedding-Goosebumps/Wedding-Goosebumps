@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -19,7 +20,12 @@ export default function InquiryForm() {
   });
 
   const [status, setStatus] = useState("");
-  const [loading, setLoading] = useState(false);  
+  const [loading, setLoading] = useState(false);
+
+  // EmailJS Configuration
+  const EMAILJS_SERVICE_ID = "service_osuh7eq"; // Replace with your EmailJS service ID
+  const EMAILJS_TEMPLATE_ID = "template_1krfddr"; // Replace with your EmailJS template ID
+  const EMAILJS_PUBLIC_KEY = "nQf1yyZBzmKhc_E3m"; // Replace with your EmailJS public key  
 
 
   const handleChange = (
@@ -34,20 +40,21 @@ export default function InquiryForm() {
     setStatus("");
 
     try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          to_email: "weddinggoosebumps@gmail.com", // Your receiving email
         },
-        body: JSON.stringify(formData),
-      });
+        EMAILJS_PUBLIC_KEY
+      );
 
-      const data = await res.json();
-
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || "Failed to submit inquiry");
-      }
-
+      console.log("Email sent successfully:", result);
       setStatus("Your inquiry has been sent successfully!");
       setFormData({ name: "", email: "", phone: "", message: "" });
 
@@ -57,7 +64,7 @@ export default function InquiryForm() {
       }, 2000);
 
     } catch (err) {
-      console.error(err);
+      console.error("Failed to send email:", err);
       setStatus("An error occurred. Please try again.");
     } finally {
       setLoading(false);
