@@ -93,7 +93,7 @@ export default function InquirePage() {
                 GET IN TOUCH
               </p>
               <h2 className="font-epicene-display text-3xl md:text-4xl text-charcoal leading-tight mb-6">
-                Lets create a goosebumps <br /> moment together
+                Lets create a goosebump <br /> moment together
               </h2>
               <p className="text-charcoal/70 leading-relaxed font-lora mb-8">
                 Please fill out our contact form or send us an email.

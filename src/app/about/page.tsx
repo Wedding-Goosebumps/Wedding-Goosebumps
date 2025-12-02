@@ -113,12 +113,12 @@ export default function AboutPage() {
             </div>
 
             {/* Right text column */}
-            <div className="max-w-[540px] mt-3 lg:mt-4">
+            <div className="max-w-[540px] mt-3 lg:mt-4 lg:pl-0.5">
               <p className="font-cormorant italic text-[16px] sm:text-[17px] md:text-[18px] text-charcoal/80 mb-6">
                 Ali has been creating luxury weddings and events since 2010
               </p>
 
-              <p className="font-lora text-[16px] sm:text-[17px] md:text-[18px] leading-[1.7] sm:leading-[1.75] text-charcoal/90 mb-7">
+              <p className="font-lora text-[16px] sm:text-[17px] md:text-[18px] leading-[1.7] sm:leading-[1.75] text-charcoal/90 mb-7 text-justify">
                 With over 15 years in the luxury wedding world, Ali Waris Khan has become one of the
                 most trusted names in destination wedding planning and design across India and beyond.
                 His approach is rooted in a deep respect for each couple's story, blending meticulous
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 His Approach To Wedding <span className="italic lowercase font-light">and</span> Design
               </h2>
 
-              <p className="font-lora italic text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80">
+              <p className="font-lora italic text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-charcoal/80 text-justify">
                 Is different in that he offers his couples a truly hands-on experience. He accepts a
                 limited number of weddings per year, which allows him to give 100% of his attention to
                 each and every couple.<br />
@@ -143,6 +143,15 @@ export default function AboutPage() {
           </div>
         </div>
       </Slide>
+
+      {/* Decorative divider with infinity symbol */}
+      <div className="bg-ivory py-8 sm:py-10 md:py-12 pb-[30px] sm:pb-[38px] md:pb-[46px]">
+        <div className="flex items-center gap-3 sm:gap-4 max-w-4xl mx-auto px-6">
+          <div className="h-px flex-1 bg-charcoal/20" />
+          <span className="text-2xl sm:text-3xl text-[#B5A484]">∞</span>
+          <div className="h-px flex-1 bg-charcoal/20" />
+        </div>
+      </div>
 
       {/* Slide 3 — Framed statement panel with mobile improvements */}
       <Slide>
@@ -220,7 +229,7 @@ export default function AboutPage() {
                   Prior to starting his own business,
                 </h3>
 
-                <p className="font-newsreader text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 mb-8 lg:mb-10">
+                <p className="font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 mb-8 lg:mb-10">
                   Before founding Wedding Goosebumps, Ali spent years as the Director of a
                   leading events and entertainment company, delivering spectacular celebrations
                   across India and abroad. This role refined his <em>expertise in managing large-scale,
@@ -303,7 +312,7 @@ export default function AboutPage() {
                 </span>
               </div>
 
-              <div className="lg:pr-6">
+              <div className="lg:pr-6 lg:-mt-15.5">
                 <h5 className="mt-50 text-charcoal text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] leading-tight mb-6">
                   "Ali is truly a <br />one-of-a-kind planner."
                 </h5>

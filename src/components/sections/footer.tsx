@@ -62,9 +62,9 @@ export default function Footer() {
           </p>
         </div>
 
-        <p className="max-w-xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
+        <p className="max-w-xl mx-auto font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90">
           Wedding Goosebumps is a{' '}
-          <em className="font-serif">full service destination wedding planning and design agency</em>{' '}
+          <em className="font-lora">full service destination wedding planning and design agency</em>{' '}
           that specializes in creating elegant and exclusive weddings.
         </p>
 

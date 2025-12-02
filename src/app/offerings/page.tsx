@@ -318,7 +318,7 @@ export default function OfferingsPage() {
                 </h3>
                 
                 {/* Description */}
-                <div className="font-lora text-[14px] sm:text-[15px] md:text-[16px] leading-[1.75] sm:leading-[1.8] md:leading-[1.85] text-charcoal/85 space-y-4 sm:space-y-5">
+                <div className="font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 space-y-4 sm:space-y-5">
                   {OFFERINGS_DATA[currentOffering].description.map((paragraph, idx) => (
                     <p key={idx} className="max-w-[55ch] lg:max-w-[60ch]">{paragraph}</p>
                   ))}
