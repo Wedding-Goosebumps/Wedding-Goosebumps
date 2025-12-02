@@ -184,7 +184,7 @@ export default function GalleriesPage() {
         </div>
       </section>
 
-<section className="bg-ivory text-charcoal py-6 pb-40">
+<section className="bg-ivory text-charcoal py-6 pb-25">
     <div className="max-w-4xl mx-auto px-4"> {/* equal margins: px controls sides */}
       {/* small uppercase heading + underline */}
       <h2 className="font-commuter-sans text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
@@ -210,7 +210,7 @@ export default function GalleriesPage() {
       </p>
 
       {/* offerings link */}
-      <Link href="/offerings" className="inline-block mt-2  ">
+      <Link href="/offerings" className="inline-block mt-2 mb-0">
         <span className="font-commuter-sans text-[12px] uppercase tracking-[0.3em] text-gold border-b-[1.5px] border-gold ">
           OUR OFFERINGS
         </span>
