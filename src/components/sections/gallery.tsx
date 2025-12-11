@@ -37,7 +37,7 @@ export default function GallerySection() {
   return (
   <section className="bg-ivory py-2 sm:py-3 md:py-5">
       {/* — Heading & intro copy */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-5 sm:mt-8 lg:mt-10">
         {/* WE CREATE → Commuter Sans 400 */}
         <h3 className="font-commuter-sans font-normal text-xs sm:text-sm uppercase tracking-[0.3em] text-charcoal mb-1">
           WE CREATE
