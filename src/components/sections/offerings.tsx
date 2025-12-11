@@ -5,7 +5,7 @@ const OfferingsSection = () => (
   <section className="bg-ivory text-charcoal py-8 sm:py-12 md:py-16 lg:py-20 pb-17 sm:pb-21 md:pb-24 mb-10">
     <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-7">
       {/* small uppercase heading + underline */}
-      <h2 className="font-commuter-sans text-[10px] sm:text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-charcoal/80">
+      <h2 className="font-commuter-sans text-[11px] sm:text-[13px] md:text-[14px] uppercase tracking-[0.3em] text-gold font-bold mb-[3px]">
         ABOUT WEDDING GOOSEBUMPS
       </h2>
       <div className="h-[2.3px] w-18 sm:w-22 md:w-28 bg-[#D9D5CF]" />

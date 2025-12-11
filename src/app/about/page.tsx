@@ -99,7 +99,7 @@ export default function AboutPage() {
       {/* Slide 2 - Fixed image cutting */}
       <Slide className="mt-12 lg:mt-16 xl:mt-20">
         <div className="mx-auto w-full max-w-[1000px] px-5 sm:px-7">
-          <div className="grid gap-8 lg:gap-10 xl:gap-12 lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] items-start">
+          <div className="grid gap-[2.188rem] lg:gap-[2.688rem] xl:gap-[3.188rem] lg:grid-cols-[400px_1fr] xl:grid-cols-[440px_1fr] items-start">
             {/* Left image - ensure proper aspect ratio */}
             <div className="relative w-full h-[430px] sm:h-[510px] lg:h-[650px] xl:h-[650px] bg-[#efe9df] overflow-hidden">
               <Image
@@ -136,8 +136,6 @@ export default function AboutPage() {
                 Is different in that he offers his couples a truly hands-on experience. He accepts a
                 limited number of weddings per year, which allows him to give 100% of his attention to
                 each and every couple.<br />
-                He is known for his inherent people skills, strong organization skills as well as
-                his design talents.
               </p>
             </div>
           </div>
@@ -193,10 +191,10 @@ export default function AboutPage() {
       <Slide className="bg-white">
         <div className="full-bleed">
           {/* Mobile: stack vertically with proper spacing */}
-          <div className="flex flex-col lg:grid lg:grid-cols-[180px_1fr_380px] xl:grid-cols-[220px_1fr_480px] gap-6 lg:gap-6 xl:gap-8">
+          <div className="flex flex-col lg:grid lg:grid-cols-[240px_1fr_380px] xl:grid-cols-[280px_1fr_480px] gap-6 lg:gap-6 xl:gap-8">
 
             {/* LEFT IMAGE - hidden on mobile, proper height on desktop */}
-            <div className="relative w-full h-[320px] lg:h-[400px] xl:h-[480px] bg-[#efe9df] hidden lg:block overflow-hidden lg:mt-12">
+            <div className="relative w-full h-[360px] lg:h-[380px] xl:h-[430px]  hidden lg:block overflow-hidden lg:mt-12">
               <Image
                 src="/about-page/slide-4/1.jpg"
                 alt="Earlier work"
@@ -224,12 +222,12 @@ export default function AboutPage() {
                 </span>
               </div>
 
-              <div className="lg:pl-12 xl:pl-16">
+              <div className="lg:pl-12 xl:pl-16 pr-12">
                 <h3 className="font-epicene-display font-light uppercase text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] leading-[1.15] mb-6 lg:mb-8">
                   Prior to starting his own business,
                 </h3>
 
-                <p className="font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 mb-8 lg:mb-10">
+                <p className="font-lora text-[13px] sm:text-[14px] md:text-[14.5px] leading-[1.7] sm:leading-[1.8] text-charcoal/90 mb-8 lg:mb-10 text-justify ">
                   Before founding Wedding Goosebumps, Ali spent years as the Director of a
                   leading events and entertainment company, delivering spectacular celebrations
                   across India and abroad. This role refined his <em>expertise in managing large-scale,
