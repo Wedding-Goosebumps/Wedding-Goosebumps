@@ -109,11 +109,11 @@ export default function OfferingsPage() {
         />
         <div className="absolute inset-0 flex items-center justify-center px-3">
           <div className="text-center max-w-3xl">
-            <h1 className="font-epicene-display text-black/95 uppercase leading-tight text-[20px] sm:text-[26px] md:text-[34px] lg:text-[42px] drop-shadow">
+            <h1 className="font-epicene-display text-white uppercase leading-tight text-[20px] sm:text-[26px] md:text-[34px] lg:text-[42px] drop-shadow">
               FULL SERVICE<br />
               LUXURY WEDDING DESIGN AND PLANNING
             </h1>
-            <p className="mt-2 sm:mt-3 font-lora tracking-[0.12em] sm:tracking-[0.16em] text-black/90 uppercase text-[9px] sm:text-[10px]">
+            <p className="mt-2 sm:mt-3 font-lora tracking-[0.12em] sm:tracking-[0.16em] text-white/95 uppercase text-[9px] sm:text-[10px]">
               BY WEDDING GOOSEBUMPS
             </p>
           </div>
