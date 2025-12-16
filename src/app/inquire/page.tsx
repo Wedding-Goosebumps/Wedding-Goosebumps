@@ -20,7 +20,7 @@ function ContactInfoBanner() {
             <h4 className="font-epicene-display text-lg text-charcoal mb-3 uppercase tracking-wide">Customer Support</h4>
             <p className="text-sm text-charcoal/70 font-lora mb-2">Phone number:</p>
             <a href="tel:+917004734213" className="text-[#C2A770] font-lora text-lg hover:underline">
-              +91-9810196863
+              +91-7004734213
             </a>
           </div>
 
@@ -50,7 +50,7 @@ function ContactInfoBanner() {
             <h4 className="font-epicene-display text-lg text-charcoal mb-3 uppercase tracking-wide">Find Us On</h4>
             <div className="flex items-center justify-center gap-4 mt-2">
               <a
-                href="https://wa.me/917004734213"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
