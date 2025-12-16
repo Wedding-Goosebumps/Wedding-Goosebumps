@@ -20,7 +20,7 @@ function ContactInfoBanner() {
             <h4 className="font-epicene-display text-lg text-charcoal mb-3 uppercase tracking-wide">Customer Support</h4>
             <p className="text-sm text-charcoal/70 font-lora mb-2">Phone number:</p>
             <a href="tel:+917004734213" className="text-[#C2A770] font-lora text-lg hover:underline">
-              +01-7004734213
+              +91-7004734213
             </a>
           </div>
 
